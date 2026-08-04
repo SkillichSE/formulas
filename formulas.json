@@ -1,0 +1,2022 @@
+[
+  {
+    "name": "Quadratic formula",
+    "formula": "x = (-b +- sqrt(b^2 - 4ac)) / 2a"
+  },
+  {
+    "name": "Square of a sum",
+    "formula": "(a + b)^2 = a^2 + 2ab + b^2"
+  },
+  {
+    "name": "Square of a difference",
+    "formula": "(a - b)^2 = a^2 - 2ab + b^2"
+  },
+  {
+    "name": "Difference of squares",
+    "formula": "a^2 - b^2 = (a - b)(a + b)"
+  },
+  {
+    "name": "Sum of cubes",
+    "formula": "a^3 + b^3 = (a + b)(a^2 - ab + b^2)"
+  },
+  {
+    "name": "Difference of cubes",
+    "formula": "a^3 - b^3 = (a - b)(a^2 + ab + b^2)"
+  },
+  {
+    "name": "Cube of a sum",
+    "formula": "(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3"
+  },
+  {
+    "name": "Vieta's formula (sum of roots)",
+    "formula": "x1 + x2 = -b/a"
+  },
+  {
+    "name": "Vieta's formula (product of roots)",
+    "formula": "x1 * x2 = c/a"
+  },
+  {
+    "name": "Binomial theorem",
+    "formula": "(a+b)^n = sum C(n,k) a^(n-k) b^k"
+  },
+  {
+    "name": "Geometric series sum",
+    "formula": "S = a1(1 - q^n) / (1 - q)"
+  },
+  {
+    "name": "Arithmetic series sum",
+    "formula": "S = n(a1 + an) / 2"
+  },
+  {
+    "name": "Arithmetic sequence nth term",
+    "formula": "an = a1 + (n-1)d"
+  },
+  {
+    "name": "Geometric sequence nth term",
+    "formula": "an = a1 * q^(n-1)"
+  },
+  {
+    "name": "Log of a product",
+    "formula": "log(ab) = log a + log b"
+  },
+  {
+    "name": "Log of a quotient",
+    "formula": "log(a/b) = log a - log b"
+  },
+  {
+    "name": "Log of a power",
+    "formula": "log(a^n) = n log a"
+  },
+  {
+    "name": "Change of base formula",
+    "formula": "log_b(a) = ln a / ln b"
+  },
+  {
+    "name": "Modulus of a complex number",
+    "formula": "|z| = sqrt(a^2 + b^2)"
+  },
+  {
+    "name": "De Moivre's formula",
+    "formula": "(cos t + i sin t)^n = cos(nt) + i sin(nt)"
+  },
+  {
+    "name": "Discriminant",
+    "formula": "D = b^2 - 4ac"
+  },
+  {
+    "name": "Compound interest formula",
+    "formula": "A = P(1 + r/n)^(nt)"
+  },
+  {
+    "name": "Pythagorean identity",
+    "formula": "sin^2 x + cos^2 x = 1"
+  },
+  {
+    "name": "Roots of unity",
+    "formula": "z_k = cos(2 pi k/n) + i sin(2 pi k/n)"
+  },
+  {
+    "name": "AM-GM inequality",
+    "formula": "(a+b)/2 >= sqrt(ab)"
+  },
+  {
+    "name": "Heron's formula",
+    "formula": "S = sqrt(p(p-a)(p-b)(p-c))"
+  },
+  {
+    "name": "Semiperimeter of a triangle",
+    "formula": "p = (a + b + c) / 2"
+  },
+  {
+    "name": "Factorial",
+    "formula": "n! = n(n-1)(n-2)...1"
+  },
+  {
+    "name": "Combinations formula",
+    "formula": "C(n,k) = n! / (k!(n-k)!)"
+  },
+  {
+    "name": "Permutations formula",
+    "formula": "A(n,k) = n! / (n-k)!"
+  },
+  {
+    "name": "Sum of first n cubes",
+    "formula": "sum k^3 = (n(n+1)/2)^2"
+  },
+  {
+    "name": "Sum of first n naturals",
+    "formula": "sum k = n(n+1)/2"
+  },
+  {
+    "name": "Sum of first n squares",
+    "formula": "sum k^2 = n(n+1)(2n+1)/6"
+  },
+  {
+    "name": "Fundamental theorem of calculus",
+    "formula": "int[a,b] f(x)dx = F(b) - F(a)"
+  },
+  {
+    "name": "Mean value theorem (Lagrange)",
+    "formula": "(f(b) - f(a)) / (b - a) = f'(c)"
+  },
+  {
+    "name": "Taylor series",
+    "formula": "f(x) = sum f^(n)(a)/n! * (x-a)^n"
+  },
+  {
+    "name": "Euler's formula",
+    "formula": "e^(ix) = cos x + i sin x"
+  },
+  {
+    "name": "Euler's identity",
+    "formula": "e^(i pi) + 1 = 0"
+  },
+  {
+    "name": "Area of a circle via diameter",
+    "formula": "S = pi d^2 / 4"
+  },
+  {
+    "name": "Infinite geometric series sum",
+    "formula": "S = a1 / (1 - q), |q|<1"
+  },
+  {
+    "name": "Newton's binomial for negative exponent",
+    "formula": "(1+x)^-1 = 1 - x + x^2 - x^3 + ..."
+  },
+  {
+    "name": "Pythagorean theorem",
+    "formula": "a^2 + b^2 = c^2"
+  },
+  {
+    "name": "Law of cosines",
+    "formula": "c^2 = a^2 + b^2 - 2ab cos(C)"
+  },
+  {
+    "name": "Law of sines",
+    "formula": "a/sin A = b/sin B = c/sin C"
+  },
+  {
+    "name": "Triangle area (base and height)",
+    "formula": "S = 1/2 * a * h"
+  },
+  {
+    "name": "Triangle area (two sides and angle)",
+    "formula": "S = 1/2 * a * b * sin(C)"
+  },
+  {
+    "name": "Rectangle area",
+    "formula": "S = a * b"
+  },
+  {
+    "name": "Square area",
+    "formula": "S = a^2"
+  },
+  {
+    "name": "Circle area",
+    "formula": "S = pi r^2"
+  },
+  {
+    "name": "Circle circumference",
+    "formula": "L = 2 pi r"
+  },
+  {
+    "name": "Trapezoid area",
+    "formula": "S = (a + b)/2 * h"
+  },
+  {
+    "name": "Parallelogram area",
+    "formula": "S = a * h"
+  },
+  {
+    "name": "Rhombus area",
+    "formula": "S = (d1 * d2) / 2"
+  },
+  {
+    "name": "Cube volume",
+    "formula": "V = a^3"
+  },
+  {
+    "name": "Rectangular prism volume",
+    "formula": "V = a * b * c"
+  },
+  {
+    "name": "Cylinder volume",
+    "formula": "V = pi r^2 h"
+  },
+  {
+    "name": "Cone volume",
+    "formula": "V = 1/3 pi r^2 h"
+  },
+  {
+    "name": "Sphere volume",
+    "formula": "V = 4/3 pi r^3"
+  },
+  {
+    "name": "Sphere surface area",
+    "formula": "S = 4 pi r^2"
+  },
+  {
+    "name": "Cylinder lateral surface area",
+    "formula": "S = 2 pi r h"
+  },
+  {
+    "name": "Cone lateral surface area",
+    "formula": "S = pi r l"
+  },
+  {
+    "name": "Distance formula",
+    "formula": "d = sqrt((x2-x1)^2 + (y2-y1)^2)"
+  },
+  {
+    "name": "Circle equation",
+    "formula": "(x - a)^2 + (y - b)^2 = r^2"
+  },
+  {
+    "name": "General line equation",
+    "formula": "Ax + By + C = 0"
+  },
+  {
+    "name": "Slope of a line",
+    "formula": "k = (y2 - y1)/(x2 - x1)"
+  },
+  {
+    "name": "Section formula",
+    "formula": "x = (x1 + t*x2)/(1 + t)"
+  },
+  {
+    "name": "Triangle area by coordinates",
+    "formula": "S = 1/2 |x1(y2-y3)+x2(y3-y1)+x3(y1-y2)|"
+  },
+  {
+    "name": "Thales' theorem",
+    "formula": "parallel lines cut proportional segments"
+  },
+  {
+    "name": "Median property",
+    "formula": "medians meet at a point dividing them 2:1"
+  },
+  {
+    "name": "Inradius formula",
+    "formula": "r = S / p"
+  },
+  {
+    "name": "Circumradius formula",
+    "formula": "R = abc / (4S)"
+  },
+  {
+    "name": "Ellipse equation",
+    "formula": "x^2/a^2 + y^2/b^2 = 1"
+  },
+  {
+    "name": "Hyperbola equation",
+    "formula": "x^2/a^2 - y^2/b^2 = 1"
+  },
+  {
+    "name": "Parabola equation",
+    "formula": "y^2 = 2px"
+  },
+  {
+    "name": "Pyramid volume",
+    "formula": "V = 1/3 * S(base) * h"
+  },
+  {
+    "name": "Regular polygon area",
+    "formula": "S = (n a^2)/(4 tan(pi/n))"
+  },
+  {
+    "name": "Sum of interior angles",
+    "formula": "Sum = (n-2)*180 degrees"
+  },
+  {
+    "name": "Inscribed angle theorem",
+    "formula": "inscribed angle = half of central angle"
+  },
+  {
+    "name": "Arc length",
+    "formula": "l = r * theta"
+  },
+  {
+    "name": "Circular sector area",
+    "formula": "S = 1/2 r^2 theta"
+  },
+  {
+    "name": "Distance from point to plane",
+    "formula": "d = |Ax0+By0+Cz0+D| / sqrt(A^2+B^2+C^2)"
+  },
+  {
+    "name": "Vector dot product",
+    "formula": "a . b = |a||b|cos(theta)"
+  },
+  {
+    "name": "Vector cross product magnitude",
+    "formula": "|a x b| = |a||b|sin(theta)"
+  },
+  {
+    "name": "Double angle sine",
+    "formula": "sin(2x) = 2 sin x cos x"
+  },
+  {
+    "name": "Double angle cosine",
+    "formula": "cos(2x) = cos^2 x - sin^2 x"
+  },
+  {
+    "name": "Tangent of a sum",
+    "formula": "tan(x+y) = (tan x + tan y)/(1 - tan x tan y)"
+  },
+  {
+    "name": "Sine of a sum",
+    "formula": "sin(x+y) = sin x cos y + cos x sin y"
+  },
+  {
+    "name": "Cosine of a sum",
+    "formula": "cos(x+y) = cos x cos y - sin x sin y"
+  },
+  {
+    "name": "Sine of a difference",
+    "formula": "sin(x-y) = sin x cos y - cos x sin y"
+  },
+  {
+    "name": "Cosine of a difference",
+    "formula": "cos(x-y) = cos x cos y + sin x sin y"
+  },
+  {
+    "name": "Half angle sine",
+    "formula": "sin(x/2) = +-sqrt((1-cos x)/2)"
+  },
+  {
+    "name": "Half angle cosine",
+    "formula": "cos(x/2) = +-sqrt((1+cos x)/2)"
+  },
+  {
+    "name": "Product to sum (sine)",
+    "formula": "sin x sin y = 1/2[cos(x-y) - cos(x+y)]"
+  },
+  {
+    "name": "Sum to product (sine)",
+    "formula": "sin x + sin y = 2 sin((x+y)/2) cos((x-y)/2)"
+  },
+  {
+    "name": "Difference to product (cosine)",
+    "formula": "cos x - cos y = -2 sin((x+y)/2) sin((x-y)/2)"
+  },
+  {
+    "name": "Tangent-cotangent relation",
+    "formula": "tan x * cot x = 1"
+  },
+  {
+    "name": "Tangent definition",
+    "formula": "tan x = sin x / cos x"
+  },
+  {
+    "name": "Reduction formula",
+    "formula": "sin(pi - x) = sin x"
+  },
+  {
+    "name": "Periodicity of sine",
+    "formula": "sin(x + 2 pi) = sin x"
+  },
+  {
+    "name": "Weierstrass substitution",
+    "formula": "sin x = 2t/(1+t^2), t=tan(x/2)"
+  },
+  {
+    "name": "Power rule",
+    "formula": "d/dx(x^n) = n x^(n-1)"
+  },
+  {
+    "name": "Derivative of sine",
+    "formula": "d/dx(sin x) = cos x"
+  },
+  {
+    "name": "Derivative of cosine",
+    "formula": "d/dx(cos x) = -sin x"
+  },
+  {
+    "name": "Derivative of exponential",
+    "formula": "d/dx(e^x) = e^x"
+  },
+  {
+    "name": "Derivative of logarithm",
+    "formula": "d/dx(ln x) = 1/x"
+  },
+  {
+    "name": "Product rule",
+    "formula": "(fg)' = f'g + fg'"
+  },
+  {
+    "name": "Quotient rule",
+    "formula": "(f/g)' = (f'g - fg')/g^2"
+  },
+  {
+    "name": "Chain rule",
+    "formula": "(f(g(x)))' = f'(g(x)) g'(x)"
+  },
+  {
+    "name": "Power rule for integrals",
+    "formula": "int x^n dx = x^(n+1)/(n+1) + C"
+  },
+  {
+    "name": "Integral of 1/x",
+    "formula": "int(1/x)dx = ln|x| + C"
+  },
+  {
+    "name": "Integral of exponential",
+    "formula": "int e^x dx = e^x + C"
+  },
+  {
+    "name": "Integration by parts",
+    "formula": "int u dv = uv - int v du"
+  },
+  {
+    "name": "Taylor series for e^x",
+    "formula": "e^x = sum x^n/n!"
+  },
+  {
+    "name": "Maclaurin series for sin x",
+    "formula": "sin x = x - x^3/3! + x^5/5! - ..."
+  },
+  {
+    "name": "Limit definition of e",
+    "formula": "e = lim(1+1/n)^n as n -> inf"
+  },
+  {
+    "name": "First remarkable limit",
+    "formula": "lim(sin x / x) = 1 as x -> 0"
+  },
+  {
+    "name": "Leibniz rule",
+    "formula": "(fg)^(n) = sum C(n,k) f^(k) g^(n-k)"
+  },
+  {
+    "name": "Area under a curve",
+    "formula": "S = int[a,b] f(x) dx"
+  },
+  {
+    "name": "Arc length of a curve",
+    "formula": "L = int sqrt(1+(y')^2) dx"
+  },
+  {
+    "name": "Volume of a solid of revolution",
+    "formula": "V = pi int[a,b] y^2 dx"
+  },
+  {
+    "name": "Green's theorem",
+    "formula": "oint(Ldx+Mdy) = dblint(dM/dx - dL/dy)dA"
+  },
+  {
+    "name": "Stokes' theorem",
+    "formula": "oint F.dr = dblint(curl F).dA"
+  },
+  {
+    "name": "Mean value theorem for integrals",
+    "formula": "int[a,b]f(x)dx = f(c)(b-a)"
+  },
+  {
+    "name": "Newton's method",
+    "formula": "x_(n+1) = x_n - f(x_n)/f'(x_n)"
+  },
+  {
+    "name": "Partial derivative notation",
+    "formula": "df/dx at constant y"
+  },
+  {
+    "name": "Gradient",
+    "formula": "grad f = (df/dx, df/dy, df/dz)"
+  },
+  {
+    "name": "Divergence",
+    "formula": "div F = dFx/dx + dFy/dy + dFz/dz"
+  },
+  {
+    "name": "Curl",
+    "formula": "curl F = nabla x F"
+  },
+  {
+    "name": "Laplacian",
+    "formula": "laplace f = d^2f/dx^2 + d^2f/dy^2 + d^2f/dz^2"
+  },
+  {
+    "name": "Newton's second law",
+    "formula": "F = ma"
+  },
+  {
+    "name": "Newton's first law",
+    "formula": "a body stays at rest or moves uniformly unless acted on by a force"
+  },
+  {
+    "name": "Newton's third law",
+    "formula": "F(1 on 2) = -F(2 on 1)"
+  },
+  {
+    "name": "Law of universal gravitation",
+    "formula": "F = G m1 m2 / r^2"
+  },
+  {
+    "name": "Momentum",
+    "formula": "p = mv"
+  },
+  {
+    "name": "Conservation of momentum",
+    "formula": "p1 + p2 = const"
+  },
+  {
+    "name": "Kinetic energy",
+    "formula": "Ek = mv^2/2"
+  },
+  {
+    "name": "Gravitational potential energy",
+    "formula": "Ep = mgh"
+  },
+  {
+    "name": "Work done by a force",
+    "formula": "A = F s cos(a)"
+  },
+  {
+    "name": "Power",
+    "formula": "P = A / t"
+  },
+  {
+    "name": "Uniformly accelerated motion (position)",
+    "formula": "s = v0 t + at^2/2"
+  },
+  {
+    "name": "Uniformly accelerated motion (velocity)",
+    "formula": "v = v0 + at"
+  },
+  {
+    "name": "Acceleration",
+    "formula": "a = (v - v0)/t"
+  },
+  {
+    "name": "Centripetal acceleration",
+    "formula": "a = v^2/r"
+  },
+  {
+    "name": "Period of rotation",
+    "formula": "T = 2 pi/w"
+  },
+  {
+    "name": "Hooke's law",
+    "formula": "F = -kx"
+  },
+  {
+    "name": "Torque",
+    "formula": "M = F * d"
+  },
+  {
+    "name": "Angular momentum",
+    "formula": "L = r x p"
+  },
+  {
+    "name": "Rotational analogue of Newton's law",
+    "formula": "M = I * eps"
+  },
+  {
+    "name": "Moment of inertia (point mass)",
+    "formula": "I = m r^2"
+  },
+  {
+    "name": "Moment of inertia (disk)",
+    "formula": "I = 1/2 m r^2"
+  },
+  {
+    "name": "Moment of inertia (sphere)",
+    "formula": "I = 2/5 m r^2"
+  },
+  {
+    "name": "Center of mass",
+    "formula": "x_cm = sum(m_i x_i)/sum m_i"
+  },
+  {
+    "name": "Conservation of mechanical energy",
+    "formula": "Ek + Ep = const"
+  },
+  {
+    "name": "Pendulum period",
+    "formula": "T = 2 pi sqrt(l/g)"
+  },
+  {
+    "name": "Spring pendulum period",
+    "formula": "T = 2 pi sqrt(m/k)"
+  },
+  {
+    "name": "Friction force",
+    "formula": "Ffr = mu N"
+  },
+  {
+    "name": "First cosmic velocity",
+    "formula": "v1 = sqrt(gR)"
+  },
+  {
+    "name": "Second cosmic velocity",
+    "formula": "v2 = sqrt(2gR)"
+  },
+  {
+    "name": "Kepler's third law",
+    "formula": "T^2 / a^3 = const"
+  },
+  {
+    "name": "Free fall velocity",
+    "formula": "v = gt"
+  },
+  {
+    "name": "Free fall height",
+    "formula": "h = gt^2/2"
+  },
+  {
+    "name": "Hydrostatic pressure",
+    "formula": "P = rho g h"
+  },
+  {
+    "name": "Archimedes' principle",
+    "formula": "F = rho g V"
+  },
+  {
+    "name": "Pascal's law",
+    "formula": "pressure is transmitted equally in all directions"
+  },
+  {
+    "name": "Continuity equation",
+    "formula": "S1 v1 = S2 v2"
+  },
+  {
+    "name": "Bernoulli's equation",
+    "formula": "P + rho v^2/2 + rho g h = const"
+  },
+  {
+    "name": "Reynolds number",
+    "formula": "Re = rho v L / mu"
+  },
+  {
+    "name": "Lorentz force",
+    "formula": "F = qv x B"
+  },
+  {
+    "name": "Kinetic theory of gas pressure",
+    "formula": "P = 1/3 n m v^2"
+  },
+  {
+    "name": "Angular velocity",
+    "formula": "w = d(theta)/dt"
+  },
+  {
+    "name": "Torsion spring torque",
+    "formula": "M = -k theta"
+  },
+  {
+    "name": "Ideal gas law",
+    "formula": "PV = nRT"
+  },
+  {
+    "name": "First law of thermodynamics",
+    "formula": "dU = Q - A"
+  },
+  {
+    "name": "Second law of thermodynamics",
+    "formula": "dS >= 0"
+  },
+  {
+    "name": "Heat engine efficiency",
+    "formula": "eta = (Q1 - Q2)/Q1"
+  },
+  {
+    "name": "Carnot cycle efficiency",
+    "formula": "eta = 1 - T2/T1"
+  },
+  {
+    "name": "Internal energy of ideal gas",
+    "formula": "U = 3/2 nRT"
+  },
+  {
+    "name": "Boyle's law",
+    "formula": "PV = const (T=const)"
+  },
+  {
+    "name": "Gay-Lussac's law",
+    "formula": "P/T = const (V=const)"
+  },
+  {
+    "name": "Charles's law",
+    "formula": "V/T = const (P=const)"
+  },
+  {
+    "name": "Van der Waals equation",
+    "formula": "(P + a n^2/V^2)(V - nb) = nRT"
+  },
+  {
+    "name": "Heat of heating",
+    "formula": "Q = mcdT"
+  },
+  {
+    "name": "Latent heat of fusion",
+    "formula": "Q = mL"
+  },
+  {
+    "name": "Latent heat of vaporization",
+    "formula": "Q = mL"
+  },
+  {
+    "name": "Stefan-Boltzmann law",
+    "formula": "P = sigma T^4"
+  },
+  {
+    "name": "Wien's displacement law",
+    "formula": "lambda_max T = b"
+  },
+  {
+    "name": "Boltzmann entropy formula",
+    "formula": "S = k ln W"
+  },
+  {
+    "name": "Ideal gas density relation",
+    "formula": "P = rho R T / M"
+  },
+  {
+    "name": "Speed of sound in a gas",
+    "formula": "v = sqrt(gamma R T / M)"
+  },
+  {
+    "name": "Average kinetic energy of molecules",
+    "formula": "Ek = 3/2 kT"
+  },
+  {
+    "name": "Barometric formula",
+    "formula": "P = P0 e^(-mgh/kT)"
+  },
+  {
+    "name": "Fourier's law of heat conduction",
+    "formula": "q = -k grad T"
+  },
+  {
+    "name": "Coefficient of performance",
+    "formula": "eps = Q2/(Q1-Q2)"
+  },
+  {
+    "name": "Ohm's law",
+    "formula": "I = U / R"
+  },
+  {
+    "name": "Ohm's law for a full circuit",
+    "formula": "I = eps / (R + r)"
+  },
+  {
+    "name": "Coulomb's law",
+    "formula": "F = k q1 q2 / r^2"
+  },
+  {
+    "name": "Electric field strength",
+    "formula": "E = F / q"
+  },
+  {
+    "name": "Electric potential",
+    "formula": "phi = kq/r"
+  },
+  {
+    "name": "Capacitance",
+    "formula": "C = q / U"
+  },
+  {
+    "name": "Energy of a charged capacitor",
+    "formula": "W = CU^2/2"
+  },
+  {
+    "name": "Resistance of a conductor",
+    "formula": "R = rho l / S"
+  },
+  {
+    "name": "Kirchhoff's first law",
+    "formula": "sum I_in = sum I_out"
+  },
+  {
+    "name": "Kirchhoff's second law",
+    "formula": "sum eps = sum IR"
+  },
+  {
+    "name": "Joule-Lenz law",
+    "formula": "Q = I^2 R t"
+  },
+  {
+    "name": "Electric power",
+    "formula": "P = UI"
+  },
+  {
+    "name": "EMF of induction",
+    "formula": "eps = -dPhi/dt"
+  },
+  {
+    "name": "Faraday's law of induction",
+    "formula": "eps = -N dPhi/dt"
+  },
+  {
+    "name": "Magnetic flux",
+    "formula": "Phi = B S cos(a)"
+  },
+  {
+    "name": "Ampere's force",
+    "formula": "F = BIL sin(a)"
+  },
+  {
+    "name": "Lorentz force (electromagnetic)",
+    "formula": "F = qvB sin(a)"
+  },
+  {
+    "name": "Solenoid inductance",
+    "formula": "L = mu0 n^2 V"
+  },
+  {
+    "name": "Energy of magnetic field",
+    "formula": "W = LI^2/2"
+  },
+  {
+    "name": "Parallel plate capacitor",
+    "formula": "C = eps eps0 S / d"
+  },
+  {
+    "name": "Coulomb's law in a dielectric",
+    "formula": "F = q1q2/(4 pi eps eps0 r^2)"
+  },
+  {
+    "name": "LC circuit resonant frequency",
+    "formula": "f = 1/(2 pi sqrt(LC))"
+  },
+  {
+    "name": "Gauss's law (electric)",
+    "formula": "div E = rho/eps0"
+  },
+  {
+    "name": "Gauss's law (magnetic)",
+    "formula": "div B = 0"
+  },
+  {
+    "name": "Faraday's law (Maxwell)",
+    "formula": "curl E = -dB/dt"
+  },
+  {
+    "name": "Ampere-Maxwell law",
+    "formula": "curl B = mu0 J + mu0 eps0 dE/dt"
+  },
+  {
+    "name": "Speed of electromagnetic wave",
+    "formula": "c = 1/sqrt(mu0 eps0)"
+  },
+  {
+    "name": "Voltage divider",
+    "formula": "Vout = Vin * R2/(R1+R2)"
+  },
+  {
+    "name": "Law of reflection",
+    "formula": "angle of incidence equals angle of reflection"
+  },
+  {
+    "name": "Snell's law",
+    "formula": "n1 sin t1 = n2 sin t2"
+  },
+  {
+    "name": "Thin lens equation",
+    "formula": "1/f = 1/d + 1/d'"
+  },
+  {
+    "name": "Optical power of a lens",
+    "formula": "D = 1/f"
+  },
+  {
+    "name": "Diffraction grating equation",
+    "formula": "d sin theta = k lambda"
+  },
+  {
+    "name": "Wavelength-frequency relation",
+    "formula": "lambda = v / f"
+  },
+  {
+    "name": "Photon energy",
+    "formula": "E = hf"
+  },
+  {
+    "name": "Photon momentum",
+    "formula": "p = h/lambda"
+  },
+  {
+    "name": "Planck's radiation formula",
+    "formula": "E = h nu"
+  },
+  {
+    "name": "Doppler effect",
+    "formula": "f' = f (v+-v_o)/(v-+v_s)"
+  },
+  {
+    "name": "Wave equation",
+    "formula": "y = A sin(wt - kx)"
+  },
+  {
+    "name": "Sound intensity",
+    "formula": "I = P / S"
+  },
+  {
+    "name": "Sound level in decibels",
+    "formula": "L = 10 log(I/I0)"
+  },
+  {
+    "name": "Young's double slit",
+    "formula": "d sin theta = m lambda"
+  },
+  {
+    "name": "Mass-energy equivalence",
+    "formula": "E = mc^2"
+  },
+  {
+    "name": "Photoelectric effect equation",
+    "formula": "hf = A + Ek"
+  },
+  {
+    "name": "Heisenberg uncertainty principle",
+    "formula": "dx dp >= hbar/2"
+  },
+  {
+    "name": "Time-independent Schrodinger equation",
+    "formula": "H psi = E psi"
+  },
+  {
+    "name": "Time-dependent Schrodinger equation",
+    "formula": "i hbar dpsi/dt = H psi"
+  },
+  {
+    "name": "De Broglie wavelength",
+    "formula": "lambda = h / p"
+  },
+  {
+    "name": "Bohr model energy levels",
+    "formula": "En = -13.6 eV / n^2"
+  },
+  {
+    "name": "Relativistic energy-momentum relation",
+    "formula": "E^2 = (pc)^2 + (mc^2)^2"
+  },
+  {
+    "name": "Time dilation",
+    "formula": "dt' = dt/sqrt(1-v^2/c^2)"
+  },
+  {
+    "name": "Length contraction",
+    "formula": "L = L0 sqrt(1-v^2/c^2)"
+  },
+  {
+    "name": "Lorentz transformation (time)",
+    "formula": "t' = gamma(t - vx/c^2)"
+  },
+  {
+    "name": "Relativistic mass",
+    "formula": "m = m0/sqrt(1-v^2/c^2)"
+  },
+  {
+    "name": "Radioactive decay law",
+    "formula": "N = N0 e^(-lambda t)"
+  },
+  {
+    "name": "Half-life formula",
+    "formula": "T_half = ln2/lambda"
+  },
+  {
+    "name": "Fine structure constant",
+    "formula": "alpha = e^2/(4 pi eps0 hbar c)"
+  },
+  {
+    "name": "Compton scattering formula",
+    "formula": "dlambda = (h/mc)(1-cos theta)"
+  },
+  {
+    "name": "Law of conservation of mass",
+    "formula": "mass of reactants equals mass of products"
+  },
+  {
+    "name": "Avogadro's law",
+    "formula": "equal volumes of gases contain equal numbers of molecules"
+  },
+  {
+    "name": "Avogadro's number",
+    "formula": "NA = 6.022 * 10^23 mol^-1"
+  },
+  {
+    "name": "Molar mass formula",
+    "formula": "M = m / n"
+  },
+  {
+    "name": "Amount of substance",
+    "formula": "n = N / NA"
+  },
+  {
+    "name": "Molar volume of gas",
+    "formula": "V = n Vm"
+  },
+  {
+    "name": "Law of equivalents",
+    "formula": "m1/E1 = m2/E2"
+  },
+  {
+    "name": "pH formula",
+    "formula": "pH = -log[H+]"
+  },
+  {
+    "name": "pOH formula",
+    "formula": "pOH = -log[OH-]"
+  },
+  {
+    "name": "pH-pOH relation",
+    "formula": "pH + pOH = 14"
+  },
+  {
+    "name": "Rate law",
+    "formula": "v = k[A]^m[B]^n"
+  },
+  {
+    "name": "Arrhenius equation",
+    "formula": "k = A e^(-Ea/RT)"
+  },
+  {
+    "name": "Equilibrium constant",
+    "formula": "K = [products]/[reactants]"
+  },
+  {
+    "name": "Ostwald's dilution law",
+    "formula": "K = a^2 C/(1-a)"
+  },
+  {
+    "name": "Mass fraction formula",
+    "formula": "w = m(solute)/m(solution)"
+  },
+  {
+    "name": "Molar concentration",
+    "formula": "C = n / V"
+  },
+  {
+    "name": "Ideal gas law (chemistry)",
+    "formula": "PV = nRT"
+  },
+  {
+    "name": "Hess's law",
+    "formula": "dH = sum dHf(products) - sum dHf(reactants)"
+  },
+  {
+    "name": "Nernst equation",
+    "formula": "E = E0 - (RT/nF) ln Q"
+  },
+  {
+    "name": "Degree of dissociation",
+    "formula": "a = Nd/N"
+  },
+  {
+    "name": "Henry's law",
+    "formula": "C = kH * P"
+  },
+  {
+    "name": "Raoult's law",
+    "formula": "P = P0 * x"
+  },
+  {
+    "name": "Binding energy formula",
+    "formula": "Eb = dm c^2"
+  },
+  {
+    "name": "Van't Hoff factor",
+    "formula": "i = 1 + a(n-1)"
+  },
+  {
+    "name": "Rate of reaction (general)",
+    "formula": "rate = -d[A]/dt"
+  },
+  {
+    "name": "Half-reaction balance (electrons)",
+    "formula": "electrons lost = electrons gained"
+  },
+  {
+    "name": "Classical probability",
+    "formula": "P(A) = m/n"
+  },
+  {
+    "name": "Addition rule of probability",
+    "formula": "P(A or B) = P(A)+P(B)-P(A and B)"
+  },
+  {
+    "name": "Multiplication rule of probability",
+    "formula": "P(A and B) = P(A)P(B|A)"
+  },
+  {
+    "name": "Law of total probability",
+    "formula": "P(A) = sum P(Hi)P(A|Hi)"
+  },
+  {
+    "name": "Bayes' theorem",
+    "formula": "P(H|A) = P(A|H)P(H)/P(A)"
+  },
+  {
+    "name": "Expected value",
+    "formula": "E(X) = sum xi pi"
+  },
+  {
+    "name": "Variance",
+    "formula": "D(X) = E(X^2) - (E(X))^2"
+  },
+  {
+    "name": "Standard deviation",
+    "formula": "sigma = sqrt(D(X))"
+  },
+  {
+    "name": "Binomial distribution",
+    "formula": "P(k) = C(n,k) p^k (1-p)^(n-k)"
+  },
+  {
+    "name": "Normal distribution density",
+    "formula": "f(x) = 1/(sigma sqrt(2 pi)) e^(-(x-mu)^2/2sigma^2)"
+  },
+  {
+    "name": "Central limit theorem (statement)",
+    "formula": "sum of independent variables tends to normal distribution"
+  },
+  {
+    "name": "Pearson correlation coefficient",
+    "formula": "r = cov(X,Y)/(sigma_x sigma_y)"
+  },
+  {
+    "name": "Arithmetic mean",
+    "formula": "x_bar = sum xi / n"
+  },
+  {
+    "name": "Median for even sample size",
+    "formula": "Me = (x_n/2 + x_n/2+1)/2"
+  },
+  {
+    "name": "Law of large numbers (statement)",
+    "formula": "sample mean tends to expected value"
+  },
+  {
+    "name": "Poisson distribution",
+    "formula": "P(k) = (lambda^k e^(-lambda))/k!"
+  },
+  {
+    "name": "Standard error of the mean",
+    "formula": "SE = sigma/sqrt(n)"
+  },
+  {
+    "name": "Chi-squared statistic",
+    "formula": "chi^2 = sum(O-E)^2/E"
+  },
+  {
+    "name": "Linear regression",
+    "formula": "y = a + bx"
+  },
+  {
+    "name": "Geometric probability",
+    "formula": "P = S(A)/S"
+  },
+  {
+    "name": "Shannon entropy",
+    "formula": "H = -sum p_i log2(p_i)"
+  },
+  {
+    "name": "Covariance",
+    "formula": "cov(X,Y) = E[(X-EX)(Y-EY)]"
+  },
+  {
+    "name": "Hubble's law",
+    "formula": "v = H0 * d"
+  },
+  {
+    "name": "Kepler's first law",
+    "formula": "planets move in ellipses with the Sun at one focus"
+  },
+  {
+    "name": "Kepler's second law",
+    "formula": "a planet sweeps equal areas in equal times"
+  },
+  {
+    "name": "Luminosity of a star",
+    "formula": "L = 4 pi R^2 sigma T^4"
+  },
+  {
+    "name": "Parallax distance formula",
+    "formula": "d = 1/p"
+  },
+  {
+    "name": "Schwarzschild radius",
+    "formula": "Rs = 2GM/c^2"
+  },
+  {
+    "name": "Apparent magnitude formula",
+    "formula": "m2 - m1 = -2.5 log(F2/F1)"
+  },
+  {
+    "name": "Wien's law for stars",
+    "formula": "lambda_max = b/T"
+  },
+  {
+    "name": "Cosmological redshift",
+    "formula": "z = (lambda_obs - lambda_emit)/lambda_emit"
+  },
+  {
+    "name": "Moore's law",
+    "formula": "transistor count doubles roughly every 2 years"
+  },
+  {
+    "name": "Hartley's information formula",
+    "formula": "I = log2 N"
+  },
+  {
+    "name": "Shannon-Hartley theorem",
+    "formula": "C = B log2(1+S/N)"
+  },
+  {
+    "name": "Big-O notation",
+    "formula": "T(n) = O(f(n))"
+  },
+  {
+    "name": "Number of bit combinations",
+    "formula": "N = 2^n"
+  },
+  {
+    "name": "Amdahl's law",
+    "formula": "S = 1/((1-p)+p/n)"
+  },
+  {
+    "name": "Little's law",
+    "formula": "L = lambda W"
+  },
+  {
+    "name": "Simple interest formula",
+    "formula": "A = P(1 + rt)"
+  },
+  {
+    "name": "Present value formula",
+    "formula": "PV = FV / (1+r)^n"
+  },
+  {
+    "name": "Net present value",
+    "formula": "NPV = sum CFt/(1+r)^t - I0"
+  },
+  {
+    "name": "Internal rate of return (condition)",
+    "formula": "sum CFt/(1+IRR)^t = 0"
+  },
+  {
+    "name": "Price elasticity of demand",
+    "formula": "E = (dQ/Q)/(dP/P)"
+  },
+  {
+    "name": "Fisher equation",
+    "formula": "i = r + pi"
+  },
+  {
+    "name": "GDP by expenditure",
+    "formula": "GDP = C + I + G + Xn"
+  },
+  {
+    "name": "Capital asset pricing model",
+    "formula": "E(Ri) = Rf + beta(E(Rm)-Rf)"
+  },
+  {
+    "name": "Exponential population growth",
+    "formula": "N(t) = N0 e^(rt)"
+  },
+  {
+    "name": "Logistic growth model",
+    "formula": "dN/dt = rN(1-N/K)"
+  },
+  {
+    "name": "Body mass index",
+    "formula": "BMI = m / h^2"
+  },
+  {
+    "name": "Basal metabolic rate (Harris-Benedict, men)",
+    "formula": "BMR = 88.36+13.4m+4.8h-5.7a"
+  },
+  {
+    "name": "Hardy-Weinberg equilibrium",
+    "formula": "p^2 + 2pq + q^2 = 1"
+  },
+  {
+    "name": "Michaelis-Menten equation",
+    "formula": "v = Vmax[S]/(Km+[S])"
+  },
+  {
+    "name": "Hooke's law for stress-strain",
+    "formula": "sigma = E epsilon"
+  },
+  {
+    "name": "Young's modulus",
+    "formula": "E = sigma/epsilon"
+  },
+  {
+    "name": "Stress formula",
+    "formula": "sigma = F/S"
+  },
+  {
+    "name": "Strain formula",
+    "formula": "epsilon = dL/L0"
+  },
+  {
+    "name": "Beam deflection formula",
+    "formula": "f = FL^3/(48EI)"
+  },
+  {
+    "name": "Euler's critical buckling load",
+    "formula": "Fcr = pi^2 EI/(mu L)^2"
+  },
+  {
+    "name": "Thermal expansion formula",
+    "formula": "dL = alpha L0 dT"
+  },
+  {
+    "name": "Determinant of a 2x2 matrix",
+    "formula": "det(A) = ad - bc"
+  },
+  {
+    "name": "Determinant of a 3x3 matrix (Sarrus)",
+    "formula": "det = aei+bfg+cdh-ceg-bdi-afh"
+  },
+  {
+    "name": "Matrix multiplication rule",
+    "formula": "C_ij = sum_k A_ik B_kj"
+  },
+  {
+    "name": "Inverse of a 2x2 matrix",
+    "formula": "A^-1 = 1/det(A) * [d -b; -c a]"
+  },
+  {
+    "name": "Eigenvalue equation",
+    "formula": "Av = lambda v"
+  },
+  {
+    "name": "Trace of a matrix",
+    "formula": "tr(A) = sum a_ii"
+  },
+  {
+    "name": "Rank-nullity theorem",
+    "formula": "rank(A) + nullity(A) = n"
+  },
+  {
+    "name": "Cramer's rule",
+    "formula": "xi = det(Ai)/det(A)"
+  },
+  {
+    "name": "Vector norm (Euclidean)",
+    "formula": "||v|| = sqrt(sum vi^2)"
+  },
+  {
+    "name": "Dot product in coordinates",
+    "formula": "a.b = a1b1+a2b2+a3b3"
+  },
+  {
+    "name": "Cross product in coordinates",
+    "formula": "a x b = (a2b3-a3b2, a3b1-a1b3, a1b2-a2b1)"
+  },
+  {
+    "name": "Orthogonal projection formula",
+    "formula": "proj_b(a) = (a.b/||b||^2) b"
+  },
+  {
+    "name": "Characteristic polynomial",
+    "formula": "det(A - lambda I) = 0"
+  },
+  {
+    "name": "Cayley-Hamilton theorem (statement)",
+    "formula": "a matrix satisfies its own characteristic equation"
+  },
+  {
+    "name": "Gram-Schmidt process (first step)",
+    "formula": "u1 = v1"
+  },
+  {
+    "name": "Euclidean algorithm (gcd)",
+    "formula": "gcd(a,b) = gcd(b, a mod b)"
+  },
+  {
+    "name": "Fundamental theorem of arithmetic",
+    "formula": "every integer >1 has a unique prime factorization"
+  },
+  {
+    "name": "Euler's totient function",
+    "formula": "phi(n) = n * product(1-1/p)"
+  },
+  {
+    "name": "Fermat's little theorem",
+    "formula": "a^p = a (mod p)"
+  },
+  {
+    "name": "Euler's theorem (modular)",
+    "formula": "a^phi(n) = 1 (mod n)"
+  },
+  {
+    "name": "Chinese remainder theorem (statement)",
+    "formula": "system of congruences has a unique solution mod product"
+  },
+  {
+    "name": "Wilson's theorem",
+    "formula": "(p-1)! = -1 (mod p)"
+  },
+  {
+    "name": "Fibonacci recurrence",
+    "formula": "F(n) = F(n-1) + F(n-2)"
+  },
+  {
+    "name": "Binet's formula",
+    "formula": "F(n) = (phi^n - psi^n)/sqrt(5)"
+  },
+  {
+    "name": "Pascal's triangle rule",
+    "formula": "C(n,k) = C(n-1,k-1) + C(n-1,k)"
+  },
+  {
+    "name": "Inclusion-exclusion principle",
+    "formula": "|A U B| = |A|+|B|-|A and B|"
+  },
+  {
+    "name": "Prime number theorem (statement)",
+    "formula": "pi(x) ~ x/ln(x)"
+  },
+  {
+    "name": "Sum of divisors function",
+    "formula": "sigma(n) = sum of divisors of n"
+  },
+  {
+    "name": "Handshaking lemma",
+    "formula": "sum of vertex degrees = 2 * number of edges"
+  },
+  {
+    "name": "Euler's formula for planar graphs",
+    "formula": "V - E + F = 2"
+  },
+  {
+    "name": "Dijkstra's algorithm (concept)",
+    "formula": "finds shortest paths from a source vertex"
+  },
+  {
+    "name": "Kirchhoff's theorem (spanning trees)",
+    "formula": "number of spanning trees via matrix-tree theorem"
+  },
+  {
+    "name": "Four color theorem (statement)",
+    "formula": "any planar map can be colored with 4 colors"
+  },
+  {
+    "name": "Bellman-Ford relaxation",
+    "formula": "d[v] = min(d[v], d[u]+w(u,v))"
+  },
+  {
+    "name": "Trapezoidal rule",
+    "formula": "int f(x)dx ~ h/2 (f0+2f1+...+fn)"
+  },
+  {
+    "name": "Simpson's rule",
+    "formula": "int f(x)dx ~ h/3 (f0+4f1+2f2+...+fn)"
+  },
+  {
+    "name": "Newton-Raphson iteration",
+    "formula": "x_(n+1) = x_n - f(x_n)/f'(x_n)"
+  },
+  {
+    "name": "Euler's method (ODE)",
+    "formula": "y_(n+1) = y_n + h f(x_n,y_n)"
+  },
+  {
+    "name": "Runge-Kutta 4th order (concept)",
+    "formula": "weighted average of four slope estimates"
+  },
+  {
+    "name": "Bisection method (concept)",
+    "formula": "repeatedly halves an interval containing a root"
+  },
+  {
+    "name": "Radioactive decay constant relation",
+    "formula": "lambda = ln2/T_half"
+  },
+  {
+    "name": "Nuclear binding energy per nucleon",
+    "formula": "Eb/A"
+  },
+  {
+    "name": "Mass defect formula",
+    "formula": "dm = Zmp + Nmn - M"
+  },
+  {
+    "name": "Alpha decay reaction",
+    "formula": "A/Z X -> A-4/Z-2 Y + alpha"
+  },
+  {
+    "name": "Beta decay reaction",
+    "formula": "n -> p + e- + antineutrino"
+  },
+  {
+    "name": "Nuclear fission energy release",
+    "formula": "E = dm c^2"
+  },
+  {
+    "name": "Hardy-Weinberg allele frequencies",
+    "formula": "p + q = 1"
+  },
+  {
+    "name": "Punnett square ratio (monohybrid)",
+    "formula": "3:1 phenotype ratio"
+  },
+  {
+    "name": "Dihybrid cross ratio",
+    "formula": "9:3:3:1 phenotype ratio"
+  },
+  {
+    "name": "Chi-square test for genetics",
+    "formula": "chi^2 = sum(O-E)^2/E"
+  },
+  {
+    "name": "Ideal gas law for atmosphere",
+    "formula": "P = rho R T"
+  },
+  {
+    "name": "Adiabatic lapse rate (dry)",
+    "formula": "dT/dz = -g/cp"
+  },
+  {
+    "name": "Clausius-Clapeyron relation",
+    "formula": "dP/dT = L/(TdV)"
+  },
+  {
+    "name": "Coriolis force",
+    "formula": "F = 2m(v x omega)"
+  },
+  {
+    "name": "Sum of an infinite series (p-series test)",
+    "formula": "sum 1/n^p converges if p>1"
+  },
+  {
+    "name": "Harmonic series",
+    "formula": "H_n = 1 + 1/2 + 1/3 + ... + 1/n"
+  },
+  {
+    "name": "Formula for nth root",
+    "formula": "x = a^(1/n)"
+  },
+  {
+    "name": "Absolute value inequality",
+    "formula": "|x-a| < b means a-b<x<a+b"
+  },
+  {
+    "name": "Distance on a number line",
+    "formula": "d = |x2 - x1|"
+  },
+  {
+    "name": "Quadratic formula (vertex form)",
+    "formula": "y = a(x-h)^2 + k"
+  },
+  {
+    "name": "Point-slope form of a line",
+    "formula": "y - y1 = m(x - x1)"
+  },
+  {
+    "name": "Slope-intercept form",
+    "formula": "y = mx + b"
+  },
+  {
+    "name": "Two-point form of a line",
+    "formula": "(y-y1)/(y2-y1) = (x-x1)/(x2-x1)"
+  },
+  {
+    "name": "Midpoint formula",
+    "formula": "M = ((x1+x2)/2, (y1+y2)/2)"
+  },
+  {
+    "name": "Law of exponents (product)",
+    "formula": "a^m * a^n = a^(m+n)"
+  },
+  {
+    "name": "Law of exponents (power)",
+    "formula": "(a^m)^n = a^(mn)"
+  },
+  {
+    "name": "Law of exponents (quotient)",
+    "formula": "a^m / a^n = a^(m-n)"
+  },
+  {
+    "name": "Rationalizing formula",
+    "formula": "1/sqrt(a) = sqrt(a)/a"
+  },
+  {
+    "name": "Scalar triple product",
+    "formula": "a . (b x c) = volume of parallelepiped"
+  },
+  {
+    "name": "Equation of a plane",
+    "formula": "Ax + By + Cz + D = 0"
+  },
+  {
+    "name": "Distance between two parallel planes",
+    "formula": "d = |D2-D1|/sqrt(A^2+B^2+C^2)"
+  },
+  {
+    "name": "Equation of a line in 3D (parametric)",
+    "formula": "x=x0+at, y=y0+bt, z=z0+ct"
+  },
+  {
+    "name": "Angle between two vectors",
+    "formula": "cos theta = (a.b)/(|a||b|)"
+  },
+  {
+    "name": "Volume of a tetrahedron by vectors",
+    "formula": "V = 1/6 |a.(b x c)|"
+  },
+  {
+    "name": "Surface area of a torus",
+    "formula": "S = 4 pi^2 R r"
+  },
+  {
+    "name": "Volume of a torus",
+    "formula": "V = 2 pi^2 R r^2"
+  },
+  {
+    "name": "Volume of an ellipsoid",
+    "formula": "V = 4/3 pi a b c"
+  },
+  {
+    "name": "Double integral over a region",
+    "formula": "V = dblint_D f(x,y) dA"
+  },
+  {
+    "name": "Jacobian determinant",
+    "formula": "J = d(x,y)/d(u,v)"
+  },
+  {
+    "name": "Divergence theorem",
+    "formula": "tripleint(div F)dV = surfint F.dA"
+  },
+  {
+    "name": "Lagrange multipliers condition",
+    "formula": "grad f = lambda grad g"
+  },
+  {
+    "name": "Directional derivative",
+    "formula": "D_u f = grad f . u"
+  },
+  {
+    "name": "Chain rule (multivariable)",
+    "formula": "dz/dt = dz/dx dx/dt + dz/dy dy/dt"
+  },
+  {
+    "name": "Hyperbolic sine definition",
+    "formula": "sinh x = (e^x - e^-x)/2"
+  },
+  {
+    "name": "Hyperbolic cosine definition",
+    "formula": "cosh x = (e^x + e^-x)/2"
+  },
+  {
+    "name": "Hyperbolic identity",
+    "formula": "cosh^2 x - sinh^2 x = 1"
+  },
+  {
+    "name": "Inverse tangent derivative",
+    "formula": "d/dx arctan x = 1/(1+x^2)"
+  },
+  {
+    "name": "Inverse sine derivative",
+    "formula": "d/dx arcsin x = 1/sqrt(1-x^2)"
+  },
+  {
+    "name": "Impulse-momentum theorem",
+    "formula": "F dt = dp"
+  },
+  {
+    "name": "Work-energy theorem",
+    "formula": "W = dEk"
+  },
+  {
+    "name": "Power in rotational motion",
+    "formula": "P = M * w"
+  },
+  {
+    "name": "Escape velocity",
+    "formula": "v_esc = sqrt(2GM/R)"
+  },
+  {
+    "name": "Orbital velocity",
+    "formula": "v = sqrt(GM/r)"
+  },
+  {
+    "name": "Gravitational potential energy (general)",
+    "formula": "Ep = -GMm/r"
+  },
+  {
+    "name": "Elastic collision velocity (1D, equal mass)",
+    "formula": "v1' = v2, v2' = v1"
+  },
+  {
+    "name": "Coefficient of restitution",
+    "formula": "e = (v2'-v1')/(v1-v2)"
+  },
+  {
+    "name": "Simple harmonic motion position",
+    "formula": "x(t) = A cos(wt + phi)"
+  },
+  {
+    "name": "Angular frequency of SHM",
+    "formula": "w = sqrt(k/m)"
+  },
+  {
+    "name": "Torque of a couple",
+    "formula": "M = F * d (couple arm)"
+  },
+  {
+    "name": "Rolling without slipping condition",
+    "formula": "v = w r"
+  },
+  {
+    "name": "Static equilibrium condition (forces)",
+    "formula": "sum F = 0"
+  },
+  {
+    "name": "Static equilibrium condition (torques)",
+    "formula": "sum M = 0"
+  },
+  {
+    "name": "Adiabatic process relation",
+    "formula": "PV^gamma = const"
+  },
+  {
+    "name": "Isothermal work done by gas",
+    "formula": "W = nRT ln(V2/V1)"
+  },
+  {
+    "name": "Entropy change (reversible)",
+    "formula": "dS = dQ_rev/T"
+  },
+  {
+    "name": "Efficiency of a real engine (Otto cycle)",
+    "formula": "eta = 1 - 1/r^(gamma-1)"
+  },
+  {
+    "name": "Heat capacity ratio",
+    "formula": "gamma = Cp/Cv"
+  },
+  {
+    "name": "Thermal conductivity heat flow",
+    "formula": "Q/t = kA(dT)/L"
+  },
+  {
+    "name": "Capacitors in series",
+    "formula": "1/C = 1/C1 + 1/C2"
+  },
+  {
+    "name": "Capacitors in parallel",
+    "formula": "C = C1 + C2"
+  },
+  {
+    "name": "Resistors in series",
+    "formula": "R = R1 + R2"
+  },
+  {
+    "name": "Resistors in parallel",
+    "formula": "1/R = 1/R1 + 1/R2"
+  },
+  {
+    "name": "RC circuit charging",
+    "formula": "V(t) = V0(1 - e^(-t/RC))"
+  },
+  {
+    "name": "RL circuit current growth",
+    "formula": "I(t) = I0(1 - e^(-Rt/L))"
+  },
+  {
+    "name": "Impedance of a capacitor",
+    "formula": "Zc = 1/(jwC)"
+  },
+  {
+    "name": "Impedance of an inductor",
+    "formula": "ZL = jwL"
+  },
+  {
+    "name": "Total impedance (RLC series)",
+    "formula": "Z = sqrt(R^2+(XL-XC)^2)"
+  },
+  {
+    "name": "Biot-Savart law",
+    "formula": "dB = (mu0/4pi) I dl x r / r^3"
+  },
+  {
+    "name": "Magnetic field of a long wire",
+    "formula": "B = mu0 I / (2 pi r)"
+  },
+  {
+    "name": "Magnetic field inside a solenoid",
+    "formula": "B = mu0 n I"
+  },
+  {
+    "name": "Magnification of a lens",
+    "formula": "m = -d'/d"
+  },
+  {
+    "name": "Critical angle for total internal reflection",
+    "formula": "sin(theta_c) = n2/n1"
+  },
+  {
+    "name": "Resolving power of a telescope",
+    "formula": "theta = 1.22 lambda/D"
+  },
+  {
+    "name": "Malus's law",
+    "formula": "I = I0 cos^2(theta)"
+  },
+  {
+    "name": "Brewster's angle",
+    "formula": "tan(theta_B) = n2/n1"
+  },
+  {
+    "name": "Combined gas law",
+    "formula": "P1V1/T1 = P2V2/T2"
+  },
+  {
+    "name": "Graham's law of effusion",
+    "formula": "r1/r2 = sqrt(M2/M1)"
+  },
+  {
+    "name": "Dalton's law of partial pressures",
+    "formula": "P_total = sum P_i"
+  },
+  {
+    "name": "Faraday's law of electrolysis",
+    "formula": "m = (Q M)/(nF)"
+  },
+  {
+    "name": "Freezing point depression",
+    "formula": "dTf = Kf * m"
+  },
+  {
+    "name": "Boiling point elevation",
+    "formula": "dTb = Kb * m"
+  },
+  {
+    "name": "Osmotic pressure formula",
+    "formula": "pi = MRT"
+  },
+  {
+    "name": "Buffer equation (Henderson-Hasselbalch)",
+    "formula": "pH = pKa + log([A-]/[HA])"
+  },
+  {
+    "name": "Rate constant units (first order)",
+    "formula": "k has units of 1/time"
+  },
+  {
+    "name": "Half-life of first order reaction",
+    "formula": "t1/2 = ln2/k"
+  },
+  {
+    "name": "Gibbs free energy",
+    "formula": "dG = dH - TdS"
+  },
+  {
+    "name": "Relation between Gibbs energy and equilibrium constant",
+    "formula": "dG = -RT ln K"
+  },
+  {
+    "name": "Confidence interval for the mean",
+    "formula": "x_bar +- z * sigma/sqrt(n)"
+  },
+  {
+    "name": "Sample variance (unbiased)",
+    "formula": "s^2 = sum(xi-x_bar)^2/(n-1)"
+  },
+  {
+    "name": "Z-score",
+    "formula": "z = (x - mu)/sigma"
+  },
+  {
+    "name": "Coefficient of variation",
+    "formula": "CV = sigma/mu"
+  },
+  {
+    "name": "Odds ratio",
+    "formula": "OR = (a*d)/(b*c)"
+  },
+  {
+    "name": "Bayesian posterior proportionality",
+    "formula": "P(H|D) proportional to P(D|H)P(H)"
+  },
+  {
+    "name": "Recursive binary search complexity",
+    "formula": "T(n) = T(n/2) + O(1)"
+  },
+  {
+    "name": "Merge sort complexity",
+    "formula": "T(n) = 2T(n/2) + O(n)"
+  },
+  {
+    "name": "Master theorem (general form)",
+    "formula": "T(n) = aT(n/b) + f(n)"
+  },
+  {
+    "name": "Hash table load factor",
+    "formula": "alpha = n/m"
+  },
+  {
+    "name": "Turing machine transition function (concept)",
+    "formula": "delta: Q x Gamma -> Q x Gamma x {L,R}"
+  },
+  {
+    "name": "Black-Scholes call option price (concept)",
+    "formula": "C = S0 N(d1) - K e^(-rt) N(d2)"
+  },
+  {
+    "name": "Annuity present value",
+    "formula": "PV = PMT * (1-(1+r)^-n)/r"
+  },
+  {
+    "name": "Loan amortization payment",
+    "formula": "PMT = P * r(1+r)^n / ((1+r)^n - 1)"
+  },
+  {
+    "name": "Sharpe ratio",
+    "formula": "Sharpe = (Rp - Rf)/sigma_p"
+  },
+  {
+    "name": "Allometric scaling law",
+    "formula": "Y = aX^b"
+  },
+  {
+    "name": "Photosynthesis equation",
+    "formula": "6CO2 + 6H2O -> C6H12O6 + 6O2"
+  },
+  {
+    "name": "Cellular respiration equation",
+    "formula": "C6H12O6 + 6O2 -> 6CO2 + 6H2O"
+  },
+  {
+    "name": "Nernst potential (biology)",
+    "formula": "E = (RT/zF) ln([out]/[in])"
+  },
+  {
+    "name": "Population growth rate",
+    "formula": "r = (births - deaths)/N"
+  },
+  {
+    "name": "Ohm's law for AC circuits",
+    "formula": "V = IZ"
+  },
+  {
+    "name": "Power factor",
+    "formula": "PF = cos(phi)"
+  },
+  {
+    "name": "Beam bending stress",
+    "formula": "sigma = My/I"
+  },
+  {
+    "name": "Torsion shear stress in a shaft",
+    "formula": "tau = Tr/J"
+  },
+  {
+    "name": "Fatigue life (S-N curve concept)",
+    "formula": "N cycles to failure at stress S"
+  },
+  {
+    "name": "Reynolds number for pipe flow",
+    "formula": "Re = rho v D / mu"
+  },
+  {
+    "name": "Darcy-Weisbach equation",
+    "formula": "hf = f (L/D)(v^2/2g)"
+  },
+  {
+    "name": "Manning's equation (open channel flow)",
+    "formula": "v = (1/n) R^(2/3) S^(1/2)"
+  },
+  {
+    "name": "Stefan-Boltzmann luminosity relation",
+    "formula": "L proportional to R^2 T^4"
+  },
+  {
+    "name": "Chandrasekhar limit (concept)",
+    "formula": "maximum mass of a stable white dwarf ~1.4 solar masses"
+  },
+  {
+    "name": "Tsiolkovsky rocket equation",
+    "formula": "dv = v_e ln(m0/mf)"
+  },
+  {
+    "name": "Orbital period from semi-major axis",
+    "formula": "T = 2 pi sqrt(a^3/GM)"
+  }
+]
