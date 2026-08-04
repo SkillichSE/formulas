@@ -1,7 +1,7 @@
 [
   {
     "name": "Quadratic formula",
-    "formula": "x = (-b +- sqrt(b^2 - 4ac)) / 2a"
+    "formula": "x = (-b +- sqrt(b^2 - 4ac)) / (2a)"
   },
   {
     "name": "Square of a sum",
@@ -704,7 +704,7 @@
     "formula": "eta = 1 - T2/T1"
   },
   {
-    "name": "Internal energy of ideal gas",
+    "name": "Internal energy of monatomic ideal gas",
     "formula": "U = 3/2 nRT"
   },
   {
@@ -737,7 +737,7 @@
   },
   {
     "name": "Stefan-Boltzmann law",
-    "formula": "P = sigma T^4"
+    "formula": "P = sigma A T^4"
   },
   {
     "name": "Wien's displacement law",
@@ -916,7 +916,7 @@
     "formula": "p = h/lambda"
   },
   {
-    "name": "Planck's radiation formula",
+    "name": "Planck-Einstein relation",
     "formula": "E = h nu"
   },
   {
@@ -1161,7 +1161,7 @@
   },
   {
     "name": "Median for even sample size",
-    "formula": "Me = (x_n/2 + x_n/2+1)/2"
+    "formula": "Me = (x_(n/2) + x_(n/2+1)) / 2"
   },
   {
     "name": "Law of large numbers (statement)",
@@ -1417,11 +1417,11 @@
   },
   {
     "name": "Fermat's little theorem",
-    "formula": "a^p = a (mod p)"
+    "formula": "a^p ≡ a (mod p)"
   },
   {
     "name": "Euler's theorem (modular)",
-    "formula": "a^phi(n) = 1 (mod n)"
+    "formula": "a^phi(n) ≡ 1 (mod n), gcd(a,n)=1"
   },
   {
     "name": "Chinese remainder theorem (statement)",
@@ -1429,7 +1429,7 @@
   },
   {
     "name": "Wilson's theorem",
-    "formula": "(p-1)! = -1 (mod p)"
+    "formula": "(p-1)! ≡ -1 (mod p)"
   },
   {
     "name": "Fibonacci recurrence",
@@ -1545,7 +1545,7 @@
   },
   {
     "name": "Ideal gas law for atmosphere",
-    "formula": "P = rho R T"
+    "formula": "P = rho R T / M"
   },
   {
     "name": "Adiabatic lapse rate (dry)",
