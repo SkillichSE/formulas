@@ -57,30 +57,6 @@ body::before{
   z-index:1;
 }
 
-.header{
-  width:100%;
-  border-bottom: 1px solid rgba(220,213,191,0.25);
-  padding-bottom:14px;
-  display:flex;
-  justify-content:space-between;
-  align-items:baseline;
-}
-
-h1{
-  font-family:'IBM Plex Mono', monospace;
-  font-weight:500;
-  font-size:13px;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-  margin:0;
-}
-.sub{
-  margin:0;
-  color:var(--ink-faint);
-  font-family:'IBM Plex Mono', monospace;
-  font-size:11px;
-}
-
 /* ---------- the technical index card ---------- */
 .card-slot{
   position:relative;
@@ -146,14 +122,10 @@ h1{
 /* title block, like the corner of an engineering drawing */
 .title-block{
   border-top: 1px solid var(--card-ink);
-  display:grid;
-  grid-template-columns: 1fr 1fr;
 }
 .tb-cell{
   padding: 7px 12px;
-  border-right: 1px solid var(--card-ink);
 }
-.tb-cell:last-child{ border-right:none; }
 .tb-label{
   font-family:'IBM Plex Mono', monospace;
   font-size:8.5px;
@@ -201,11 +173,6 @@ button:disabled:hover{ background:transparent; color:#5b6773; }
 </head>
 <body>
 <div class="wrap">
-  <div class="header">
-    <h1>Formula Reference</h1>
-    <span class="sub">Rev. A</span>
-  </div>
-
   <div class="card-slot">
     <div class="card" id="card">
       <div class="crop tl"></div>
@@ -224,10 +191,6 @@ button:disabled:hover{ background:transparent; color:#5b6773; }
           <span class="tb-label">Card No.</span>
           <span class="tb-value" id="cardNo">—</span>
         </div>
-        <div class="tb-cell">
-          <span class="tb-label">Domain</span>
-          <span class="tb-value" id="cardDomain">—</span>
-        </div>
       </div>
     </div>
   </div>
@@ -245,7 +208,6 @@ const content = document.getElementById('content');
 const lawName = document.getElementById('lawName');
 const formulaText = document.getElementById('formulaText');
 const cardNo = document.getElementById('cardNo');
-const cardDomain = document.getElementById('cardDomain');
 const btn = document.getElementById('drawBtn');
 const statusLine = document.getElementById('statusLine');
 
@@ -259,7 +221,6 @@ function draw(){
   lawName.textContent = item.name;
   formulaText.textContent = item.formula;
   cardNo.textContent = String(idx + 1).padStart(3, '0');
-  cardDomain.textContent = item.domain || item.category || '—';
 
   cardEl.classList.remove('drawn');
   void cardEl.offsetWidth; // restart animation
