@@ -2523,5 +2523,1220 @@
     "name": "Orbital period from semi-major axis",
     "formula": "T = 2 pi sqrt(a^3/GM)",
     "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Rocket equation",
+    "formula": "Δv = Isp g0 ln(m0/mf)",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Thrust equation",
+    "formula": "F = ṁVe + (pe-pa)Ae",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Specific impulse",
+    "formula": "Isp = F/(ṁg0)",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Effective exhaust velocity",
+    "formula": "Ve = Isp g0",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Mass flow rate",
+    "formula": "ṁ = F/(Isp g0)",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Thrust-to-weight ratio",
+    "formula": "T/W = F/(mg)",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Total impulse",
+    "formula": "It = ∫Fdt",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Average thrust",
+    "formula": "Favg = It/tb",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Mass ratio",
+    "formula": "MR = m0/mf",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Propellant fraction",
+    "formula": "ζ = mp/m0",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Burn time",
+    "formula": "tb = mp/ṁ",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Characteristic velocity",
+    "formula": "c* = pcAt/ṁ",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Thrust coefficient",
+    "formula": "CF = F/(pcAt)",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Nozzle expansion ratio",
+    "formula": "ε = Ae/At",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Pressure thrust",
+    "formula": "Fp = (pe-pa)Ae",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Vacuum thrust",
+    "formula": "Fvac = ṁVe + peAe",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Choked nozzle flow",
+    "formula": "ṁ = pcAt sqrt(γ/(RTc))(2/(γ+1))^((γ+1)/(2(γ-1)))",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Dynamic pressure",
+    "formula": "q = 1/2ρv²",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Mach number",
+    "formula": "M = v/a",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Speed of sound",
+    "formula": "a = sqrt(γRT)",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Gravity loss",
+    "formula": "Δvg = ∫g sinγ dt",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Drag loss",
+    "formula": "ΔvD = ∫D/m dt",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Thrust acceleration",
+    "formula": "aT = T/m",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Ideal stage delta-v",
+    "formula": "Δvstage = Ve ln(m0/mf)",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Structural coefficient",
+    "formula": "εs = ms/(ms+mp)",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Payload fraction",
+    "formula": "λ = mpl/m0",
+    "domain": "Rocketry"
+  },
+  {
+    "name": "Vis-viva equation",
+    "formula": "v² = μ(2/r - 1/a)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Circular velocity",
+    "formula": "vc = sqrt(μ/r)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Orbital period",
+    "formula": "T = 2πsqrt(a³/μ)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Mean motion",
+    "formula": "n = sqrt(μ/a³)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Specific orbital energy",
+    "formula": "ε = v²/2 - μ/r",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Specific orbital energy from semimajor axis",
+    "formula": "ε = -μ/(2a)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Specific angular momentum",
+    "formula": "h = sqrt(μa(1-e²))",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Eccentricity",
+    "formula": "e = sqrt(1 + 2εh²/μ²)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Periapsis radius",
+    "formula": "rp = a(1-e)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Apoapsis radius",
+    "formula": "ra = a(1+e)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Semimajor axis from apsides",
+    "formula": "a = (rp+ra)/2",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Semilatus rectum",
+    "formula": "p = a(1-e²)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Orbit equation",
+    "formula": "r = p/(1+e cosν)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Radial velocity",
+    "formula": "vr = (μ/h)e sinν",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Transverse velocity",
+    "formula": "vθ = (μ/h)(1+e cosν)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Flight path angle",
+    "formula": "tanγ = e sinν/(1+e cosν)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Areal velocity",
+    "formula": "dA/dt = h/2",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Mean anomaly",
+    "formula": "M = E-e sinE",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Kepler equation",
+    "formula": "M = E-e sinE",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Time since periapsis",
+    "formula": "t-τ = (E-e sinE)/n",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Radius from eccentric anomaly",
+    "formula": "r = a(1-e cosE)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "True anomaly relation",
+    "formula": "tan(ν/2)=sqrt((1+e)/(1-e))tan(E/2)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Hohmann first burn",
+    "formula": "Δv1 = sqrt(μ/r1)(sqrt(2r2/(r1+r2))-1)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Hohmann second burn",
+    "formula": "Δv2 = sqrt(μ/r2)(1-sqrt(2r1/(r1+r2)))",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Plane change",
+    "formula": "Δv = 2v sin(Δi/2)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Hill sphere",
+    "formula": "rH ≈ a(1-e)(m/(3M))^(1/3)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Sphere of influence",
+    "formula": "rSOI ≈ a(m/M)^(2/5)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Synodic period",
+    "formula": "1/S = |1/T1-1/T2|",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Circular orbit energy",
+    "formula": "εcirc = -μ/(2r)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Circular orbit angular momentum",
+    "formula": "h = sqrt(μr)",
+    "domain": "Orbital Mechanics"
+  },
+  {
+    "name": "Impulse",
+    "formula": "J=Δp",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Work",
+    "formula": "W=Fd cosθ",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Potential energy near Earth",
+    "formula": "U=mgh",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Universal gravitational potential",
+    "formula": "U=-GMm/r",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Average velocity",
+    "formula": "vavg=Δx/Δt",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Instantaneous velocity",
+    "formula": "v=dx/dt",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Instantaneous acceleration",
+    "formula": "a=dv/dt",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Constant acceleration velocity",
+    "formula": "v=v0+at",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Constant acceleration displacement",
+    "formula": "x=x0+v0t+1/2at²",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Kinematic relation",
+    "formula": "v²=v0²+2aΔx",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Centripetal force",
+    "formula": "Fc=mv²/r",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Angular acceleration",
+    "formula": "α=dω/dt",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Rotational dynamics",
+    "formula": "τ=Iα",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Rotational kinetic energy",
+    "formula": "K=1/2Iω²",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Rotational work",
+    "formula": "W=τΔθ",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Rotational power",
+    "formula": "P=τω",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Rolling condition",
+    "formula": "v=ωR",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Spring force",
+    "formula": "F=-kx",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Spring energy",
+    "formula": "U=1/2kx²",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "SHM frequency",
+    "formula": "ω=sqrt(k/m)",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "SHM period",
+    "formula": "T=2πsqrt(m/k)",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Parallel-axis theorem",
+    "formula": "I=Icm+Md²",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Static equilibrium",
+    "formula": "ΣFx=ΣFy=Στ=0",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Projectile range",
+    "formula": "R=v0²sin(2θ)/g",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Projectile maximum height",
+    "formula": "H=v0²sin²θ/(2g)",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Projectile flight time",
+    "formula": "t=2v0sinθ/g",
+    "domain": "Mechanics"
+  },
+  {
+    "name": "Mass conservation",
+    "formula": "∂ρ/∂t+∇·(ρv)=0",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Bernoulli equation",
+    "formula": "P+1/2ρv²+ρgh=const",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Euler equation",
+    "formula": "ρDv/Dt=-∇P+ρg",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Navier-Stokes",
+    "formula": "ρDv/Dt=-∇P+μ∇²v+ρg",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Lift force",
+    "formula": "L=1/2ρv²CL S",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Drag force",
+    "formula": "D=1/2ρv²CD S",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Lift coefficient",
+    "formula": "CL=L/(qS)",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Drag coefficient",
+    "formula": "CD=D/(qS)",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Lift-to-drag ratio",
+    "formula": "L/D=CL/CD",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Aspect ratio",
+    "formula": "AR=b²/S",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Induced drag coefficient",
+    "formula": "CDi=CL²/(πeAR)",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Mach number fluid",
+    "formula": "M=v/a",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Froude number",
+    "formula": "Fr=v/sqrt(gL)",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Weber number",
+    "formula": "We=ρv²L/σ",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Prandtl number",
+    "formula": "Pr=μcp/k",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Dynamic viscosity",
+    "formula": "τ=μ dv/dy",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Volumetric flow",
+    "formula": "Q=Av",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Mass flow fluid",
+    "formula": "ṁ=ρAv",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Hydraulic power",
+    "formula": "P=ρgQH",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "Hydraulic diameter",
+    "formula": "Dh=4A/Pwet",
+    "domain": "Fluid & Aerodynamics"
+  },
+  {
+    "name": "First law",
+    "formula": "ΔU=Q-W",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Enthalpy",
+    "formula": "H=U+PV",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Helmholtz free energy",
+    "formula": "A=U-TS",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Heat capacity",
+    "formula": "Q=mcΔT",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Latent heat",
+    "formula": "Q=mL",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Isobaric work",
+    "formula": "W=PΔV",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Isothermal work",
+    "formula": "W=nRT ln(V2/V1)",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Adiabatic relation",
+    "formula": "PV^γ=const",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Adiabatic temperature",
+    "formula": "TV^(γ-1)=const",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Mayer relation",
+    "formula": "Cp-Cv=R",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Entropy definition",
+    "formula": "ΔS=Qrev/T",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Entropy ideal gas",
+    "formula": "ΔS=nCv ln(T2/T1)+nR ln(V2/V1)",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Carnot efficiency",
+    "formula": "η=1-Tc/Th",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Wien law",
+    "formula": "λmaxT=b",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Fourier conduction",
+    "formula": "q=-k∇T",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Thermal diffusivity",
+    "formula": "α=k/(ρcp)",
+    "domain": "Thermodynamics"
+  },
+  {
+    "name": "Young modulus",
+    "formula": "E=σ/ε",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Normal stress",
+    "formula": "σ=F/A",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Normal strain",
+    "formula": "ε=ΔL/L0",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Shear stress",
+    "formula": "τ=F/A",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Shear strain",
+    "formula": "γ=Δx/L",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Shear modulus",
+    "formula": "G=τ/γ",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Bulk modulus",
+    "formula": "K=-ΔP/(ΔV/V)",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Poisson ratio",
+    "formula": "ν=-εtrans/εlong",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Thermal strain",
+    "formula": "εth=αΔT",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Thermal expansion",
+    "formula": "ΔL=αL0ΔT",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Bending stress",
+    "formula": "σ=My/I",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Beam curvature",
+    "formula": "κ=M/EI",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Torsional stress",
+    "formula": "τ=Tr/J",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Torsion angle",
+    "formula": "θ=TL/(JG)",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Section modulus",
+    "formula": "Z=I/c",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Euler buckling",
+    "formula": "Pcr=π²EI/(KL)²",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Factor of safety",
+    "formula": "FS=σfailure/σworking",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Fracture toughness relation",
+    "formula": "K=Yσsqrt(πa)",
+    "domain": "Materials Science"
+  },
+  {
+    "name": "Joule heating",
+    "formula": "Q=I²Rt",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Coulomb law",
+    "formula": "F=kq1q2/r²",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Electric field",
+    "formula": "E=F/q",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Point charge field",
+    "formula": "E=kq/r²",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Capacitor energy",
+    "formula": "U=1/2CV²",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Inductor energy",
+    "formula": "U=1/2LI²",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Magnetic force charge",
+    "formula": "F=qvB sinθ",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Magnetic force wire",
+    "formula": "F=BIL sinθ",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Faraday law",
+    "formula": "ε=-dΦB/dt",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Gauss law",
+    "formula": "∮E·dA=Q/ε0",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Ampere law",
+    "formula": "∮B·dl=μ0I",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Wire magnetic field",
+    "formula": "B=μ0I/(2πr)",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Solenoid field",
+    "formula": "B=μ0nI",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Resistance series",
+    "formula": "Req=ΣRi",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Resistance parallel",
+    "formula": "1/Req=Σ1/Ri",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Capacitors parallel",
+    "formula": "Ceq=ΣCi",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Capacitors series",
+    "formula": "1/Ceq=Σ1/Ci",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Inductor reactance",
+    "formula": "XL=ωL",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Capacitor reactance",
+    "formula": "XC=1/(ωC)",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "RLC impedance",
+    "formula": "Z=sqrt(R²+(XL-XC)²)",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "RC time constant",
+    "formula": "τ=RC",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "RL time constant",
+    "formula": "τ=L/R",
+    "domain": "Electricity & Magnetism"
+  },
+  {
+    "name": "Angular frequency",
+    "formula": "ω=2πf",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Wave number",
+    "formula": "k=2π/λ",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Wave function",
+    "formula": "y=A sin(kx-ωt)",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Index of refraction",
+    "formula": "n=c/v",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Snell law",
+    "formula": "n1sinθ1=n2sinθ2",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Critical angle",
+    "formula": "sinθc=n2/n1",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Lens equation",
+    "formula": "1/f=1/do+1/di",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Lens magnification",
+    "formula": "M=-di/do",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Lensmaker equation",
+    "formula": "1/f=(n-1)(1/R1-1/R2)",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Optical power",
+    "formula": "P=1/f",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Young double slit",
+    "formula": "Δy=λL/d",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Diffraction grating",
+    "formula": "d sinθ=mλ",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Single slit minima",
+    "formula": "a sinθ=mλ",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Rayleigh criterion",
+    "formula": "θ=1.22λ/D",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Malus law",
+    "formula": "I=I0cos²θ",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Doppler sound",
+    "formula": "f'=f(v±vo)/(v∓vs)",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Sound level",
+    "formula": "β=10log10(I/I0)",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Beat frequency",
+    "formula": "fb=|f1-f2|",
+    "domain": "Optics & Waves"
+  },
+  {
+    "name": "Heisenberg uncertainty",
+    "formula": "ΔxΔp≥ħ/2",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Schrodinger equation",
+    "formula": "iħ∂ψ/∂t=Ĥψ",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Particle in box",
+    "formula": "En=n²π²ħ²/(2mL²)",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Relativistic energy",
+    "formula": "E²=p²c²+m²c⁴",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Lorentz factor",
+    "formula": "γ=1/sqrt(1-v²/c²)",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Relativistic momentum",
+    "formula": "p=γmv",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Radioactive decay",
+    "formula": "N=N0e^(-λt)",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Activity",
+    "formula": "A=λN",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Half-life",
+    "formula": "T1/2=ln2/λ",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Mean lifetime",
+    "formula": "τ=1/λ",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Binding energy",
+    "formula": "Eb=Δmc²",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Compton shift",
+    "formula": "Δλ=h/(mc)(1-cosθ)",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Bohr energy",
+    "formula": "En=-13.6eV/n²",
+    "domain": "Quantum & Nuclear Physics"
+  },
+  {
+    "name": "Moles",
+    "formula": "n=m/M",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Molarity",
+    "formula": "C=n/V",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Dilution",
+    "formula": "C1V1=C2V2",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Mole fraction",
+    "formula": "χi=ni/ntotal",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Mass fraction",
+    "formula": "w=msolute/msolution",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Ideal gas chemistry",
+    "formula": "PV=nRT",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Dalton law",
+    "formula": "Ptotal=ΣPi",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Henry law",
+    "formula": "C=kHP",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Raoult law",
+    "formula": "Pi=χiPi°",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Beer-Lambert law",
+    "formula": "A=εbc",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "pH",
+    "formula": "pH=-log[H+]",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "pOH",
+    "formula": "pOH=-log[OH-]",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Water ion product",
+    "formula": "Kw=[H+][OH-]",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Henderson-Hasselbalch",
+    "formula": "pH=pKa+log([A-]/[HA])",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "First-order half-life",
+    "formula": "t1/2=ln2/k",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Gibbs equation",
+    "formula": "ΔG=ΔH-TΔS",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Equilibrium free energy",
+    "formula": "ΔG°=-RTlnK",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Faraday electrolysis",
+    "formula": "m=ItM/(nF)",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Osmotic pressure",
+    "formula": "Π=iMRT",
+    "domain": "Chemistry"
+  },
+  {
+    "name": "Conditional probability",
+    "formula": "P(A|B)=P(A∩B)/P(B)",
+    "domain": "Statistics & Probability"
+  },
+  {
+    "name": "Bayes theorem",
+    "formula": "P(A|B)=P(B|A)P(A)/P(B)",
+    "domain": "Statistics & Probability"
+  },
+  {
+    "name": "Total probability",
+    "formula": "P(A)=ΣP(Hi)P(A|Hi)",
+    "domain": "Statistics & Probability"
+  },
+  {
+    "name": "Correlation",
+    "formula": "r=Cov(X,Y)/(σXσY)",
+    "domain": "Statistics & Probability"
+  },
+  {
+    "name": "Binomial probability",
+    "formula": "P(X=k)=C(n,k)p^k(1-p)^(n-k)",
+    "domain": "Statistics & Probability"
+  },
+  {
+    "name": "Poisson probability",
+    "formula": "P(X=k)=e^-λλ^k/k!",
+    "domain": "Statistics & Probability"
+  },
+  {
+    "name": "Standard error",
+    "formula": "SE=σ/sqrt(n)",
+    "domain": "Statistics & Probability"
+  },
+  {
+    "name": "Sample variance",
+    "formula": "s²=Σ(xi-x̄)²/(n-1)",
+    "domain": "Statistics & Probability"
+  },
+  {
+    "name": "Regression slope",
+    "formula": "b1=Cov(X,Y)/Var(X)",
+    "domain": "Statistics & Probability"
+  },
+  {
+    "name": "Regression intercept",
+    "formula": "b0=ȳ-b1x̄",
+    "domain": "Statistics & Probability"
+  },
+  {
+    "name": "Arithmetic sequence",
+    "formula": "an=a1+(n-1)d",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Arithmetic series",
+    "formula": "Sn=n(a1+an)/2",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Geometric sequence",
+    "formula": "an=a1r^(n-1)",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Geometric series",
+    "formula": "Sn=a1(1-r^n)/(1-r)",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Permutation",
+    "formula": "P(n,k)=n!/(n-k)!",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Combination",
+    "formula": "C(n,k)=n!/(k!(n-k)!)",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Euler formula",
+    "formula": "e^(iθ)=cosθ+i sinθ",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Euler identity",
+    "formula": "e^(iπ)+1=0",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Sphere area",
+    "formula": "A=4πr²",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Derivative power rule",
+    "formula": "d(x^n)/dx=nx^(n-1)",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Fundamental theorem",
+    "formula": "∫a^b f(x)dx=F(b)-F(a)",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Vector magnitude",
+    "formula": "|v|=sqrt(vx²+vy²+vz²)",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Dot product",
+    "formula": "a·b=|a||b|cosθ",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Cross product magnitude",
+    "formula": "|a×b|=|a||b|sinθ",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Determinant 2x2",
+    "formula": "det(A)=ad-bc",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Newton root method",
+    "formula": "xn+1=xn-f(xn)/f'(xn)",
+    "domain": "Mathematics"
+  },
+  {
+    "name": "Hubble law",
+    "formula": "v=H0d",
+    "domain": "Astronomy & Astrophysics"
+  },
+  {
+    "name": "Luminosity",
+    "formula": "L=4πR²σT⁴",
+    "domain": "Astronomy & Astrophysics"
+  },
+  {
+    "name": "Inverse square flux",
+    "formula": "F=L/(4πd²)",
+    "domain": "Astronomy & Astrophysics"
+  },
+  {
+    "name": "Distance modulus",
+    "formula": "m-M=5log10(d/10pc)",
+    "domain": "Astronomy & Astrophysics"
+  },
+  {
+    "name": "Redshift",
+    "formula": "z=(λobs-λemit)/λemit",
+    "domain": "Astronomy & Astrophysics"
+  },
+  {
+    "name": "Virial theorem",
+    "formula": "2K+U=0",
+    "domain": "Astronomy & Astrophysics"
+  },
+  {
+    "name": "Critical density",
+    "formula": "ρc=3H²/(8πG)",
+    "domain": "Astronomy & Astrophysics"
+  },
+  {
+    "name": "Angular size",
+    "formula": "θ≈D/d",
+    "domain": "Astronomy & Astrophysics"
+  },
+  {
+    "name": "Kepler third law",
+    "formula": "T²∝a³",
+    "domain": "Astronomy & Astrophysics"
   }
 ]
