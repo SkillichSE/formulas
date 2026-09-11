@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -186,30 +186,25 @@ button:disabled:hover{ background:transparent; color:#5b6773; }
 @media (prefers-reduced-motion: reduce){
   .card, .card.drawn{ animation:none; transition:none; }
 }
-.defs-row{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:6px;
-  margin-top:4px;
-  padding:0 4px;
-}
-.def-chip{
+.hint{
+  text-align:center;
   font-family:'IBM Plex Mono', monospace;
-  font-size:11px;
-  letter-spacing:0.2px;
-  color: var(--card-ink);
-  background: transparent;
-  border: 1px solid var(--card-ink-faint);
-  padding: 3px 9px;
-  cursor: pointer;
-  border-radius: 2px;
-  line-height:1.4;
+  font-size:10px;
+  letter-spacing:0.3px;
+  color: var(--card-ink-faint);
+  margin-top:2px;
 }
-.def-chip:hover, .def-chip.active{
-  background: var(--card-ink);
-  border-color: var(--card-ink);
-  color: var(--paper);
+.formula .def-hit{
+  cursor:pointer;
+  text-decoration: underline dotted;
+  text-decoration-color: var(--card-ink-faint);
+  text-underline-offset: 3px;
+  border-radius:2px;
+  transition: background-color .12s linear, color .12s linear;
+}
+.formula .def-hit:hover, .formula .def-hit.active{
+  color: var(--amber);
+  text-decoration-color: var(--amber);
 }
 .def-popover{
   position: fixed;
@@ -260,7 +255,7 @@ button:disabled:hover{ background:transparent; color:#5b6773; }
         <div id="content" style="display:none;">
           <div class="name" id="lawName"></div>
           <div class="formula" id="formulaText"></div>
-          <div class="defs-row" id="defsRow"></div>
+          <div class="hint" id="hintLine">Tap a symbol in the formula for its definition</div>
         </div>
       </div>
       <div class="title-block">
@@ -290,30 +285,242 @@ const lawName = document.getElementById('lawName');
 const formulaText = document.getElementById('formulaText');
 const cardNo = document.getElementById('cardNo');
 const cardDomain = document.getElementById('cardDomain');
-const defsRow = document.getElementById('defsRow');
 const btn = document.getElementById('drawBtn');
 const statusLine = document.getElementById('statusLine');
 const domainSelect = document.getElementById('domainSelect');
-function toLatex(value){
-  let s = String(value).trim();
-  s = s.replace(/sqrt\s*\(([^()]*)\)/g, '\\sqrt{$1}');
-  s = s.replace(/\bC\(([^,]+),([^\)]+)\)/g, '\\binom{$1}{$2}');
-  s = s.replace(/\b(sum|prod)\b/g, m => m === 'sum' ? '\\sum' : '\\prod');
-  s = s.replace(/([A-Za-z])([0-9]+)/g, '$1_{$2}');
-  s = s.replace(/\^\(([^()]*)\)/g, '^{$1}');
-  s = s.replace(/\^([A-Za-z0-9]+)/g, '^{$1}');
-  s = s.replace(/\b(sin|cos|tan|cot|sec|csc|log|ln|exp|arcsin|arccos|arctan)\b/g, '\\$1');
-  s = s.replace(/\bpi\b/gi, '\\pi');
-  s = s.replace(/\bDelta\b/g, '\\Delta');
-  s = s.replace(/\b(alpha|beta|gamma|theta|lambda|mu|rho|sigma|phi|omega)\b/gi, '\\$1');
-  s = s.replace(/\+\-/g, '\\pm');
-  s = s.replace(/!=/g, '\\ne');
-  s = s.replace(/<=/g, '\\le');
-  s = s.replace(/>=/g, '\\ge');
-  s = s.replace(/\*/g, '\\cdot ');
-  s = s.replace(/\//g, ' / ');
-  s = s.replace(/\|([^|]+)\|/g, '\\left|$1\\right|');
-  return s;
+
+/* ---------- formula -> LaTeX conversion ----------
+   Recursive, paren-balance-aware parser. Every recognized function name
+   (sqrt, log, det, grad, int, ...) is matched as a whole token and its
+   argument is located by matching brackets rather than a single flat
+   regex, so nested parentheses (e.g. sqrt(p(p-a)(p-b)(p-c))) no longer
+   fall through unconverted. Along the way, every symbol that has a
+   definition also gets wrapped in \cssId/\class so it becomes directly
+   clickable once MathJax renders it. */
+
+const GREEK_LATEX = {
+  alpha:'\\alpha', beta:'\\beta', gamma:'\\gamma', Gamma:'\\Gamma',
+  delta:'\\delta', Delta:'\\Delta', epsilon:'\\varepsilon', zeta:'\\zeta',
+  eta:'\\eta', theta:'\\theta', Theta:'\\Theta', iota:'\\iota',
+  kappa:'\\kappa', lambda:'\\lambda', Lambda:'\\Lambda', mu:'\\mu', nu:'\\nu',
+  xi:'\\xi', Xi:'\\Xi', pi:'\\pi', Pi:'\\Pi', rho:'\\rho', sigma:'\\sigma',
+  Sigma:'\\Sigma', tau:'\\tau', upsilon:'\\upsilon', phi:'\\phi', Phi:'\\Phi',
+  chi:'\\chi', psi:'\\psi', Psi:'\\Psi', omega:'\\omega', Omega:'\\Omega'
+};
+/* Built-in LaTeX operator commands (rendered upright automatically) */
+const BUILTIN_FUNCS = new Set(['sin','cos','tan','cot','sec','csc','sinh','cosh','tanh','coth',
+  'arcsin','arccos','arctan','log','ln','lg','exp','det','dim','gcd','lcm','hom','ker','deg',
+  'arg','sup','lim','max','min','Pr']);
+/* Functions with no built-in TeX command: typeset upright via \operatorname */
+const OPERATORNAME_FUNCS = new Set(['grad','div','curl','proj','trans','circ','const','rot','var','cov','corr','rank','span']);
+/* Pure symbol replacements (no argument is consumed) */
+const SYMBOL_FUNCS = { sum:'\\sum', prod:'\\prod', nabla:'\\nabla' };
+
+function findMatch(str, openIdx, openCh, closeCh){
+  let depth = 0;
+  for(let j = openIdx; j < str.length; j++){
+    if(str[j] === openCh) depth++;
+    else if(str[j] === closeCh){ depth--; if(depth === 0) return j; }
+  }
+  return -1;
+}
+function isLetter(ch){ return !!ch && /\p{L}/u.test(ch); }
+function isDigit(ch){ return !!ch && /[0-9]/.test(ch); }
+function topLevelSplit(str, sep){
+  let depth = 0, out = [], last = 0;
+  for(let j = 0; j < str.length; j++){
+    const c = str[j];
+    if(c === '(' || c === '[') depth++;
+    else if(c === ')' || c === ']') depth--;
+    else if(c === sep && depth === 0){ out.push(str.slice(last, j)); last = j + 1; }
+  }
+  out.push(str.slice(last));
+  return out;
+}
+
+function toLatex(raw, symbolSet, idPrefix){
+  const src = String(raw).trim();
+  const idMap = {};
+  let counter = 0;
+
+  function renderSub(sub){
+    if(/^[0-9]+$/.test(sub) || sub.length === 1) return sub;
+    return '\\text{' + sub + '}';
+  }
+  function wrapIfSymbol(fullToken, wordOnly, visual){
+    let key = null;
+    if(symbolSet.has(fullToken)) key = fullToken;
+    else if(symbolSet.has(wordOnly)) key = wordOnly;
+    if(key === null) return visual;
+    const id = idPrefix + (counter++);
+    idMap[id] = key;
+    return '\\cssId{' + id + '}{\\class{def-hit}{' + visual + '}}';
+  }
+
+  function parse(str){
+    let out = '', idx = 0;
+    const n = str.length;
+    while(idx < n){
+      const ch = str[idx];
+      if(/\s/.test(ch)){ out += ch; idx++; continue; }
+      if(str.startsWith('+-', idx)){ out += '\\pm '; idx += 2; continue; }
+      if(str.startsWith('->', idx)){ out += '\\to '; idx += 2; continue; }
+      if(str.startsWith('<=', idx)){ out += '\\le '; idx += 2; continue; }
+      if(str.startsWith('>=', idx)){ out += '\\ge '; idx += 2; continue; }
+      if(str.startsWith('!=', idx)){ out += '\\ne '; idx += 2; continue; }
+      if(str.startsWith('...', idx)){ out += '\\ldots '; idx += 3; continue; }
+      if(ch === '*'){ out += '\\cdot '; idx++; continue; }
+      if(ch === '~'){ out += '\\approx '; idx++; continue; }
+      if(ch === '/'){ out += ' / '; idx++; continue; }
+      if(ch === '|'){
+        const close = str.indexOf('|', idx + 1);
+        if(close !== -1){ out += '\\left|' + parse(str.slice(idx+1, close)) + '\\right|'; idx = close + 1; continue; }
+        out += '|'; idx++; continue;
+      }
+      if(ch === '^'){
+        idx++;
+        if(str[idx] === '('){
+          const close = findMatch(str, idx, '(', ')');
+          if(close !== -1){ out += '^{' + parse(str.slice(idx+1, close)) + '}'; idx = close + 1; continue; }
+        }
+        let j = idx;
+        if(str[j] === '-') j++;
+        const start = j;
+        while(j < n && (isLetter(str[j]) || isDigit(str[j]))) j++;
+        if(j > start){ out += '^{' + str.slice(idx, j) + '}'; idx = j; continue; }
+        out += '^'; continue;
+      }
+      if(ch === '('){
+        const close = findMatch(str, idx, '(', ')');
+        if(close !== -1){ out += '(' + parse(str.slice(idx+1, close)) + ')'; idx = close + 1; continue; }
+        out += '('; idx++; continue;
+      }
+      if(ch === '['){
+        const close = findMatch(str, idx, '[', ']');
+        if(close !== -1){
+          const inner = str.slice(idx+1, close);
+          if(inner.includes(';')){
+            const rows = inner.split(';').map(row => topLevelSplit(row.trim(), ' ').filter(Boolean).map(parse).join(' & '));
+            out += '\\begin{bmatrix}' + rows.join('\\\\') + '\\end{bmatrix}';
+          } else if(inner.includes(',') && /^[a-zA-Z0-9\s.,+\-*/^_]*$/.test(inner)){
+            const parts = topLevelSplit(inner, ',');
+            if(parts.length === 2){ out += '_{' + parse(parts[0].trim()) + '}^{' + parse(parts[1].trim()) + '}'; idx = close + 1; continue; }
+            out += '[' + parse(inner) + ']';
+          } else {
+            out += '[' + parse(inner) + ']';
+          }
+          idx = close + 1; continue;
+        }
+        out += '['; idx++; continue;
+      }
+      if(isDigit(ch)){
+        let j = idx;
+        while(j < n && (isDigit(str[j]) || str[j] === '.')) j++;
+        out += str.slice(idx, j); idx = j; continue;
+      }
+      if(isLetter(ch)){
+        let j = idx;
+        while(j < n && isLetter(str[j])) j++;
+        let word = str.slice(idx, j);
+        let subscript = '', consumedTo = j;
+        if(str[j] === '_'){
+          let k = j + 1;
+          while(k < n && (isLetter(str[k]) || isDigit(str[k]))) k++;
+          subscript = str.slice(j+1, k); consumedTo = k;
+        } else if(isDigit(str[j])){
+          let k = j;
+          while(k < n && isDigit(str[k])) k++;
+          subscript = str.slice(j, k); consumedTo = k;
+        }
+        const fullToken = str.slice(idx, consumedTo);
+        idx = consumedTo;
+        let skip = idx;
+        while(skip < n && str[skip] === ' ') skip++;
+        const followedByParen = str[skip] === '(';
+
+        /* Fused notation with no separating space, e.g. "sinθ", "2πsqrt(...)":
+           try to peel a known function name off the front or back of the word. */
+        if(!(BUILTIN_FUNCS.has(word) || OPERATORNAME_FUNCS.has(word) || SYMBOL_FUNCS[word] ||
+             word === 'sqrt' || word === 'int' || word === 'oint' || word === 'dblint' ||
+             word === 'tripleint' || word === 'surfint' || word === 'C' || word === 'mod' ||
+             word === 'inf' || word === 'infty' || GREEK_LATEX[word] ||
+             symbolSet.has(word) || symbolSet.has(fullToken))){
+          const PREFIX_FUNCS = ['arcsin','arccos','arctan','sinh','cosh','tanh','sin','cos','tan','cot','sec','csc','log','ln','exp'];
+          let matchedPrefix = null;
+          for(const name of PREFIX_FUNCS){
+            if(word.length > name.length && word.startsWith(name)){ matchedPrefix = name; break; }
+          }
+          if(matchedPrefix){
+            const remainder = word.slice(matchedPrefix.length);
+            const remFull = remainder + subscript;
+            let visual = GREEK_LATEX[remainder] || remainder;
+            if(subscript) visual += '_{' + renderSub(subscript) + '}';
+            out += '\\' + matchedPrefix + ' ' + wrapIfSymbol(remFull, remainder, visual);
+            continue;
+          }
+          const SUFFIX_FUNCS = ['sqrt','arcsin','arccos','arctan','sinh','cosh','tanh','sin','cos','tan','cot','sec','csc','log','ln','exp'];
+          for(const name of SUFFIX_FUNCS){
+            if(word.length > name.length && word.endsWith(name)){
+              out += parse(word.slice(0, word.length - name.length));
+              word = name;
+              break;
+            }
+          }
+        }
+        if(word === 'mod'){ out += '\\bmod '; continue; }
+
+        /* sqrt: always needs braces, not visible parens */
+        if(word === 'sqrt' && followedByParen){
+          const openIdx = skip;
+          const close = findMatch(str, openIdx, '(', ')');
+          if(close !== -1){ out += '\\sqrt{' + parse(str.slice(openIdx+1, close)) + '}'; idx = close + 1; continue; }
+        }
+        if(word === 'int' || word === 'oint'){
+          let cmd = word === 'int' ? '\\int' : '\\oint';
+          if(str[idx] === '['){
+            const close = findMatch(str, idx, '[', ']');
+            if(close !== -1){
+              const parts = topLevelSplit(str.slice(idx+1, close), ',');
+              if(parts.length === 2) cmd += '_{' + parse(parts[0].trim()) + '}^{' + parse(parts[1].trim()) + '}';
+              idx = close + 1;
+            }
+          }
+          out += cmd + ' '; continue;
+        }
+        if(word === 'dblint'){ out += '\\iint '; continue; }
+        if(word === 'tripleint'){ out += '\\iiint '; continue; }
+        if(word === 'surfint'){ out += '\\unicode{x222F} '; continue; }
+        if(word === 'infty' || (word === 'inf' && !followedByParen)){ out += '\\infty '; continue; }
+        if(SYMBOL_FUNCS[word]){ out += SYMBOL_FUNCS[word] + ' '; continue; }
+        if(word === 'C' && followedByParen){
+          const close = findMatch(str, skip, '(', ')');
+          if(close !== -1){
+            const parts = topLevelSplit(str.slice(skip+1, close), ',');
+            if(parts.length === 2){ out += '\\binom{' + parse(parts[0].trim()) + '}{' + parse(parts[1].trim()) + '}'; idx = close + 1; continue; }
+          }
+        }
+        if(BUILTIN_FUNCS.has(word) || OPERATORNAME_FUNCS.has(word)){
+          let cmd = BUILTIN_FUNCS.has(word) ? ('\\' + word) : ('\\operatorname{' + word + '}');
+          if(subscript) cmd += '_{' + renderSub(subscript) + '}';
+          if(followedByParen){
+            const close = findMatch(str, skip, '(', ')');
+            if(close !== -1){ out += cmd + '(' + parse(str.slice(skip+1, close)) + ')'; idx = close + 1; continue; }
+          }
+          out += cmd + ' '; continue;
+        }
+
+        /* plain symbol/variable */
+        let visual = GREEK_LATEX[word] || word;
+        if(subscript) visual += '_{' + renderSub(subscript) + '}';
+        out += wrapIfSymbol(fullToken, word, visual);
+        continue;
+      }
+      out += ch; idx++;
+    }
+    return out;
+  }
+
+  return { latex: parse(src), idMap };
 }
 
 let FORMULA_VARS = {};
@@ -456,10 +663,10 @@ function lookupMeaning(tok, domain, idx){
 
 let activePopover = null;
 function closePopover(){
-  if(activePopover){ activePopover.el.remove(); activePopover.chip.classList.remove('active'); activePopover = null; }
+  if(activePopover){ activePopover.el.remove(); activePopover.hit.classList.remove('active'); activePopover = null; }
 }
 document.addEventListener('click', (e) => {
-  if(activePopover && !activePopover.el.contains(e.target) && e.target !== activePopover.chip){
+  if(activePopover && !activePopover.el.contains(e.target) && e.target !== activePopover.hit){
     closePopover();
   }
 });
@@ -467,45 +674,37 @@ document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closePopove
 window.addEventListener('scroll', closePopover, true);
 window.addEventListener('resize', closePopover);
 
-function showPopover(chip, symbol, meaning){
-  if(activePopover && activePopover.chip === chip){ closePopover(); return; }
+function showPopover(hitEl, symbol, meaning){
+  if(activePopover && activePopover.hit === hitEl){ closePopover(); return; }
   closePopover();
   const pop = document.createElement('div');
   pop.className = 'def-popover';
-  pop.innerHTML = '<span class="sym">' + symbol + '</span><span class="meaning"></span><div class="close-hint">Click again to close</div>';
+  pop.innerHTML = '<span class="sym">' + symbol + '</span><span class="meaning"></span><div class="close-hint">Tap again to close</div>';
   pop.querySelector('.meaning').textContent = meaning;
   document.body.appendChild(pop);
-  const chipRect = chip.getBoundingClientRect();
+  const hitRect = hitEl.getBoundingClientRect();
   const popRect = pop.getBoundingClientRect();
-  let left = chipRect.left + chipRect.width / 2 - popRect.width / 2;
+  let left = hitRect.left + hitRect.width / 2 - popRect.width / 2;
   left = Math.max(8, Math.min(left, window.innerWidth - popRect.width - 8));
-  let top = chipRect.bottom + 8;
+  let top = hitRect.bottom + 8;
   if(top + popRect.height > window.innerHeight - 8){
-    top = chipRect.top - popRect.height - 8;
+    top = hitRect.top - popRect.height - 8;
   }
   pop.style.left = left + 'px';
   pop.style.top = top + 'px';
-  chip.classList.add('active');
-  activePopover = { el: pop, chip };
+  hitEl.classList.add('active');
+  activePopover = { el: pop, hit: hitEl };
 }
 
-function renderDefs(item, idx){
-  defsRow.innerHTML = '';
-  const domain = item.domain || item.category || 'General';
-  const perFormula = FORMULA_VARS[idx];
-  const symbols = (perFormula && Object.keys(perFormula).length)
-    ? Object.keys(perFormula)
-    : extractSymbols(item.formula);
-  symbols.forEach(sym => {
-    const chip = document.createElement('button');
-    chip.type = 'button';
-    chip.className = 'def-chip';
-    chip.textContent = sym;
-    chip.addEventListener('click', (e) => {
+function wireFormulaClicks(idMap, domain, idx){
+  Object.keys(idMap).forEach(id => {
+    const el = document.getElementById(id);
+    if(!el) return;
+    el.style.pointerEvents = 'auto';
+    el.addEventListener('click', (e) => {
       e.stopPropagation();
-      showPopover(chip, sym, lookupMeaning(sym, domain, idx));
+      showPopover(el, idMap[id], lookupMeaning(idMap[id], domain, idx));
     });
-    defsRow.appendChild(chip);
   });
 }
 
@@ -517,13 +716,24 @@ function draw(){
   if(pool.length === 0) return;
   const item = pool[Math.floor(Math.random() * pool.length)];
   const idx = FORMULAS.indexOf(item);
+  const domain = item.domain || item.category || 'General';
+  const perFormula = FORMULA_VARS[idx];
+  const symbols = (perFormula && Object.keys(perFormula).length)
+    ? Object.keys(perFormula)
+    : extractSymbols(item.formula);
+  const symbolSet = new Set(symbols);
+
   placeholder.style.display = 'none';
   content.style.display = 'block';
   lawName.textContent = item.name;
-  formulaText.innerHTML = '<span>\\(' + toLatex(item.formula) + '\\)</span>';
-  MathJax.typesetPromise([formulaText]);
   closePopover();
-  renderDefs(item, idx);
+
+  const { latex, idMap } = toLatex(item.formula, symbolSet, 'sym' + idx + '_');
+  formulaText.innerHTML = '<span>\\(' + latex + '\\)</span>';
+  MathJax.typesetPromise([formulaText]).then(() => {
+    wireFormulaClicks(idMap, domain, idx);
+  });
+
   cardNo.textContent = String(idx + 1).padStart(3, '0');
   cardDomain.textContent = item.domain || item.category || '—';
   cardEl.classList.remove('drawn');
