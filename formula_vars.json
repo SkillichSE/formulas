@@ -1,0 +1,3893 @@
+{
+  "0": {
+    "a": "coefficient of x²",
+    "b": "coefficient of x",
+    "c": "constant term of the equation",
+    "x": "root (solution) of the quadratic equation"
+  },
+  "1": {
+    "a": "first addend",
+    "b": "second addend"
+  },
+  "2": {
+    "a": "first addend (minuend)",
+    "b": "second addend (subtrahend)"
+  },
+  "3": {
+    "a": "first quantity",
+    "b": "second quantity"
+  },
+  "4": {
+    "a": "first quantity",
+    "b": "second quantity"
+  },
+  "5": {
+    "a": "first quantity (minuend)",
+    "b": "second quantity (subtrahend)"
+  },
+  "6": {
+    "a": "first addend",
+    "b": "second addend"
+  },
+  "7": {
+    "a": "coefficient of x²",
+    "b": "coefficient of x",
+    "x1": "first root of the equation",
+    "x2": "second root of the equation"
+  },
+  "8": {
+    "a": "coefficient of x²",
+    "c": "constant term",
+    "x1": "first root of the equation",
+    "x2": "second root of the equation"
+  },
+  "9": {
+    "C": "number of combinations",
+    "a": "first term of the binomial",
+    "b": "second term of the binomial",
+    "k": "summation index",
+    "n": "exponent"
+  },
+  "10": {
+    "S": "sum of a geometric progression",
+    "a1": "first term of the progression",
+    "n": "number of terms",
+    "q": "common ratio of the progression"
+  },
+  "11": {
+    "S": "sum of an arithmetic progression",
+    "a1": "first term of the progression",
+    "an": "last (n-th) term of the progression",
+    "n": "number of terms"
+  },
+  "12": {
+    "a1": "first term of the progression",
+    "an": "n-th term of an arithmetic progression",
+    "d": "common difference of the progression",
+    "n": "term number"
+  },
+  "13": {
+    "a1": "first term of the progression",
+    "an": "n-th term of a geometric progression",
+    "n": "term number",
+    "q": "common ratio of the progression"
+  },
+  "14": {
+    "a": "first factor under the logarithm",
+    "b": "second factor under the logarithm"
+  },
+  "15": {
+    "a": "dividend under the logarithm",
+    "b": "divisor under the logarithm"
+  },
+  "16": {
+    "a": "base of the power under the logarithm",
+    "n": "exponent"
+  },
+  "17": {
+    "a": "number whose logarithm is sought",
+    "b": "new base of the logarithm"
+  },
+  "18": {
+    "a": "real part",
+    "b": "imaginary part",
+    "z": "complex number"
+  },
+  "19": {
+    "n": "power to which the number is raised",
+    "t": "angle"
+  },
+  "20": {
+    "D": "discriminant",
+    "a": "coefficient of x²",
+    "b": "coefficient of x",
+    "c": "constant term"
+  },
+  "21": {
+    "A": "final deposit amount",
+    "P": "initial (principal) amount",
+    "n": "number of compounding periods per year",
+    "r": "annual interest rate",
+    "t": "time in years"
+  },
+  "22": {
+    "x": "angle"
+  },
+  "23": {
+    "k": "root index",
+    "n": "degree (index) of the root",
+    "z_k": "one of the n-th roots of unity"
+  },
+  "24": {
+    "a": "first number",
+    "b": "second number"
+  },
+  "25": {
+    "S": "area of the triangle",
+    "a": "first side of the triangle",
+    "b": "second side of the triangle",
+    "c": "third side of the triangle",
+    "p": "semi-perimeter of the triangle"
+  },
+  "26": {
+    "a": "first side of the triangle",
+    "b": "second side of the triangle",
+    "c": "third side of the triangle",
+    "p": "semi-perimeter of the triangle"
+  },
+  "27": {
+    "n": "natural number (factorial argument)"
+  },
+  "28": {
+    "C": "number of combinations of n taken k at a time",
+    "k": "number of elements being chosen",
+    "n": "total number of elements"
+  },
+  "29": {
+    "A": "number of permutations of n taken k at a time",
+    "k": "number of elements being chosen",
+    "n": "total number of elements"
+  },
+  "30": {
+    "k": "summation index",
+    "n": "upper limit of the sum"
+  },
+  "31": {
+    "k": "summation index",
+    "n": "upper limit of the sum"
+  },
+  "32": {
+    "k": "summation index",
+    "n": "upper limit of the sum"
+  },
+  "33": {
+    "F": "antiderivative of the function f",
+    "a": "lower limit of integration",
+    "b": "upper limit of integration",
+    "f": "integrand",
+    "x": "variable of integration"
+  },
+  "34": {
+    "a": "left endpoint of the segment",
+    "b": "right endpoint of the segment",
+    "c": "point inside the interval (a,b)",
+    "f": "function"
+  },
+  "35": {
+    "a": "point of series expansion",
+    "f": "function",
+    "n": "term number of the series",
+    "x": "argument of the function"
+  },
+  "36": {
+    "e": "Euler's number (≈2.71828)",
+    "i": "imaginary unit",
+    "x": "angle (argument)"
+  },
+  "37": {
+    "e": "Euler's number (≈2.71828)",
+    "i": "imaginary unit",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "38": {
+    "S": "area of the circle",
+    "d": "diameter of the circle",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "39": {
+    "S": "sum of an infinite geometric progression",
+    "a1": "first term of the progression",
+    "q": "common ratio of the progression (|q|<1)"
+  },
+  "40": {
+    "x": "variable (small quantity)"
+  },
+  "41": {
+    "a": "leg of a right triangle",
+    "b": "second leg",
+    "c": "hypotenuse"
+  },
+  "42": {
+    "C": "angle between sides a and b",
+    "a": "first side of the triangle",
+    "b": "second side of the triangle",
+    "c": "side opposite angle C"
+  },
+  "43": {
+    "A": "angle opposite side a",
+    "B": "angle opposite side b",
+    "C": "angle opposite side c",
+    "a": "side opposite angle A",
+    "b": "side opposite angle B",
+    "c": "side opposite angle C"
+  },
+  "44": {
+    "S": "area of the triangle",
+    "a": "base of the triangle",
+    "h": "altitude drawn to the base"
+  },
+  "45": {
+    "C": "angle between sides a and b",
+    "S": "area of the triangle",
+    "a": "first side",
+    "b": "second side"
+  },
+  "46": {
+    "S": "area of the rectangle",
+    "a": "length",
+    "b": "width"
+  },
+  "47": {
+    "S": "area of the square",
+    "a": "side of the square"
+  },
+  "48": {
+    "S": "area of the circle",
+    "pi": "the number π ≈ 3.14159",
+    "r": "radius of the circle"
+  },
+  "49": {
+    "L": "circumference",
+    "pi": "the number π ≈ 3.14159",
+    "r": "radius of the circle"
+  },
+  "50": {
+    "S": "area of the trapezoid",
+    "a": "first base of the trapezoid",
+    "b": "second base of the trapezoid",
+    "h": "height of the trapezoid"
+  },
+  "51": {
+    "S": "area of the parallelogram",
+    "a": "side of the parallelogram",
+    "h": "altitude drawn to this side"
+  },
+  "52": {
+    "S": "area of the rhombus",
+    "d1": "first diagonal of the rhombus",
+    "d2": "second diagonal of the rhombus"
+  },
+  "53": {
+    "V": "volume of the cube",
+    "a": "edge length of the cube"
+  },
+  "54": {
+    "V": "volume of the rectangular parallelepiped",
+    "a": "length",
+    "b": "width",
+    "c": "height"
+  },
+  "55": {
+    "V": "volume of the cylinder",
+    "h": "height of the cylinder",
+    "pi": "the number π ≈ 3.14159",
+    "r": "base radius"
+  },
+  "56": {
+    "V": "volume of the cone",
+    "h": "height of the cone",
+    "pi": "the number π ≈ 3.14159",
+    "r": "base radius"
+  },
+  "57": {
+    "V": "volume of the sphere",
+    "pi": "the number π ≈ 3.14159",
+    "r": "radius of the sphere"
+  },
+  "58": {
+    "S": "surface area of the sphere",
+    "pi": "the number π ≈ 3.14159",
+    "r": "radius of the sphere"
+  },
+  "59": {
+    "S": "lateral surface area of a cylinder",
+    "h": "height of the cylinder",
+    "pi": "the number π ≈ 3.14159",
+    "r": "base radius"
+  },
+  "60": {
+    "S": "lateral surface area of a cone",
+    "l": "slant height of the cone",
+    "pi": "the number π ≈ 3.14159",
+    "r": "base radius"
+  },
+  "61": {
+    "d": "distance between the points",
+    "x1": "x-coordinate of the first point",
+    "x2": "x-coordinate of the second point",
+    "y1": "y-coordinate of the first point",
+    "y2": "y-coordinate of the second point"
+  },
+  "62": {
+    "a": "x-coordinate of the center of the circle",
+    "b": "y-coordinate of the center of the circle",
+    "r": "radius of the circle",
+    "x": "x-coordinate of the point on the circle",
+    "y": "y-coordinate of the point on the circle"
+  },
+  "63": {
+    "A": "coefficient of x in the line equation",
+    "B": "coefficient of y in the line equation",
+    "C": "constant term of the line equation",
+    "x": "x-coordinate",
+    "y": "y-coordinate"
+  },
+  "64": {
+    "k": "slope of the line",
+    "x1": "x-coordinate of the first point",
+    "x2": "x-coordinate of the second point",
+    "y1": "y-coordinate of the first point",
+    "y2": "y-coordinate of the second point"
+  },
+  "65": {
+    "t": "segment division parameter",
+    "x": "coordinate of the point being sought",
+    "x1": "coordinate of the first point",
+    "x2": "coordinate of the second point"
+  },
+  "66": {
+    "S": "area of the triangle",
+    "x1": "x-coordinate of the first vertex",
+    "x2": "x-coordinate of the second vertex",
+    "x3": "x-coordinate of the third vertex",
+    "y1": "y-coordinate of the first vertex",
+    "y2": "y-coordinate of the second vertex",
+    "y3": "y-coordinate of the third vertex"
+  },
+  "69": {
+    "S": "area of the triangle",
+    "p": "semi-perimeter of the triangle",
+    "r": "radius of the inscribed circle"
+  },
+  "70": {
+    "R": "radius of the circumscribed circle",
+    "S": "area of the triangle",
+    "a": "first side of the triangle",
+    "b": "second side of the triangle",
+    "c": "third side of the triangle"
+  },
+  "71": {
+    "a": "semi-major axis of the ellipse",
+    "b": "semi-minor axis of the ellipse",
+    "x": "x-coordinate of the point on the ellipse",
+    "y": "y-coordinate of the point on the ellipse"
+  },
+  "72": {
+    "a": "real semi-axis",
+    "b": "imaginary semi-axis",
+    "x": "x-coordinate of the point on the hyperbola",
+    "y": "y-coordinate of the point on the hyperbola"
+  },
+  "73": {
+    "p": "semi-latus rectum of the parabola",
+    "x": "x-coordinate of the point on the parabola",
+    "y": "y-coordinate of the point on the parabola"
+  },
+  "74": {
+    "S": "base area of the pyramid",
+    "V": "volume of the pyramid",
+    "h": "height of the pyramid"
+  },
+  "75": {
+    "S": "area of the regular polygon",
+    "a": "side length",
+    "n": "number of sides of the polygon",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "76": {
+    "Sum": "sum of the interior angles of the polygon",
+    "n": "number of sides of the polygon"
+  },
+  "78": {
+    "l": "arc length",
+    "r": "radius of the circle",
+    "theta": "central angle (in radians)"
+  },
+  "79": {
+    "S": "area of the circular sector",
+    "r": "radius of the circle",
+    "theta": "central angle (in radians)"
+  },
+  "80": {
+    "A": "coefficient of x in the plane equation",
+    "B": "coefficient of y in the plane equation",
+    "C": "coefficient of z in the plane equation",
+    "D": "constant term of the plane equation",
+    "d": "distance from the point to the plane",
+    "x0": "x-coordinate of the point",
+    "y0": "y-coordinate of the point",
+    "z0": "z-coordinate of the point"
+  },
+  "81": {
+    "a": "first vector",
+    "b": "second vector",
+    "theta": "angle between the vectors"
+  },
+  "82": {
+    "a": "first vector",
+    "b": "second vector",
+    "theta": "angle between the vectors"
+  },
+  "83": {
+    "x": "angle"
+  },
+  "84": {
+    "x": "angle"
+  },
+  "85": {
+    "x": "first angle",
+    "y": "second angle"
+  },
+  "86": {
+    "x": "first angle",
+    "y": "second angle"
+  },
+  "87": {
+    "x": "first angle",
+    "y": "second angle"
+  },
+  "88": {
+    "x": "first angle",
+    "y": "second angle"
+  },
+  "89": {
+    "x": "first angle",
+    "y": "second angle"
+  },
+  "90": {
+    "x": "angle"
+  },
+  "91": {
+    "x": "angle"
+  },
+  "92": {
+    "x": "first angle",
+    "y": "second angle"
+  },
+  "93": {
+    "x": "first angle",
+    "y": "second angle"
+  },
+  "94": {
+    "x": "first angle",
+    "y": "second angle"
+  },
+  "95": {
+    "x": "angle"
+  },
+  "96": {
+    "x": "angle"
+  },
+  "97": {
+    "pi": "the number π ≈ 3.14159",
+    "x": "angle"
+  },
+  "98": {
+    "pi": "the number π ≈ 3.14159",
+    "x": "angle"
+  },
+  "99": {
+    "t": "auxiliary variable (half-angle tangent)",
+    "x": "angle"
+  },
+  "100": {
+    "n": "exponent",
+    "x": "variable (function argument)"
+  },
+  "101": {
+    "x": "angle (function argument)"
+  },
+  "102": {
+    "x": "angle (function argument)"
+  },
+  "103": {
+    "x": "argument of the exponential function"
+  },
+  "104": {
+    "x": "argument of the logarithm"
+  },
+  "105": {
+    "f": "first function",
+    "g": "second function"
+  },
+  "106": {
+    "f": "numerator — function",
+    "g": "denominator — function"
+  },
+  "107": {
+    "f": "outer function",
+    "g": "inner function",
+    "x": "argument"
+  },
+  "108": {
+    "C": "arbitrary constant of integration",
+    "n": "exponent",
+    "x": "variable of integration"
+  },
+  "109": {
+    "C": "arbitrary constant of integration",
+    "x": "variable of integration"
+  },
+  "110": {
+    "C": "arbitrary constant of integration",
+    "x": "variable of integration"
+  },
+  "111": {
+    "u": "first factor (differentiable function)",
+    "v": "second factor (function being integrated)"
+  },
+  "112": {
+    "n": "term number of the series",
+    "x": "argument of the function"
+  },
+  "113": {
+    "x": "argument of the function (angle)"
+  },
+  "114": {
+    "e": "Euler's number (≈2.71828)",
+    "n": "number tending to infinity"
+  },
+  "115": {
+    "x": "angle approaching zero"
+  },
+  "116": {
+    "C": "number of combinations",
+    "f": "first function",
+    "g": "second function",
+    "k": "summation index",
+    "n": "order of the derivative"
+  },
+  "117": {
+    "S": "area under the curve",
+    "a": "lower bound of integration",
+    "b": "upper bound of integration",
+    "f": "function",
+    "x": "variable of integration"
+  },
+  "118": {
+    "L": "curve length",
+    "y": "function defining the curve"
+  },
+  "119": {
+    "V": "volume of the solid of revolution",
+    "a": "lower bound",
+    "b": "upper bound",
+    "pi": "the number π ≈ 3.14159",
+    "y": "function defining the curve"
+  },
+  "120": {
+    "L": "first component of the vector field",
+    "M": "second component of the vector field",
+    "dA": "area element"
+  },
+  "121": {
+    "F": "vector field",
+    "dA": "surface area element",
+    "dr": "element of the loop"
+  },
+  "122": {
+    "a": "lower limit of integration",
+    "b": "upper limit of integration",
+    "c": "point inside the interval (a,b)",
+    "f": "integrand"
+  },
+  "123": {
+    "f": "function whose root is being sought",
+    "f'": "derivative of the function",
+    "x_n": "current approximation of the root"
+  },
+  "124": {
+    "f": "function of two variables",
+    "x": "variable with respect to which the derivative is taken",
+    "y": "variable held constant"
+  },
+  "125": {
+    "f": "scalar function"
+  },
+  "126": {
+    "F": "vector field",
+    "Fx": "x-component of the vector field",
+    "Fy": "y-component of the vector field"
+  },
+  "127": {
+    "F": "vector field"
+  },
+  "128": {
+    "f": "scalar function"
+  },
+  "129": {
+    "F": "resultant force",
+    "a": "acceleration of the body",
+    "m": "mass of the body"
+  },
+  "131": {
+    "F": "force of interaction between two bodies"
+  },
+  "132": {
+    "F": "gravitational attraction force",
+    "G": "gravitational constant",
+    "m1": "mass of the first body",
+    "m2": "mass of the second body",
+    "r": "distance between the bodies"
+  },
+  "133": {
+    "m": "mass of the body",
+    "p": "momentum of the body",
+    "v": "velocity of the body"
+  },
+  "134": {
+    "p1": "momentum of the first body",
+    "p2": "momentum of the second body"
+  },
+  "135": {
+    "Ek": "kinetic energy of the body",
+    "m": "mass of the body",
+    "v": "velocity of the body"
+  },
+  "136": {
+    "Ep": "potential energy of the body",
+    "g": "acceleration due to gravity",
+    "h": "height above the surface",
+    "m": "mass of the body"
+  },
+  "137": {
+    "A": "work done by the force",
+    "F": "applied force",
+    "a": "angle between the force and the direction of motion",
+    "s": "distance traveled"
+  },
+  "138": {
+    "A": "work done",
+    "P": "power",
+    "t": "time"
+  },
+  "139": {
+    "a": "acceleration",
+    "s": "displacement of the body",
+    "t": "time",
+    "v0": "initial velocity"
+  },
+  "140": {
+    "a": "acceleration",
+    "t": "time",
+    "v": "final velocity",
+    "v0": "initial velocity"
+  },
+  "141": {
+    "a": "acceleration of the body",
+    "t": "time",
+    "v": "final velocity",
+    "v0": "initial velocity"
+  },
+  "142": {
+    "a": "centripetal acceleration",
+    "r": "radius of the circle",
+    "v": "velocity of the body"
+  },
+  "143": {
+    "T": "rotation period",
+    "pi": "the number π ≈ 3.14159",
+    "w": "angular velocity"
+  },
+  "144": {
+    "F": "elastic force",
+    "k": "spring stiffness",
+    "x": "magnitude of deformation (displacement)"
+  },
+  "145": {
+    "F": "applied force",
+    "M": "moment of force (torque)",
+    "d": "lever arm of the force (distance to the axis)"
+  },
+  "146": {
+    "L": "angular momentum",
+    "p": "momentum of the body",
+    "r": "radius vector from the rotation axis"
+  },
+  "147": {
+    "I": "moment of inertia of the body",
+    "M": "moment of force",
+    "eps": "angular acceleration"
+  },
+  "148": {
+    "I": "moment of inertia",
+    "m": "mass of the point",
+    "r": "distance to the axis of rotation"
+  },
+  "149": {
+    "I": "moment of inertia of the disk",
+    "m": "mass of the disk",
+    "r": "radius of the disk"
+  },
+  "150": {
+    "I": "moment of inertia of the sphere",
+    "m": "mass of the sphere",
+    "r": "radius of the sphere"
+  },
+  "151": {
+    "m_i": "mass of the i-th body",
+    "x_cm": "coordinate of the center of mass",
+    "x_i": "coordinate of the i-th body"
+  },
+  "152": {
+    "Ek": "kinetic energy",
+    "Ep": "potential energy"
+  },
+  "153": {
+    "T": "period of oscillation of the pendulum",
+    "g": "acceleration due to gravity",
+    "l": "length of the pendulum string",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "154": {
+    "T": "period of oscillation of the spring pendulum",
+    "k": "spring stiffness",
+    "m": "mass of the load",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "155": {
+    "Ffr": "friction force",
+    "N": "normal reaction force of the support",
+    "mu": "coefficient of friction"
+  },
+  "156": {
+    "R": "radius of the planet",
+    "g": "acceleration due to gravity on the planet",
+    "v1": "first cosmic velocity"
+  },
+  "157": {
+    "R": "radius of the planet",
+    "g": "acceleration due to gravity on the planet",
+    "v2": "second cosmic velocity"
+  },
+  "158": {
+    "T": "orbital period",
+    "a": "semi-major axis of the orbit"
+  },
+  "159": {
+    "g": "acceleration due to gravity",
+    "t": "fall time",
+    "v": "free-fall velocity"
+  },
+  "160": {
+    "g": "acceleration due to gravity",
+    "h": "height of free fall",
+    "t": "fall time"
+  },
+  "161": {
+    "P": "hydrostatic pressure",
+    "g": "acceleration due to gravity",
+    "h": "depth (height of the liquid column)",
+    "rho": "liquid density"
+  },
+  "162": {
+    "F": "buoyant force (Archimedes' force)",
+    "V": "volume of the submerged part of the body",
+    "g": "acceleration due to gravity",
+    "rho": "liquid density"
+  },
+  "164": {
+    "S1": "pipe cross-sectional area at the first point",
+    "S2": "pipe cross-sectional area at the second point",
+    "v1": "flow velocity at the first point",
+    "v2": "flow velocity at the second point"
+  },
+  "165": {
+    "P": "static pressure of the liquid",
+    "g": "acceleration due to gravity",
+    "h": "height",
+    "rho": "liquid density",
+    "v": "flow velocity"
+  },
+  "166": {
+    "L": "characteristic size (length)",
+    "Re": "Reynolds number",
+    "mu": "dynamic viscosity of the liquid",
+    "rho": "liquid density",
+    "v": "flow velocity"
+  },
+  "167": {
+    "B": "magnetic field induction",
+    "F": "Lorentz force",
+    "q": "charge of the particle",
+    "v": "velocity of the particle"
+  },
+  "168": {
+    "P": "gas pressure",
+    "m": "mass of the molecule",
+    "n": "concentration of molecules",
+    "v": "average speed of the molecules"
+  },
+  "169": {
+    "t": "time",
+    "theta": "angle of rotation",
+    "w": "angular velocity"
+  },
+  "170": {
+    "M": "moment of the elastic (torsional) forces",
+    "k": "torsional stiffness",
+    "theta": "twist angle"
+  },
+  "171": {
+    "P": "gas pressure",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "V": "gas volume",
+    "n": "amount of substance (moles)"
+  },
+  "172": {
+    "A": "work done by the gas",
+    "Q": "heat supplied",
+    "U": "change in internal energy"
+  },
+  "173": {
+    "S": "entropy of the system"
+  },
+  "174": {
+    "Q1": "heat absorbed from the hot reservoir",
+    "Q2": "heat given off to the cold reservoir",
+    "eta": "efficiency of a heat engine"
+  },
+  "175": {
+    "T1": "temperature of the hot reservoir",
+    "T2": "temperature of the cold reservoir",
+    "eta": "efficiency of the Carnot cycle"
+  },
+  "176": {
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "U": "internal energy of an ideal gas",
+    "n": "amount of substance (moles)"
+  },
+  "177": {
+    "P": "gas pressure",
+    "T": "temperature (constant)",
+    "V": "gas volume"
+  },
+  "178": {
+    "P": "gas pressure",
+    "T": "absolute temperature",
+    "V": "volume (constant)"
+  },
+  "179": {
+    "P": "pressure (constant)",
+    "T": "absolute temperature",
+    "V": "gas volume"
+  },
+  "180": {
+    "P": "pressure of a real gas",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "V": "gas volume",
+    "a": "correction for intermolecular attraction",
+    "b": "correction for the molecules' own volume",
+    "n": "amount of substance (moles)"
+  },
+  "181": {
+    "Q": "amount of heat",
+    "c": "specific heat capacity of the substance",
+    "dT": "change in temperature",
+    "m": "mass of the substance"
+  },
+  "182": {
+    "L": "specific heat of fusion",
+    "Q": "heat of fusion",
+    "m": "mass of the substance"
+  },
+  "183": {
+    "L": "specific heat of vaporization",
+    "Q": "heat of vaporization",
+    "m": "mass of the substance"
+  },
+  "184": {
+    "P": "radiated power",
+    "T": "absolute temperature",
+    "sigma": "Stefan–Boltzmann constant"
+  },
+  "185": {
+    "T": "absolute temperature",
+    "b": "Wien's displacement constant",
+    "lambda_max": "wavelength of maximum radiation"
+  },
+  "186": {
+    "S": "Boltzmann entropy",
+    "W": "number of microstates of the system",
+    "k": "Boltzmann constant"
+  },
+  "187": {
+    "M": "molar mass of the gas",
+    "P": "gas pressure",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "rho": "gas density"
+  },
+  "188": {
+    "M": "molar mass of the gas",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "gamma": "adiabatic index of the gas",
+    "v": "speed of sound in the gas"
+  },
+  "189": {
+    "Ek": "mean kinetic energy of the molecule",
+    "T": "absolute temperature",
+    "k": "Boltzmann constant"
+  },
+  "190": {
+    "P": "pressure at height h",
+    "P0": "pressure at zero altitude",
+    "T": "absolute temperature",
+    "g": "acceleration due to gravity",
+    "h": "height",
+    "k": "Boltzmann constant",
+    "m": "mass of the molecule"
+  },
+  "191": {
+    "k": "thermal conductivity",
+    "q": "heat flux density"
+  },
+  "192": {
+    "Q1": "heat released to the surroundings",
+    "Q2": "heat removed from the cooled body",
+    "eps": "coefficient of performance (refrigeration)"
+  },
+  "193": {
+    "I": "current",
+    "R": "electrical resistance",
+    "U": "voltage across the circuit segment"
+  },
+  "194": {
+    "I": "current in the circuit",
+    "R": "external resistance",
+    "eps": "EMF of the current source",
+    "r": "internal resistance of the source"
+  },
+  "195": {
+    "F": "force of interaction between charges",
+    "k": "Coulomb's constant",
+    "q1": "first charge",
+    "q2": "second charge",
+    "r": "distance between the charges"
+  },
+  "196": {
+    "E": "electric field strength",
+    "F": "force acting on the charge",
+    "q": "magnitude of the charge"
+  },
+  "197": {
+    "k": "Coulomb's constant",
+    "phi": "electric field potential",
+    "q": "charge creating the field",
+    "r": "distance to the charge"
+  },
+  "198": {
+    "C": "capacitance",
+    "U": "voltage between the plates",
+    "q": "charge on the plates"
+  },
+  "199": {
+    "C": "capacitance of the capacitor",
+    "U": "voltage across the capacitor",
+    "W": "energy of the charged capacitor"
+  },
+  "200": {
+    "R": "resistance of the conductor",
+    "S": "cross-sectional area",
+    "l": "length of the conductor",
+    "rho": "resistivity of the material"
+  },
+  "201": {
+    "I_in": "current flowing into the node",
+    "I_out": "current flowing out of the node"
+  },
+  "202": {
+    "I": "current in the circuit segment",
+    "R": "resistance of the circuit segment",
+    "eps": "EMF in the loop"
+  },
+  "203": {
+    "I": "current",
+    "Q": "heat released",
+    "R": "resistance of the conductor",
+    "t": "duration of current flow"
+  },
+  "204": {
+    "I": "current",
+    "P": "electric power",
+    "U": "voltage"
+  },
+  "205": {
+    "dPhi": "change in magnetic flux",
+    "dt": "time interval",
+    "eps": "induced EMF"
+  },
+  "206": {
+    "N": "number of turns of the coil",
+    "dPhi": "change in magnetic flux",
+    "dt": "time interval",
+    "eps": "induced EMF"
+  },
+  "207": {
+    "B": "magnetic field induction",
+    "Phi": "magnetic flux",
+    "S": "area of the loop",
+    "a": "angle between the field and the normal to the loop"
+  },
+  "208": {
+    "B": "magnetic field induction",
+    "F": "Ampère force",
+    "I": "current in the conductor",
+    "L": "length of the conductor in the field",
+    "a": "angle between the conductor and the field"
+  },
+  "209": {
+    "B": "magnetic field induction",
+    "F": "Lorentz force",
+    "a": "angle between the velocity and the field",
+    "q": "charge of the particle",
+    "v": "velocity of the particle"
+  },
+  "210": {
+    "L": "inductance of the solenoid",
+    "V": "volume of the solenoid",
+    "mu0": "magnetic constant",
+    "n": "number of turns per unit length"
+  },
+  "211": {
+    "I": "current in the coil",
+    "L": "inductance of the coil",
+    "W": "energy of the magnetic field"
+  },
+  "212": {
+    "C": "capacitance of the parallel-plate capacitor",
+    "S": "area of the plates",
+    "d": "distance between the plates",
+    "eps": "permittivity of the medium",
+    "eps0": "electric constant (vacuum permittivity)"
+  },
+  "213": {
+    "F": "force of interaction between charges in a dielectric",
+    "eps": "permittivity of the medium",
+    "eps0": "electric constant (vacuum permittivity)",
+    "q1": "first charge",
+    "q2": "second charge",
+    "r": "distance between the charges"
+  },
+  "214": {
+    "C": "capacitance of the capacitor",
+    "L": "inductance of the coil",
+    "f": "resonant frequency of the circuit",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "215": {
+    "E": "electric field strength (divergence)",
+    "eps0": "electric constant (vacuum permittivity)",
+    "rho": "volume charge density"
+  },
+  "216": {
+    "B": "magnetic field induction"
+  },
+  "217": {
+    "B": "magnetic field induction",
+    "E": "electric field strength",
+    "dB": "change in magnetic induction",
+    "dt": "time interval"
+  },
+  "218": {
+    "B": "magnetic field induction",
+    "J": "current density",
+    "dE": "change in the electric field",
+    "dt": "time interval",
+    "eps0": "electric constant (vacuum permittivity)",
+    "mu0": "magnetic constant"
+  },
+  "219": {
+    "c": "speed of the electromagnetic wave (light)",
+    "eps0": "electric constant (vacuum permittivity)",
+    "mu0": "magnetic constant"
+  },
+  "220": {
+    "R1": "resistance of the first resistor",
+    "R2": "resistance of the second resistor",
+    "Vin": "input voltage",
+    "Vout": "output voltage of the divider"
+  },
+  "222": {
+    "n1": "refractive index of the first medium",
+    "n2": "refractive index of the second medium",
+    "t1": "angle of incidence",
+    "t2": "angle of refraction"
+  },
+  "223": {
+    "d": "distance from the object to the lens",
+    "d'": "distance from the lens to the image",
+    "f": "focal length of the lens"
+  },
+  "224": {
+    "D": "optical power of the lens",
+    "f": "focal length of the lens"
+  },
+  "225": {
+    "d": "period of the diffraction grating",
+    "k": "order of the maximum",
+    "lambda": "wavelength of light",
+    "theta": "diffraction angle"
+  },
+  "226": {
+    "f": "wave frequency",
+    "lambda": "wavelength",
+    "v": "wave speed"
+  },
+  "227": {
+    "E": "energy of the photon",
+    "f": "frequency of light",
+    "h": "Planck constant"
+  },
+  "228": {
+    "h": "Planck constant",
+    "lambda": "wavelength of the photon",
+    "p": "momentum of the photon"
+  },
+  "229": {
+    "E": "energy of the quantum",
+    "h": "Planck constant",
+    "nu": "frequency of the radiation"
+  },
+  "230": {
+    "f": "frequency of the source",
+    "f'": "observed frequency (Doppler effect)",
+    "v": "speed of sound in the medium",
+    "v_o": "velocity of the observer",
+    "v_s": "velocity of the source"
+  },
+  "231": {
+    "A": "wave amplitude",
+    "k": "wavenumber",
+    "t": "time",
+    "w": "angular frequency",
+    "x": "coordinate of the point",
+    "y": "displacement of a point in the medium"
+  },
+  "232": {
+    "I": "sound intensity",
+    "P": "power of the sound wave",
+    "S": "surface area"
+  },
+  "233": {
+    "I": "sound intensity",
+    "I0": "threshold sound intensity",
+    "L": "sound pressure level in decibels"
+  },
+  "234": {
+    "d": "distance between the slits",
+    "lambda": "wavelength of light",
+    "m": "order of the maximum",
+    "theta": "diffraction angle"
+  },
+  "235": {
+    "E": "rest energy",
+    "c": "speed of light in vacuum",
+    "m": "mass of the body"
+  },
+  "236": {
+    "A": "electron work function",
+    "Ek": "kinetic energy of the ejected electron",
+    "f": "frequency of the incident light",
+    "h": "Planck constant"
+  },
+  "237": {
+    "dp": "uncertainty in the particle's momentum",
+    "dx": "uncertainty in the particle's position",
+    "hbar": "reduced Planck constant"
+  },
+  "238": {
+    "E": "energy of the system",
+    "H": "Hamiltonian operator (energy)",
+    "psi": "wave function"
+  },
+  "239": {
+    "H": "Hamiltonian operator (energy)",
+    "dpsi": "change in the wave function",
+    "dt": "time interval",
+    "hbar": "reduced Planck constant",
+    "psi": "wave function"
+  },
+  "240": {
+    "h": "Planck constant",
+    "lambda": "de Broglie wavelength",
+    "p": "momentum of the particle"
+  },
+  "241": {
+    "En": "energy of the n-th level of the hydrogen atom",
+    "eV": "electronvolt — a unit of energy",
+    "n": "energy level number"
+  },
+  "242": {
+    "E": "total relativistic energy",
+    "c": "speed of light",
+    "m": "rest mass of the particle",
+    "p": "momentum of the particle"
+  },
+  "243": {
+    "c": "speed of light",
+    "dt": "time interval in the stationary frame",
+    "dt'": "time interval in the moving reference frame",
+    "v": "velocity of the system"
+  },
+  "244": {
+    "L": "length in the moving reference frame",
+    "L0": "rest length (in the stationary frame)",
+    "c": "speed of light",
+    "v": "velocity"
+  },
+  "245": {
+    "c": "speed of light",
+    "gamma": "Lorentz factor",
+    "t": "time in the stationary frame",
+    "t'": "time in the moving reference frame",
+    "v": "velocity",
+    "x": "coordinate of the event"
+  },
+  "246": {
+    "c": "speed of light",
+    "m": "relativistic mass of the body",
+    "m0": "rest mass of the body",
+    "v": "velocity of the body"
+  },
+  "247": {
+    "N": "number of undecayed nuclei at time t",
+    "N0": "initial number of nuclei",
+    "lambda": "radioactive decay constant",
+    "t": "time"
+  },
+  "248": {
+    "T_half": "half-life",
+    "lambda": "radioactive decay constant"
+  },
+  "249": {
+    "alpha": "fine-structure constant",
+    "c": "speed of light",
+    "e": "elementary charge",
+    "eps0": "electric constant (vacuum permittivity)",
+    "hbar": "reduced Planck constant"
+  },
+  "250": {
+    "c": "speed of light",
+    "dlambda": "change in wavelength upon scattering",
+    "h": "Planck constant",
+    "m": "mass of the electron",
+    "theta": "scattering angle"
+  },
+  "253": {
+    "NA": "Avogadro's number"
+  },
+  "254": {
+    "M": "molar mass of the substance",
+    "m": "mass of the substance",
+    "n": "amount of substance (moles)"
+  },
+  "255": {
+    "N": "number of particles (molecules)",
+    "NA": "Avogadro's number",
+    "n": "amount of substance (moles)"
+  },
+  "256": {
+    "V": "gas volume",
+    "Vm": "molar volume of the gas",
+    "n": "amount of substance (moles)"
+  },
+  "257": {
+    "E1": "equivalent mass of the first substance",
+    "E2": "equivalent mass of the second substance",
+    "m1": "mass of the first substance",
+    "m2": "mass of the second substance"
+  },
+  "258": {
+    "pH": "pH of the solution"
+  },
+  "259": {
+    "pOH": "basicity index of the solution"
+  },
+  "260": {
+    "pH": "pH of the solution",
+    "pOH": "basicity index of the solution"
+  },
+  "261": {
+    "k": "rate constant of the reaction",
+    "m": "reaction order with respect to substance A",
+    "n": "reaction order with respect to substance B",
+    "v": "rate of the chemical reaction"
+  },
+  "262": {
+    "A": "pre-exponential factor",
+    "Ea": "activation energy of the reaction",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "k": "rate constant of the reaction"
+  },
+  "263": {
+    "K": "equilibrium constant of the reaction"
+  },
+  "264": {
+    "C": "molar concentration of the solution",
+    "K": "dissociation constant (Ostwald)",
+    "a": "degree of dissociation"
+  },
+  "265": {
+    "msolute": "mass of the dissolved substance",
+    "msolution": "mass of the solution",
+    "w": "mass fraction of the dissolved substance"
+  },
+  "266": {
+    "C": "molar concentration",
+    "V": "volume of the solution",
+    "n": "amount of substance (moles)"
+  },
+  "267": {
+    "P": "gas pressure",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "V": "gas volume",
+    "n": "amount of substance (moles)"
+  },
+  "268": {
+    "dH": "heat of reaction",
+    "dHf": "enthalpy of formation of the substance"
+  },
+  "269": {
+    "E": "electrode potential",
+    "E0": "standard electrode potential",
+    "F": "Faraday constant",
+    "Q": "ratio of reactant concentrations",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "n": "number of electrons in the reaction"
+  },
+  "270": {
+    "N": "total number of molecules",
+    "Nd": "number of decayed molecules",
+    "a": "degree of dissociation"
+  },
+  "271": {
+    "C": "concentration of dissolved gas",
+    "P": "partial pressure of the gas",
+    "kH": "Henry's constant"
+  },
+  "272": {
+    "P": "vapor pressure over the solution",
+    "P0": "vapor pressure over the pure solvent",
+    "x": "mole fraction of the solvent"
+  },
+  "273": {
+    "Eb": "binding energy of the nucleus",
+    "c": "speed of light",
+    "dm": "mass defect"
+  },
+  "274": {
+    "a": "degree of dissociation",
+    "i": "van 't Hoff isotonic coefficient",
+    "n": "number of ions the molecule dissociates into"
+  },
+  "275": {
+    "A": "concentration of reactant A",
+    "dt": "small time interval"
+  },
+  "277": {
+    "P": "probability of event A",
+    "m": "number of favorable outcomes",
+    "n": "total number of outcomes"
+  },
+  "278": {
+    "P": "probability of the event"
+  },
+  "279": {
+    "P": "probability of the event"
+  },
+  "280": {
+    "Hi": "hypothesis (complete set of events)",
+    "P": "total probability of event A"
+  },
+  "281": {
+    "A": "observed event",
+    "H": "hypothesis",
+    "P": "probability (Bayes' theorem)"
+  },
+  "282": {
+    "E": "expected value of the random variable",
+    "pi": "probability of the corresponding value",
+    "xi": "value of the random variable"
+  },
+  "283": {
+    "D": "variance of the random variable",
+    "E": "expected value of the random variable",
+    "X": "random variable"
+  },
+  "284": {
+    "D": "variance of the random variable",
+    "X": "random variable",
+    "sigma": "standard deviation"
+  },
+  "285": {
+    "C": "number of combinations",
+    "P": "probability of k successes",
+    "k": "number of successes",
+    "n": "number of trials",
+    "p": "probability of success in a single trial"
+  },
+  "286": {
+    "f": "probability density of the normal distribution",
+    "mu": "expected value (mean)",
+    "pi": "the number π ≈ 3.14159",
+    "sigma": "standard deviation",
+    "x": "value of the random variable"
+  },
+  "288": {
+    "r": "Pearson correlation coefficient",
+    "sigma_x": "standard deviation of X",
+    "sigma_y": "standard deviation of Y"
+  },
+  "289": {
+    "n": "number of values in the sample",
+    "x_bar": "arithmetic mean value",
+    "xi": "i-th sample value"
+  },
+  "290": {
+    "Me": "sample median",
+    "x_n/2": "value at the middle of the ordered sample"
+  },
+  "292": {
+    "P": "probability of k events (Poisson distribution)",
+    "k": "number of events",
+    "lambda": "mean number of events per interval"
+  },
+  "293": {
+    "SE": "standard error of the mean",
+    "n": "sample size",
+    "sigma": "standard deviation of the sample"
+  },
+  "294": {
+    "E": "expected frequency",
+    "O": "observed frequency",
+    "chi^2": "chi-squared statistic"
+  },
+  "295": {
+    "a": "regression intercept",
+    "b": "regression slope coefficient",
+    "x": "explanatory variable",
+    "y": "predicted value"
+  },
+  "296": {
+    "P": "geometric probability",
+    "S": "measure of the entire region"
+  },
+  "297": {
+    "H": "Shannon entropy",
+    "p_i": "probability of the i-th symbol/event"
+  },
+  "298": {
+    "E": "expectation operator",
+    "X": "first random variable",
+    "Y": "second random variable"
+  },
+  "299": {
+    "H0": "Hubble constant",
+    "d": "distance to the galaxy",
+    "v": "recession velocity of the galaxy"
+  },
+  "302": {
+    "L": "luminosity of the star",
+    "R": "radius of the star",
+    "T": "surface temperature of the star",
+    "pi": "the number π ≈ 3.14159",
+    "sigma": "Stefan–Boltzmann constant"
+  },
+  "303": {
+    "d": "distance to the star",
+    "p": "parallax of the star"
+  },
+  "304": {
+    "G": "gravitational constant",
+    "M": "mass of the body",
+    "Rs": "Schwarzschild radius (black hole radius)",
+    "c": "speed of light"
+  },
+  "305": {
+    "F1": "radiant flux of the first object",
+    "F2": "radiant flux of the second object",
+    "m1": "apparent magnitude of the first object",
+    "m2": "apparent magnitude of the second object"
+  },
+  "306": {
+    "T": "surface temperature of the star",
+    "b": "Wien's displacement constant",
+    "lambda_max": "wavelength of the star's peak radiation"
+  },
+  "307": {
+    "lambda_emit": "wavelength of the source's radiation",
+    "lambda_obs": "observed wavelength",
+    "z": "redshift"
+  },
+  "309": {
+    "I": "amount of information (in bits)",
+    "N": "number of equally likely outcomes",
+    "log2": "logarithm base 2"
+  },
+  "310": {
+    "B": "bandwidth",
+    "C": "channel bandwidth",
+    "N": "noise power",
+    "S": "signal power"
+  },
+  "311": {
+    "O": "order of growth (Big-O notation)",
+    "T": "algorithm running time",
+    "f": "function bounding the growth",
+    "n": "size of the input"
+  },
+  "312": {
+    "N": "number of possible combinations",
+    "n": "number of bits"
+  },
+  "313": {
+    "S": "speedup (per Amdahl's law)",
+    "n": "number of processors",
+    "p": "fraction of the program that is parallelizable"
+  },
+  "314": {
+    "L": "mean number of requests in the system",
+    "W": "mean time a request spends in the system",
+    "lambda": "arrival rate of requests"
+  },
+  "315": {
+    "A": "total sum",
+    "P": "initial amount (principal)",
+    "r": "interest rate",
+    "t": "time in years"
+  },
+  "316": {
+    "FV": "future value",
+    "PV": "present value",
+    "n": "number of periods",
+    "r": "interest rate"
+  },
+  "317": {
+    "CFt": "cash flow in period t",
+    "I0": "initial investment",
+    "NPV": "net present value",
+    "r": "discount rate",
+    "t": "period number"
+  },
+  "318": {
+    "CFt": "cash flow in period t",
+    "IRR": "internal rate of return",
+    "t": "period number"
+  },
+  "319": {
+    "E": "price elasticity of demand",
+    "P": "price",
+    "Q": "quantity demanded",
+    "dP": "change in price",
+    "dQ": "change in quantity demanded"
+  },
+  "320": {
+    "i": "nominal interest rate",
+    "pi": "inflation rate",
+    "r": "real interest rate"
+  },
+  "321": {
+    "C": "consumer spending",
+    "G": "government spending",
+    "GDP": "gross domestic product",
+    "I": "investment",
+    "Xn": "net exports"
+  },
+  "322": {
+    "Rf": "risk-free rate of return",
+    "Ri": "expected return of the asset",
+    "Rm": "expected market return",
+    "beta": "beta coefficient (asset's systematic risk)"
+  },
+  "323": {
+    "N": "population size at time t",
+    "N0": "initial population size",
+    "r": "population growth rate",
+    "t": "time"
+  },
+  "324": {
+    "K": "carrying capacity of the environment (maximum population size)",
+    "N": "population size",
+    "r": "population growth rate"
+  },
+  "325": {
+    "BMI": "body mass index",
+    "h": "height (m)",
+    "m": "mass of the body (kg)"
+  },
+  "326": {
+    "BMR": "basal metabolic rate",
+    "a": "age (years)",
+    "h": "height (cm)",
+    "m": "mass of the body (kg)"
+  },
+  "327": {
+    "p": "frequency of the dominant allele",
+    "q": "frequency of the recessive allele"
+  },
+  "328": {
+    "Km": "Michaelis constant",
+    "S": "substrate concentration",
+    "Vmax": "maximum reaction rate",
+    "v": "rate of the enzymatic reaction"
+  },
+  "329": {
+    "E": "Young's modulus (modulus of elasticity) of the material",
+    "epsilon": "relative strain",
+    "sigma": "mechanical stress"
+  },
+  "330": {
+    "E": "Young's modulus of the material",
+    "epsilon": "relative strain",
+    "sigma": "mechanical stress"
+  },
+  "331": {
+    "F": "applied force",
+    "S": "cross-sectional area",
+    "sigma": "mechanical stress"
+  },
+  "332": {
+    "L0": "initial length of the specimen",
+    "dL": "elongation of the specimen",
+    "epsilon": "relative strain"
+  },
+  "333": {
+    "E": "Young's modulus of the material",
+    "F": "applied force",
+    "I": "moment of inertia of the cross-section",
+    "L": "length of the beam",
+    "f": "beam deflection"
+  },
+  "334": {
+    "E": "Young's modulus of the material",
+    "Fcr": "critical (buckling) load",
+    "I": "moment of inertia of the cross-section",
+    "L": "length of the rod",
+    "mu": "coefficient depending on the end-fixity condition",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "335": {
+    "L0": "initial length of the body",
+    "alpha": "coefficient of linear thermal expansion",
+    "dL": "elongation of the body upon heating",
+    "dT": "change in temperature"
+  },
+  "336": {
+    "A": "2×2 matrix",
+    "a": "matrix element (row 1, column 1)",
+    "b": "matrix element (row 1, column 2)",
+    "c": "matrix element (row 2, column 1)",
+    "d": "matrix element (row 2, column 2)"
+  },
+  "337": {
+    "a": "matrix element",
+    "b": "matrix element",
+    "c": "matrix element",
+    "d": "matrix element",
+    "e": "matrix element",
+    "f": "matrix element",
+    "g": "matrix element",
+    "h": "matrix element",
+    "i": "matrix element"
+  },
+  "338": {
+    "A_ik": "element of the first matrix",
+    "B_kj": "element of the second matrix",
+    "C_ij": "element of the resulting matrix",
+    "k": "summation index"
+  },
+  "339": {
+    "A": "original 2×2 matrix",
+    "a": "matrix element",
+    "b": "matrix element",
+    "c": "matrix element",
+    "d": "matrix element"
+  },
+  "340": {
+    "A": "square matrix",
+    "lambda": "eigenvalue",
+    "v": "eigenvector"
+  },
+  "341": {
+    "A": "square matrix",
+    "a_ii": "diagonal element of the matrix"
+  },
+  "342": {
+    "A": "matrix of the linear map",
+    "n": "number of columns of the matrix"
+  },
+  "343": {
+    "A": "coefficient matrix of the system",
+    "Ai": "matrix A with the i-th column replaced",
+    "xi": "i-th component of the system's solution"
+  },
+  "344": {
+    "v": "vector",
+    "vi": "i-th vector component"
+  },
+  "345": {
+    "a": "first vector",
+    "a1": "first component of vector a",
+    "b": "second vector",
+    "b1": "first component of vector b"
+  },
+  "346": {
+    "a": "first vector",
+    "a1": "first component of vector a",
+    "a2": "second component of vector a",
+    "a3": "third component of vector a",
+    "b": "second vector",
+    "b1": "first component of vector b",
+    "b2": "second component of vector b",
+    "b3": "third component of vector b"
+  },
+  "347": {
+    "a": "vector being projected",
+    "b": "vector onto which the projection is made"
+  },
+  "348": {
+    "A": "square matrix",
+    "I": "identity matrix",
+    "lambda": "eigenvalue"
+  },
+  "350": {
+    "u1": "first orthogonalized vector",
+    "v1": "first original vector"
+  },
+  "351": {
+    "a": "first number (for which the GCD is sought)",
+    "b": "second number (for which the GCD is sought)"
+  },
+  "353": {
+    "n": "natural number",
+    "p": "prime divisor of n",
+    "phi": "Euler's totient function (count of coprime numbers)"
+  },
+  "354": {
+    "a": "integer",
+    "p": "prime number"
+  },
+  "355": {
+    "a": "integer coprime with n",
+    "n": "magnitude",
+    "phi": "Euler's totient function"
+  },
+  "357": {
+    "p": "prime number"
+  },
+  "358": {
+    "F": "Fibonacci number",
+    "n": "index of the Fibonacci number"
+  },
+  "359": {
+    "F": "Fibonacci number",
+    "n": "index of the Fibonacci number",
+    "phi": "golden ratio (≈1.618)",
+    "psi": "conjugate golden ratio"
+  },
+  "360": {
+    "C": "number of combinations",
+    "k": "number of elements being chosen",
+    "n": "total number of elements"
+  },
+  "361": {
+    "A": "first set",
+    "B": "second set"
+  },
+  "362": {
+    "pi": "number of primes not exceeding x",
+    "x": "upper bound of the range"
+  },
+  "363": {
+    "n": "natural number",
+    "sigma": "sum of the divisors of the number"
+  },
+  "365": {
+    "E": "number of edges of the graph",
+    "F": "number of faces of the graph (including the outer one)",
+    "V": "number of vertices of the graph"
+  },
+  "369": {
+    "d": "shortest known distance to the vertex",
+    "u": "adjacent vertex",
+    "v": "current vertex",
+    "w": "weight of the edge between u and v"
+  },
+  "370": {
+    "f0": "value of the function at the starting point",
+    "f1": "value of the function at the next point",
+    "fn": "value of the function at the endpoint",
+    "h": "partition step (interval width)"
+  },
+  "371": {
+    "f0": "value of the function at the starting point",
+    "f1": "value of the function at the first intermediate point",
+    "f2": "value of the function at the second intermediate point",
+    "fn": "value of the function at the endpoint",
+    "h": "partition step (interval width)"
+  },
+  "372": {
+    "f": "function whose root is being sought",
+    "f'": "derivative of the function",
+    "x_n": "current approximation of the root"
+  },
+  "373": {
+    "f": "right-hand side of the differential equation",
+    "h": "integration step",
+    "x_n": "current point",
+    "y_n": "current approximate value of the solution"
+  },
+  "376": {
+    "T_half": "half-life",
+    "lambda": "radioactive decay constant"
+  },
+  "377": {
+    "A": "mass number (number of nucleons)",
+    "Eb": "binding energy of the nucleus"
+  },
+  "378": {
+    "M": "mass of the nucleus",
+    "N": "number of neutrons",
+    "Z": "number of protons",
+    "dm": "mass defect of the nucleus",
+    "mn": "mass of the neutron",
+    "mp": "mass of the proton"
+  },
+  "379": {
+    "A": "mass number of the parent nucleus",
+    "Z": "atomic number (number of protons) of the parent nucleus"
+  },
+  "380": {
+    "e-": "electron (beta particle)",
+    "n": "neutron",
+    "p": "proton"
+  },
+  "381": {
+    "E": "energy released",
+    "c": "speed of light",
+    "dm": "mass defect"
+  },
+  "382": {
+    "p": "frequency of one allele",
+    "q": "frequency of the second allele"
+  },
+  "385": {
+    "E": "expected frequency",
+    "O": "observed frequency",
+    "chi^2": "chi-squared statistic"
+  },
+  "386": {
+    "P": "atmospheric pressure",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "rho": "air density"
+  },
+  "387": {
+    "cp": "specific heat capacity at constant pressure",
+    "dT": "change in temperature with altitude",
+    "dz": "change in height",
+    "g": "acceleration due to gravity"
+  },
+  "388": {
+    "L": "specific heat of the phase transition",
+    "TdV": "product of temperature and volume change",
+    "dP": "change in saturated vapor pressure",
+    "dT": "change in temperature"
+  },
+  "389": {
+    "F": "Coriolis force",
+    "m": "mass of the body",
+    "omega": "angular velocity of rotation (e.g., of Earth)",
+    "v": "velocity of the body"
+  },
+  "390": {
+    "n": "term number of the series",
+    "p": "exponent in the denominator"
+  },
+  "391": {
+    "H_n": "n-th partial sum of the harmonic series",
+    "n": "number of terms"
+  },
+  "392": {
+    "a": "number under the root",
+    "n": "degree (index) of the root",
+    "x": "value of the n-th root"
+  },
+  "393": {
+    "a": "center of the interval",
+    "b": "tolerance (allowed deviation) from a",
+    "x": "variable"
+  },
+  "394": {
+    "d": "distance between points on the number line",
+    "x1": "coordinate of the first point",
+    "x2": "coordinate of the second point"
+  },
+  "395": {
+    "a": "stretch/compression coefficient of the parabola",
+    "h": "x-coordinate of the parabola's vertex",
+    "k": "y-coordinate of the parabola's vertex",
+    "x": "argument of the function",
+    "y": "value of the function"
+  },
+  "396": {
+    "m": "slope of the line",
+    "x": "x-coordinate of the point on the line",
+    "x1": "x-coordinate of the given point",
+    "y": "y-coordinate of the point on the line",
+    "y1": "y-coordinate of the given point"
+  },
+  "397": {
+    "b": "constant term (y-intercept)",
+    "m": "slope of the line",
+    "x": "x-coordinate of the point",
+    "y": "y-coordinate of the point on the line"
+  },
+  "398": {
+    "x": "x-coordinate of the current point",
+    "x1": "x-coordinate of the first point",
+    "x2": "x-coordinate of the second point",
+    "y": "y-coordinate of the current point",
+    "y1": "y-coordinate of the first point",
+    "y2": "y-coordinate of the second point"
+  },
+  "399": {
+    "M": "coordinates of the midpoint of the segment",
+    "x1": "x-coordinate of the first point",
+    "x2": "x-coordinate of the second point",
+    "y1": "y-coordinate of the first point",
+    "y2": "y-coordinate of the second point"
+  },
+  "400": {
+    "a": "base of the power",
+    "m": "first exponent",
+    "n": "second exponent"
+  },
+  "401": {
+    "a": "base of the power",
+    "m": "inner exponent",
+    "n": "outer exponent"
+  },
+  "402": {
+    "a": "base of the power",
+    "m": "exponent of the numerator",
+    "n": "exponent of the denominator"
+  },
+  "403": {
+    "a": "number under the root in the denominator"
+  },
+  "404": {
+    "a": "first vector",
+    "b": "second vector",
+    "c": "third vector"
+  },
+  "405": {
+    "A": "coefficient of x in the plane equation",
+    "B": "coefficient of y in the plane equation",
+    "C": "coefficient of z in the plane equation",
+    "D": "constant term of the plane equation",
+    "x": "x-coordinate",
+    "y": "y-coordinate",
+    "z": "z-coordinate"
+  },
+  "406": {
+    "A": "coefficient of x",
+    "B": "coefficient of y",
+    "C": "coefficient of z",
+    "D1": "constant term of the first plane's equation",
+    "D2": "constant term of the second plane's equation",
+    "d": "distance between the planes"
+  },
+  "407": {
+    "a": "direction coefficient along x",
+    "b": "direction coefficient along y",
+    "c": "direction coefficient along z",
+    "t": "parameter of the line",
+    "x": "current x-coordinate on the line",
+    "x0": "initial x-coordinate",
+    "y": "current y-coordinate on the line",
+    "y0": "initial y-coordinate",
+    "z": "current z-coordinate on the line",
+    "z0": "initial z-coordinate"
+  },
+  "408": {
+    "a": "first vector",
+    "b": "second vector",
+    "theta": "angle between the vectors"
+  },
+  "409": {
+    "V": "volume of the tetrahedron",
+    "a": "first edge vector",
+    "b": "second edge vector",
+    "c": "third edge vector"
+  },
+  "410": {
+    "R": "radius of the generating circle from the torus center",
+    "S": "surface area of the torus",
+    "pi": "the number π ≈ 3.14159",
+    "r": "radius of the torus's generating circle"
+  },
+  "411": {
+    "R": "distance from the torus center to the tube center",
+    "V": "volume of the torus",
+    "pi": "the number π ≈ 3.14159",
+    "r": "radius of the torus tube"
+  },
+  "412": {
+    "V": "volume of the ellipsoid",
+    "a": "first semi-axis of the ellipsoid",
+    "b": "second semi-axis of the ellipsoid",
+    "c": "third semi-axis of the ellipsoid",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "413": {
+    "D": "region of integration",
+    "V": "volume under the surface",
+    "dA": "area element",
+    "f": "integrand",
+    "x": "variable",
+    "y": "variable"
+  },
+  "414": {
+    "J": "Jacobian of the coordinate transformation",
+    "u": "first new coordinate",
+    "v": "second new coordinate",
+    "x": "first original coordinate",
+    "y": "second original coordinate"
+  },
+  "415": {
+    "F": "vector field",
+    "dA": "surface area element",
+    "dV": "volume element"
+  },
+  "416": {
+    "f": "objective function",
+    "g": "constraint function",
+    "lambda": "Lagrange multiplier"
+  },
+  "417": {
+    "D_u": "directional derivative along u",
+    "f": "scalar function",
+    "u": "unit direction vector"
+  },
+  "418": {
+    "t": "parameter that x and y depend on",
+    "x": "first intermediate variable",
+    "y": "second intermediate variable",
+    "z": "function of x and y"
+  },
+  "419": {
+    "e": "Euler's number (≈2.71828)",
+    "x": "argument of the function"
+  },
+  "420": {
+    "e": "Euler's number (≈2.71828)",
+    "x": "argument of the function"
+  },
+  "421": {
+    "x": "argument of the function"
+  },
+  "422": {
+    "x": "argument of the function (arctangent)"
+  },
+  "423": {
+    "x": "argument of the function (arcsine)"
+  },
+  "424": {
+    "F": "applied force",
+    "dp": "change in the body's momentum",
+    "dt": "small time interval"
+  },
+  "425": {
+    "W": "work done by the resultant force",
+    "dEk": "change in kinetic energy"
+  },
+  "426": {
+    "M": "moment of force (torque)",
+    "P": "power in rotational motion",
+    "w": "angular velocity"
+  },
+  "427": {
+    "G": "gravitational constant",
+    "M": "mass of the central body",
+    "R": "radius of the body/orbit",
+    "v_esc": "second cosmic (escape) velocity"
+  },
+  "428": {
+    "G": "gravitational constant",
+    "M": "mass of the central body",
+    "r": "orbital radius",
+    "v": "orbital velocity"
+  },
+  "429": {
+    "Ep": "gravitational potential energy",
+    "G": "gravitational constant",
+    "M": "mass of the first body",
+    "m": "mass of the second body",
+    "r": "distance between the bodies"
+  },
+  "430": {
+    "v1": "velocity of the first body before the collision",
+    "v1'": "velocity of the first body after the collision",
+    "v2": "velocity of the second body before the collision",
+    "v2'": "velocity of the second body after the collision"
+  },
+  "431": {
+    "e": "coefficient of restitution",
+    "v1": "velocity of the first body before impact",
+    "v1'": "velocity of the first body after impact",
+    "v2": "velocity of the second body before impact",
+    "v2'": "velocity of the second body after impact"
+  },
+  "432": {
+    "A": "oscillation amplitude",
+    "phi": "initial phase of oscillation",
+    "t": "time",
+    "w": "angular frequency",
+    "x": "displacement of the body during simple harmonic motion"
+  },
+  "433": {
+    "k": "spring stiffness",
+    "m": "mass of the load",
+    "w": "angular frequency of oscillation"
+  },
+  "434": {
+    "F": "magnitude of each force in the couple",
+    "M": "moment of the couple",
+    "d": "arm of the couple (distance between the forces)"
+  },
+  "435": {
+    "r": "radius of the body",
+    "v": "translational velocity of the body's center",
+    "w": "angular velocity of the body's rotation"
+  },
+  "436": {
+    "F": "sum of all forces acting on the body"
+  },
+  "437": {
+    "M": "sum of all moments of force acting on the body"
+  },
+  "438": {
+    "P": "gas pressure",
+    "V": "gas volume",
+    "gamma": "adiabatic index of the gas"
+  },
+  "439": {
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "V1": "initial gas volume",
+    "V2": "final gas volume",
+    "W": "work done by the gas in an isothermal process",
+    "n": "amount of substance (moles)"
+  },
+  "440": {
+    "T": "absolute temperature",
+    "dQ_rev": "amount of heat in a reversible process",
+    "dS": "change in entropy"
+  },
+  "441": {
+    "eta": "efficiency of the Otto cycle",
+    "gamma": "adiabatic index of the gas",
+    "r": "compression ratio"
+  },
+  "442": {
+    "Cp": "heat capacity at constant pressure",
+    "Cv": "heat capacity at constant volume",
+    "gamma": "adiabatic index of the gas"
+  },
+  "443": {
+    "A": "cross-sectional area",
+    "L": "thickness of the material layer",
+    "Q": "heat transferred",
+    "dT": "temperature difference",
+    "k": "thermal conductivity of the material",
+    "t": "time"
+  },
+  "444": {
+    "C": "total capacitance of the series connection",
+    "C1": "capacitance of the first capacitor",
+    "C2": "capacitance of the second capacitor"
+  },
+  "445": {
+    "C": "total capacitance of the parallel connection",
+    "C1": "capacitance of the first capacitor",
+    "C2": "capacitance of the second capacitor"
+  },
+  "446": {
+    "R": "total resistance of the series connection",
+    "R1": "resistance of the first resistor",
+    "R2": "resistance of the second resistor"
+  },
+  "447": {
+    "R": "total resistance of the parallel connection",
+    "R1": "resistance of the first resistor",
+    "R2": "resistance of the second resistor"
+  },
+  "448": {
+    "C": "capacitance of the capacitor",
+    "R": "resistance of the circuit",
+    "V": "voltage across the capacitor at time t",
+    "V0": "source voltage",
+    "t": "time"
+  },
+  "449": {
+    "I": "current at time t",
+    "I0": "steady-state current",
+    "L": "inductance of the coil",
+    "R": "resistance of the circuit",
+    "t": "time"
+  },
+  "450": {
+    "C": "capacitance of the capacitor",
+    "Zc": "impedance of the capacitor",
+    "w": "angular frequency of the AC current"
+  },
+  "451": {
+    "L": "inductance of the coil",
+    "ZL": "impedance of the inductor",
+    "w": "angular frequency of the AC current"
+  },
+  "452": {
+    "R": "resistance (active resistance)",
+    "XC": "capacitive reactance",
+    "XL": "inductive reactance",
+    "Z": "total impedance of the RLC circuit"
+  },
+  "453": {
+    "I": "current",
+    "dB": "element of the magnetic field induction",
+    "dl": "element of the conductor's length",
+    "mu0": "magnetic constant",
+    "r": "distance to the observation point"
+  },
+  "454": {
+    "B": "magnetic field induction around the wire",
+    "I": "current in the conductor",
+    "mu0": "magnetic constant",
+    "r": "distance from the wire"
+  },
+  "455": {
+    "B": "magnetic field induction inside the solenoid",
+    "I": "current",
+    "mu0": "magnetic constant",
+    "n": "number of turns per unit length"
+  },
+  "456": {
+    "d": "distance from the object to the lens",
+    "d'": "distance from the lens to the image",
+    "m": "linear magnification of the lens"
+  },
+  "457": {
+    "n1": "refractive index of the first (optically denser) medium",
+    "n2": "refractive index of the second medium",
+    "theta_c": "critical angle of total internal reflection"
+  },
+  "458": {
+    "D": "diameter of the telescope's objective lens",
+    "lambda": "wavelength of light",
+    "theta": "minimum resolvable angle"
+  },
+  "459": {
+    "I": "intensity of the transmitted light",
+    "I0": "intensity of the incident light",
+    "theta": "angle between the polarizer and analyzer"
+  },
+  "460": {
+    "n1": "refractive index of the first medium",
+    "n2": "refractive index of the second medium",
+    "theta_B": "Brewster's angle"
+  },
+  "461": {
+    "P1": "initial gas pressure",
+    "P2": "final gas pressure",
+    "T1": "initial temperature",
+    "T2": "final temperature",
+    "V1": "initial gas volume",
+    "V2": "final gas volume"
+  },
+  "462": {
+    "M1": "molar mass of the first gas",
+    "M2": "molar mass of the second gas",
+    "r1": "effusion rate of the first gas",
+    "r2": "effusion rate of the second gas"
+  },
+  "463": {
+    "P_i": "partial pressure of the i-th gas",
+    "P_total": "total pressure of the gas mixture"
+  },
+  "464": {
+    "F": "Faraday constant",
+    "M": "molar mass of the substance",
+    "Q": "electric charge that has flowed",
+    "m": "mass of the substance deposited on the electrode",
+    "n": "number of electrons involved in the reaction"
+  },
+  "465": {
+    "Kf": "cryoscopic constant of the solvent",
+    "dTf": "freezing point depression",
+    "m": "molality of the solution"
+  },
+  "466": {
+    "Kb": "ebullioscopic constant of the solvent",
+    "dTb": "boiling point elevation",
+    "m": "molality of the solution"
+  },
+  "467": {
+    "M": "molar concentration of the solution",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "pi": "osmotic pressure of the solution"
+  },
+  "468": {
+    "A-": "concentration of the conjugate base",
+    "HA": "concentration of undissociated acid",
+    "pH": "pH of the buffer solution",
+    "pKa": "acid dissociation constant exponent (pKa)"
+  },
+  "469": {
+    "k": "first-order rate constant"
+  },
+  "470": {
+    "k": "rate constant of the reaction",
+    "t1/2": "half-life of a first-order reaction"
+  },
+  "471": {
+    "T": "absolute temperature",
+    "dG": "change in Gibbs free energy",
+    "dH": "change in enthalpy",
+    "dS": "change in entropy"
+  },
+  "472": {
+    "K": "equilibrium constant of the reaction",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "dG": "change in Gibbs free energy"
+  },
+  "473": {
+    "n": "sample size",
+    "sigma": "standard deviation",
+    "x_bar": "sample mean",
+    "z": "quantile of the normal distribution"
+  },
+  "474": {
+    "n": "sample size",
+    "s^2": "sample (unbiased) variance",
+    "x_bar": "arithmetic mean of the sample",
+    "xi": "i-th sample value"
+  },
+  "475": {
+    "mu": "mean value of the population",
+    "sigma": "standard deviation",
+    "x": "observed value",
+    "z": "z-score (standardized value)"
+  },
+  "476": {
+    "CV": "coefficient of variation",
+    "mu": "mean value",
+    "sigma": "standard deviation"
+  },
+  "477": {
+    "OR": "odds ratio",
+    "a": "number of cases in the first group with the outcome",
+    "b": "number of cases in the first group without the outcome",
+    "c": "number of cases in the second group with the outcome",
+    "d": "number of cases in the second group without the outcome"
+  },
+  "478": {
+    "D": "observed data",
+    "H": "hypothesis",
+    "P": "probability"
+  },
+  "479": {
+    "O": "growth rate (order of growth)",
+    "T": "algorithm running time",
+    "n": "size of the input"
+  },
+  "480": {
+    "O": "growth rate (order of growth)",
+    "T": "algorithm running time (merge sort)",
+    "n": "size of the input"
+  },
+  "481": {
+    "T": "running time of the recursive algorithm",
+    "a": "number of subproblems",
+    "b": "subproblem size reduction factor",
+    "f": "cost of splitting/merging",
+    "n": "problem size"
+  },
+  "482": {
+    "alpha": "load factor of the hash table",
+    "m": "number of cells (table size)",
+    "n": "number of elements in the table"
+  },
+  "483": {
+    "Gamma": "tape alphabet",
+    "Q": "set of the machine's states"
+  },
+  "484": {
+    "C": "call option price",
+    "K": "option strike price",
+    "N": "standard normal distribution function",
+    "S0": "current price of the underlying asset",
+    "r": "risk-free interest rate",
+    "t": "time to option expiration"
+  },
+  "485": {
+    "PMT": "amount of the regular payment",
+    "PV": "present value of the annuity",
+    "n": "number of periods",
+    "r": "interest rate per period"
+  },
+  "486": {
+    "P": "loan amount",
+    "PMT": "amount of the regular loan payment",
+    "n": "number of periods",
+    "r": "interest rate per period"
+  },
+  "487": {
+    "Rf": "risk-free rate of return",
+    "Rp": "portfolio return",
+    "Sharpe": "Sharpe ratio",
+    "sigma_p": "standard deviation of the portfolio return"
+  },
+  "488": {
+    "X": "independent variable (e.g., body mass)",
+    "Y": "dependent variable (e.g., organ size)",
+    "a": "proportionality coefficient",
+    "b": "allometric scaling exponent"
+  },
+  "491": {
+    "E": "membrane potential (Nernst potential)",
+    "F": "Faraday constant",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "z": "charge of the ion"
+  },
+  "492": {
+    "N": "total population size",
+    "r": "population growth coefficient"
+  },
+  "493": {
+    "I": "current",
+    "V": "voltage in the AC circuit",
+    "Z": "total impedance"
+  },
+  "494": {
+    "PF": "power factor",
+    "phi": "phase shift angle between current and voltage"
+  },
+  "495": {
+    "I": "moment of inertia of the cross-section",
+    "M": "bending moment",
+    "sigma": "bending stress in the beam",
+    "y": "distance from the neutral axis"
+  },
+  "496": {
+    "J": "polar moment of inertia of the cross-section",
+    "T": "torque",
+    "r": "distance from the shaft axis",
+    "tau": "shear stress under torsion"
+  },
+  "497": {
+    "N": "number of cycles to failure",
+    "S": "amplitude of cyclic stress"
+  },
+  "498": {
+    "D": "pipe diameter",
+    "Re": "Reynolds number for pipe flow",
+    "mu": "dynamic viscosity of the liquid",
+    "rho": "liquid density",
+    "v": "flow velocity"
+  },
+  "499": {
+    "D": "pipe diameter",
+    "L": "pipe length",
+    "f": "coefficient of friction",
+    "g": "acceleration due to gravity",
+    "hf": "head loss due to friction",
+    "v": "flow velocity"
+  },
+  "500": {
+    "R": "hydraulic radius",
+    "S": "channel slope",
+    "n": "Manning roughness coefficient",
+    "v": "flow velocity in an open channel"
+  },
+  "501": {
+    "L": "luminosity of the star",
+    "R": "radius of the star",
+    "T": "surface temperature of the star"
+  },
+  "503": {
+    "dv": "change in the rocket's velocity (characteristic velocity)",
+    "m0": "initial mass of the rocket",
+    "mf": "final mass of the rocket",
+    "v_e": "exhaust velocity of the gases from the engine"
+  },
+  "504": {
+    "G": "gravitational constant",
+    "M": "mass of the central body",
+    "T": "orbital period",
+    "a": "semi-major axis of the orbit",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "505": {
+    "Isp": "specific impulse of the engine",
+    "g0": "acceleration due to gravity on Earth",
+    "m0": "initial mass of the rocket",
+    "mf": "final mass of the rocket",
+    "Δv": "change (increment) in the rocket's velocity"
+  },
+  "506": {
+    "Ae": "nozzle exit area",
+    "F": "engine thrust",
+    "Ve": "exhaust velocity of the gases",
+    "pa": "atmospheric pressure",
+    "pe": "pressure at the nozzle exit",
+    "ṁ": "propellant mass flow rate"
+  },
+  "507": {
+    "F": "engine thrust",
+    "Isp": "specific impulse of the engine",
+    "g0": "acceleration due to gravity on Earth",
+    "ṁ": "propellant mass flow rate"
+  },
+  "508": {
+    "Isp": "specific impulse of the engine",
+    "Ve": "effective exhaust velocity",
+    "g0": "acceleration due to gravity on Earth"
+  },
+  "509": {
+    "F": "engine thrust",
+    "Isp": "specific impulse of the engine",
+    "g0": "acceleration due to gravity on Earth",
+    "ṁ": "propellant mass flow rate"
+  },
+  "510": {
+    "F": "engine thrust",
+    "T/W": "thrust-to-weight ratio of the rocket",
+    "g": "acceleration due to gravity",
+    "m": "mass of the rocket"
+  },
+  "511": {
+    "F": "engine thrust",
+    "It": "total impulse of the engine",
+    "dt": "element of time"
+  },
+  "512": {
+    "Favg": "average engine thrust",
+    "It": "total momentum",
+    "tb": "engine burn time"
+  },
+  "513": {
+    "MR": "mass ratio of the rocket",
+    "m0": "initial mass of the rocket",
+    "mf": "final mass of the rocket"
+  },
+  "514": {
+    "m0": "initial mass of the rocket",
+    "mp": "mass of the propellant",
+    "ζ": "propellant mass fraction of the rocket"
+  },
+  "515": {
+    "mp": "mass of the propellant",
+    "tb": "engine burn time (combustion time)",
+    "ṁ": "propellant mass flow rate"
+  },
+  "516": {
+    "At": "area of the nozzle throat",
+    "c*": "characteristic exhaust velocity",
+    "pc": "combustion chamber pressure",
+    "ṁ": "propellant mass flow rate"
+  },
+  "517": {
+    "At": "area of the nozzle throat",
+    "CF": "nozzle thrust coefficient",
+    "F": "engine thrust",
+    "pc": "combustion chamber pressure"
+  },
+  "518": {
+    "Ae": "nozzle exit area",
+    "At": "area of the nozzle throat",
+    "ε": "nozzle expansion ratio"
+  },
+  "519": {
+    "Ae": "nozzle exit area",
+    "Fp": "thrust component due to the pressure differential",
+    "pa": "atmospheric pressure",
+    "pe": "pressure at the nozzle exit"
+  },
+  "520": {
+    "Ae": "nozzle exit area",
+    "Fvac": "engine thrust in vacuum",
+    "Ve": "exhaust velocity of the gases",
+    "pe": "pressure at the nozzle exit",
+    "ṁ": "propellant mass flow rate"
+  },
+  "521": {
+    "At": "area of the nozzle throat",
+    "R": "gas constant of the propellant",
+    "Tc": "combustion chamber temperature",
+    "pc": "combustion chamber pressure",
+    "γ": "adiabatic index of the gas",
+    "ṁ": "propellant mass flow rate (at the throat)"
+  },
+  "522": {
+    "q": "dynamic pressure",
+    "v": "velocity",
+    "ρ": "air density"
+  },
+  "523": {
+    "M": "Mach number",
+    "a": "speed of sound in the medium",
+    "v": "velocity of the body"
+  },
+  "524": {
+    "R": "gas constant",
+    "T": "absolute temperature",
+    "a": "speed of sound in the medium",
+    "γ": "adiabatic index of the gas"
+  },
+  "525": {
+    "dt": "element of time",
+    "g": "acceleration due to gravity",
+    "Δvg": "gravity losses (velocity)",
+    "γ": "flight path angle"
+  },
+  "526": {
+    "D": "drag force",
+    "dt": "element of time",
+    "m": "mass of the rocket",
+    "ΔvD": "velocity losses due to aerodynamic drag"
+  },
+  "527": {
+    "T": "engine thrust",
+    "aT": "acceleration due to engine thrust",
+    "m": "mass of the rocket"
+  },
+  "528": {
+    "Ve": "effective exhaust velocity",
+    "m0": "initial mass of the stage",
+    "mf": "final mass of the stage",
+    "Δvstage": "velocity increment of the rocket stage"
+  },
+  "529": {
+    "mp": "mass of the propellant",
+    "ms": "structural mass of the stage",
+    "εs": "structural coefficient of the stage"
+  },
+  "530": {
+    "m0": "initial mass of the rocket",
+    "mpl": "payload mass",
+    "λ": "payload fraction"
+  },
+  "531": {
+    "a": "semi-major axis of the orbit",
+    "r": "current distance to the center",
+    "v²": "square of the orbital velocity",
+    "μ": "gravitational parameter of the central body"
+  },
+  "532": {
+    "r": "radius of the circular orbit",
+    "vc": "circular orbital velocity",
+    "μ": "gravitational parameter of the central body"
+  },
+  "533": {
+    "T": "orbital period",
+    "a": "semi-major axis of the orbit",
+    "μ": "gravitational parameter of the central body"
+  },
+  "534": {
+    "a": "semi-major axis of the orbit",
+    "n": "mean motion (angular velocity in orbit)",
+    "μ": "gravitational parameter of the central body"
+  },
+  "535": {
+    "r": "current distance to the center",
+    "v²": "square of the body's velocity",
+    "ε": "specific orbital energy",
+    "μ": "gravitational parameter of the central body"
+  },
+  "536": {
+    "a": "semi-major axis of the orbit",
+    "ε": "specific orbital energy",
+    "μ": "gravitational parameter of the central body"
+  },
+  "537": {
+    "a": "semi-major axis of the orbit",
+    "e": "eccentricity of the orbit",
+    "h": "specific angular momentum",
+    "μ": "gravitational parameter of the central body"
+  },
+  "538": {
+    "e": "eccentricity of the orbit",
+    "h": "specific angular momentum",
+    "ε": "specific orbital energy",
+    "μ": "gravitational parameter of the central body"
+  },
+  "539": {
+    "a": "semi-major axis of the orbit",
+    "e": "eccentricity of the orbit",
+    "rp": "periapsis radius of the orbit"
+  },
+  "540": {
+    "a": "semi-major axis of the orbit",
+    "e": "eccentricity of the orbit",
+    "ra": "apoapsis radius of the orbit"
+  },
+  "541": {
+    "a": "semi-major axis of the orbit",
+    "ra": "apoapsis radius",
+    "rp": "periapsis radius"
+  },
+  "542": {
+    "a": "semi-major axis of the orbit",
+    "e": "eccentricity of the orbit",
+    "p": "semi-latus rectum of the orbit"
+  },
+  "543": {
+    "e": "eccentricity of the orbit",
+    "p": "semi-latus rectum of the orbit",
+    "r": "current distance from the focus to the body",
+    "ν": "true anomaly"
+  },
+  "544": {
+    "e": "eccentricity of the orbit",
+    "h": "specific angular momentum",
+    "vr": "radial component of velocity",
+    "μ": "gravitational parameter of the central body",
+    "ν": "true anomaly"
+  },
+  "545": {
+    "e": "eccentricity of the orbit",
+    "h": "specific angular momentum",
+    "vθ": "transverse component of velocity",
+    "μ": "gravitational parameter of the central body",
+    "ν": "true anomaly"
+  },
+  "546": {
+    "e": "eccentricity of the orbit",
+    "γ": "flight path angle",
+    "ν": "true anomaly"
+  },
+  "547": {
+    "dA": "element of area swept by the radius vector",
+    "dt": "element of time",
+    "h": "specific angular momentum"
+  },
+  "548": {
+    "E": "eccentric anomaly",
+    "M": "mean anomaly",
+    "e": "eccentricity of the orbit"
+  },
+  "549": {
+    "E": "eccentric anomaly",
+    "M": "mean anomaly",
+    "e": "eccentricity of the orbit"
+  },
+  "550": {
+    "E": "eccentric anomaly",
+    "e": "eccentricity of the orbit",
+    "n": "mean motion",
+    "t": "current time",
+    "τ": "time of perihelion passage"
+  },
+  "551": {
+    "E": "eccentric anomaly",
+    "a": "semi-major axis of the orbit",
+    "e": "eccentricity of the orbit",
+    "r": "current distance from the focus to the body"
+  },
+  "552": {
+    "E": "eccentric anomaly",
+    "e": "eccentricity of the orbit",
+    "ν": "true anomaly"
+  },
+  "553": {
+    "r1": "radius of the initial orbit",
+    "r2": "radius of the final orbit",
+    "Δv1": "velocity impulse of the first Hohmann burn",
+    "μ": "gravitational parameter of the central body"
+  },
+  "554": {
+    "r1": "radius of the initial orbit",
+    "r2": "radius of the final orbit",
+    "Δv2": "velocity impulse of the second Hohmann burn",
+    "μ": "gravitational parameter of the central body"
+  },
+  "555": {
+    "v": "orbital velocity",
+    "Δi": "orbital inclination change angle",
+    "Δv": "required velocity change for the orbital plane change"
+  },
+  "556": {
+    "M": "mass of the larger (central) body",
+    "a": "semi-major axis of the body's orbit around the central body",
+    "e": "eccentricity of the orbit",
+    "m": "mass of the smaller body",
+    "rH": "radius of the Hill sphere"
+  },
+  "557": {
+    "M": "mass of the larger body",
+    "a": "distance between the bodies",
+    "m": "mass of the smaller body",
+    "rSOI": "radius of the sphere of influence"
+  },
+  "558": {
+    "S": "synodic period",
+    "T1": "orbital period of the first body",
+    "T2": "orbital period of the second body"
+  },
+  "559": {
+    "r": "radius of the circular orbit",
+    "εcirc": "specific energy of the circular orbit",
+    "μ": "gravitational parameter of the central body"
+  },
+  "560": {
+    "h": "specific angular momentum of the circular orbit",
+    "r": "radius of the circular orbit",
+    "μ": "gravitational parameter of the central body"
+  },
+  "561": {
+    "J": "impulse of force",
+    "Δp": "change in the body's momentum"
+  },
+  "562": {
+    "F": "magnitude of the force",
+    "W": "work done by the force",
+    "d": "displacement of the body",
+    "θ": "angle between the force and the displacement"
+  },
+  "563": {
+    "U": "potential energy of the body near Earth's surface",
+    "g": "acceleration due to gravity",
+    "h": "height above the surface",
+    "m": "mass of the body"
+  },
+  "564": {
+    "G": "gravitational constant",
+    "M": "mass of the first body",
+    "U": "gravitational potential energy",
+    "m": "mass of the second body",
+    "r": "distance between the bodies"
+  },
+  "565": {
+    "vavg": "average velocity",
+    "Δt": "time interval",
+    "Δx": "displacement of the body"
+  },
+  "566": {
+    "t": "time",
+    "v": "instantaneous velocity",
+    "x": "coordinate of the body"
+  },
+  "567": {
+    "a": "instantaneous acceleration",
+    "t": "time",
+    "v": "velocity of the body"
+  },
+  "568": {
+    "a": "acceleration",
+    "t": "time",
+    "v": "final velocity",
+    "v0": "initial velocity"
+  },
+  "569": {
+    "a": "acceleration",
+    "t": "time",
+    "v0": "initial velocity",
+    "x": "coordinate of the body at time t",
+    "x0": "initial coordinate"
+  },
+  "570": {
+    "a": "acceleration",
+    "v": "final velocity",
+    "v0": "initial velocity",
+    "Δx": "displacement of the body"
+  },
+  "571": {
+    "Fc": "centripetal force",
+    "m": "mass of the body",
+    "r": "radius of the circle",
+    "v": "velocity of the body"
+  },
+  "572": {
+    "t": "time",
+    "α": "angular acceleration",
+    "ω": "angular velocity"
+  },
+  "573": {
+    "I": "moment of inertia of the body",
+    "α": "angular acceleration",
+    "τ": "moment of force (torque)"
+  },
+  "574": {
+    "I": "moment of inertia of the body",
+    "K": "rotational kinetic energy",
+    "ω": "angular velocity"
+  },
+  "575": {
+    "W": "work in rotational motion",
+    "Δθ": "angle of rotation",
+    "τ": "moment of force"
+  },
+  "576": {
+    "P": "power in rotational motion",
+    "τ": "moment of force",
+    "ω": "angular velocity"
+  },
+  "577": {
+    "R": "radius of the body",
+    "v": "velocity of the center of mass of the rolling body",
+    "ω": "angular velocity"
+  },
+  "578": {
+    "F": "spring's elastic force",
+    "k": "spring stiffness",
+    "x": "spring deformation"
+  },
+  "579": {
+    "U": "potential energy of elastic deformation",
+    "k": "spring stiffness",
+    "x": "spring deformation"
+  },
+  "580": {
+    "k": "spring stiffness",
+    "m": "mass of the load",
+    "ω": "angular frequency of oscillation"
+  },
+  "581": {
+    "T": "period of oscillation",
+    "k": "spring stiffness",
+    "m": "mass of the load"
+  },
+  "582": {
+    "I": "moment of inertia about an arbitrary axis",
+    "Icm": "moment of inertia about an axis through the center of mass",
+    "M": "mass of the body",
+    "d": "distance between the axes"
+  },
+  "583": {
+    "ΣFx": "sum of the force projections on the x-axis",
+    "ΣFy": "sum of the force projections on the y-axis",
+    "Στ": "sum of moments of force"
+  },
+  "584": {
+    "R": "range of the body's flight",
+    "g": "acceleration due to gravity",
+    "v0": "initial velocity",
+    "θ": "launch angle"
+  },
+  "585": {
+    "H": "maximum height reached by the body",
+    "g": "acceleration due to gravity",
+    "v0": "initial velocity",
+    "θ": "launch angle"
+  },
+  "586": {
+    "g": "acceleration due to gravity",
+    "t": "flight time of the body",
+    "v0": "initial velocity",
+    "θ": "launch angle"
+  },
+  "587": {
+    "rho": "density of the medium",
+    "t": "time",
+    "v": "flow velocity"
+  },
+  "588": {
+    "P": "liquid pressure",
+    "g": "acceleration due to gravity",
+    "h": "height of the liquid column",
+    "v": "flow velocity",
+    "ρ": "liquid density"
+  },
+  "589": {
+    "P": "pressure",
+    "g": "acceleration due to gravity (vector)",
+    "v": "flow velocity",
+    "ρ": "liquid density"
+  },
+  "590": {
+    "P": "pressure",
+    "g": "acceleration due to gravity",
+    "v": "flow velocity",
+    "μ": "dynamic viscosity of the liquid",
+    "ρ": "liquid density"
+  },
+  "591": {
+    "CL": "lift coefficient",
+    "L": "lift force",
+    "S": "wing area",
+    "v": "flow velocity",
+    "ρ": "air density"
+  },
+  "592": {
+    "CD": "drag coefficient",
+    "D": "drag force",
+    "S": "wing area",
+    "v": "flow velocity",
+    "ρ": "air density"
+  },
+  "593": {
+    "CL": "lift coefficient",
+    "L": "lift force",
+    "S": "wing area",
+    "q": "dynamic pressure"
+  },
+  "594": {
+    "CD": "drag coefficient",
+    "D": "drag force",
+    "S": "wing area",
+    "q": "dynamic pressure"
+  },
+  "595": {
+    "CD": "drag coefficient",
+    "CL": "lift coefficient",
+    "L/D": "aerodynamic efficiency (lift-to-drag ratio)"
+  },
+  "596": {
+    "AR": "aspect ratio of the wing",
+    "S": "wing area",
+    "b": "wingspan"
+  },
+  "597": {
+    "AR": "aspect ratio of the wing",
+    "CDi": "induced drag coefficient",
+    "CL": "lift coefficient",
+    "e": "Oswald efficiency factor (wing efficiency)"
+  },
+  "598": {
+    "M": "Mach number",
+    "a": "speed of sound in the medium",
+    "v": "flow velocity"
+  },
+  "599": {
+    "Fr": "Froude number",
+    "L": "characteristic length",
+    "g": "acceleration due to gravity",
+    "v": "flow velocity"
+  },
+  "600": {
+    "L": "characteristic length",
+    "We": "Weber number",
+    "v": "flow velocity",
+    "ρ": "liquid density",
+    "σ": "surface tension"
+  },
+  "601": {
+    "Pr": "Prandtl number",
+    "cp": "specific heat capacity at constant pressure",
+    "k": "thermal conductivity",
+    "μ": "dynamic viscosity"
+  },
+  "602": {
+    "dv": "change in velocity",
+    "dy": "change in distance along the normal",
+    "μ": "dynamic viscosity of the liquid",
+    "τ": "shear stress (viscous friction)"
+  },
+  "603": {
+    "A": "cross-sectional area of the flow",
+    "Q": "volumetric flow rate of the liquid",
+    "v": "flow velocity"
+  },
+  "604": {
+    "A": "cross-sectional area",
+    "v": "flow velocity",
+    "ρ": "liquid density",
+    "ṁ": "mass flow rate of the liquid"
+  },
+  "605": {
+    "H": "pump head",
+    "P": "hydraulic power",
+    "Q": "volumetric flow rate",
+    "g": "acceleration due to gravity",
+    "ρ": "liquid density"
+  },
+  "606": {
+    "A": "cross-sectional area of the flow",
+    "Dh": "hydraulic diameter",
+    "Pwet": "wetted perimeter"
+  },
+  "607": {
+    "Q": "heat supplied",
+    "W": "work done by the system",
+    "ΔU": "change in internal energy"
+  },
+  "608": {
+    "H": "enthalpy of the system",
+    "P": "pressure",
+    "U": "internal energy",
+    "V": "volume"
+  },
+  "609": {
+    "A": "Helmholtz free energy",
+    "S": "entropy",
+    "T": "absolute temperature",
+    "U": "internal energy"
+  },
+  "610": {
+    "Q": "amount of heat",
+    "c": "specific heat capacity",
+    "m": "mass of the substance",
+    "ΔT": "change in temperature"
+  },
+  "611": {
+    "L": "specific heat of the phase transition",
+    "Q": "heat of the phase transition",
+    "m": "mass of the substance"
+  },
+  "612": {
+    "P": "gas pressure",
+    "W": "work done by the gas at constant pressure",
+    "ΔV": "change in gas volume"
+  },
+  "613": {
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "V1": "initial volume",
+    "V2": "final volume",
+    "W": "work done by the gas in an isothermal process",
+    "n": "amount of substance (moles)"
+  },
+  "614": {
+    "P": "gas pressure",
+    "V": "gas volume",
+    "γ": "adiabatic index of the gas"
+  },
+  "615": {
+    "T": "absolute temperature of the gas",
+    "V": "gas volume",
+    "γ": "adiabatic index of the gas"
+  },
+  "616": {
+    "Cp": "heat capacity at constant pressure",
+    "Cv": "heat capacity at constant volume",
+    "R": "universal gas constant"
+  },
+  "617": {
+    "Qrev": "heat in a reversible process",
+    "T": "absolute temperature",
+    "ΔS": "change in entropy"
+  },
+  "618": {
+    "Cv": "heat capacity at constant volume",
+    "R": "universal gas constant",
+    "T1": "initial temperature",
+    "T2": "final temperature",
+    "V1": "initial volume",
+    "V2": "final volume",
+    "n": "amount of substance (moles)",
+    "ΔS": "change in entropy of an ideal gas"
+  },
+  "619": {
+    "Tc": "temperature of the cold reservoir",
+    "Th": "temperature of the hot reservoir",
+    "η": "efficiency of the Carnot cycle"
+  },
+  "620": {
+    "T": "absolute temperature of the body",
+    "b": "Wien's displacement constant",
+    "lambda_max": "wavelength of maximum radiation"
+  },
+  "621": {
+    "T": "temperature (gradient with coordinate)",
+    "k": "thermal conductivity of the material",
+    "q": "heat flux density"
+  },
+  "622": {
+    "alpha": "thermal diffusivity",
+    "cp": "specific heat capacity at constant pressure",
+    "k": "thermal conductivity",
+    "rho": "density of the material"
+  },
+  "623": {
+    "E": "Young's modulus of the material",
+    "epsilon": "relative strain",
+    "sigma": "mechanical stress"
+  },
+  "624": {
+    "A": "cross-sectional area",
+    "F": "applied force",
+    "sigma": "normal stress"
+  },
+  "625": {
+    "L0": "initial length of the specimen",
+    "dL": "elongation of the specimen",
+    "epsilon": "relative strain"
+  },
+  "626": {
+    "A": "exit-plane area",
+    "F": "applied force",
+    "tau": "shear stress"
+  },
+  "627": {
+    "L": "characteristic length of the layer",
+    "dx": "magnitude of the shift",
+    "gamma": "shear angle (shear strain)"
+  },
+  "628": {
+    "G": "shear modulus of the material",
+    "gamma": "shear angle",
+    "tau": "shear stress"
+  },
+  "629": {
+    "K": "bulk modulus",
+    "V": "initial volume",
+    "dP": "change in pressure",
+    "dV": "change in volume"
+  },
+  "630": {
+    "eps_long": "longitudinal strain",
+    "eps_trans": "transverse strain",
+    "nu": "Poisson's ratio"
+  },
+  "631": {
+    "alpha": "coefficient of linear thermal expansion",
+    "dT": "change in temperature",
+    "eps_th": "thermal strain"
+  },
+  "632": {
+    "L0": "initial length of the body",
+    "alpha": "coefficient of linear thermal expansion",
+    "dL": "elongation of the body upon heating",
+    "dT": "change in temperature"
+  },
+  "633": {
+    "I": "moment of inertia of the cross-section",
+    "M": "bending moment",
+    "sigma": "bending stress in the beam",
+    "y": "distance from the neutral axis"
+  },
+  "634": {
+    "E": "Young's modulus of the material",
+    "I": "moment of inertia of the cross-section",
+    "M": "bending moment",
+    "kappa": "curvature of the bent beam"
+  },
+  "635": {
+    "J": "polar moment of inertia of the cross-section",
+    "T": "torque",
+    "r": "distance from the shaft axis",
+    "tau": "shear stress under torsion"
+  },
+  "636": {
+    "G": "shear modulus of the material",
+    "J": "polar moment of inertia of the cross-section",
+    "L": "shaft length",
+    "T": "torque",
+    "theta": "twist angle of the shaft"
+  },
+  "637": {
+    "I": "moment of inertia of the cross-section",
+    "Z": "section modulus",
+    "c": "distance to the outermost fiber"
+  },
+  "638": {
+    "E": "Young's modulus of the material",
+    "I": "moment of inertia of the cross-section",
+    "K": "effective length factor",
+    "L": "length of the rod",
+    "Pcr": "critical buckling force",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "639": {
+    "FS": "safety factor",
+    "sigma_failure": "ultimate (breaking) stress",
+    "sigma_working": "operating voltage"
+  },
+  "640": {
+    "K": "stress intensity factor",
+    "Y": "geometric correction factor",
+    "a": "crack length",
+    "sigma": "applied voltage"
+  },
+  "641": {
+    "I": "current",
+    "Q": "heat released (Joule–Lenz law)",
+    "R": "electrical resistance",
+    "t": "duration of current flow"
+  },
+  "642": {
+    "F": "force of interaction between charges (Coulomb's law)",
+    "k": "Coulomb's constant",
+    "q1": "first charge",
+    "q2": "second charge",
+    "r": "distance between the charges"
+  },
+  "643": {
+    "E": "electric field strength",
+    "F": "force acting on the charge",
+    "q": "magnitude of the test charge"
+  },
+  "644": {
+    "E": "field strength of a point charge",
+    "k": "Coulomb's constant",
+    "q": "magnitude of the charge",
+    "r": "distance to the charge"
+  },
+  "645": {
+    "C": "capacitance of the capacitor",
+    "U": "energy of the charged capacitor",
+    "V": "voltage across the capacitor"
+  },
+  "646": {
+    "I": "current in the coil",
+    "L": "inductance of the coil",
+    "U": "energy of the coil's magnetic field"
+  },
+  "647": {
+    "B": "magnetic field induction",
+    "F": "Lorentz force acting on the charge",
+    "q": "magnitude of the charge",
+    "theta": "angle between the velocity and the field",
+    "v": "velocity of the particle"
+  },
+  "648": {
+    "B": "magnetic field induction",
+    "F": "Ampère force acting on the conductor",
+    "I": "current in the conductor",
+    "L": "length of the conductor in the field",
+    "theta": "angle between the conductor and the field"
+  },
+  "649": {
+    "dPhi": "change in magnetic flux",
+    "dt": "time interval",
+    "eps": "induced EMF (Faraday's law)"
+  },
+  "650": {
+    "E": "electric field strength",
+    "Q": "total charge enclosed by the surface",
+    "eps0": "electric constant (vacuum permittivity)"
+  },
+  "651": {
+    "B": "magnetic field induction along the loop",
+    "I": "current enclosed by the loop",
+    "mu0": "magnetic constant"
+  },
+  "652": {
+    "B": "magnetic field induction around the wire",
+    "I": "current in the conductor",
+    "mu0": "magnetic constant",
+    "r": "distance from the wire"
+  },
+  "653": {
+    "B": "magnetic field induction inside the solenoid",
+    "I": "current",
+    "mu0": "magnetic constant",
+    "n": "number of turns per unit length"
+  },
+  "654": {
+    "Req": "total resistance for a series connection",
+    "Ri": "resistance of the i-th resistor"
+  },
+  "655": {
+    "Req": "total resistance for a parallel connection",
+    "Ri": "resistance of the i-th resistor"
+  },
+  "656": {
+    "Ceq": "total capacitance for a parallel connection",
+    "Ci": "capacitance of the i-th capacitor"
+  },
+  "657": {
+    "Ceq": "total capacitance for a series connection",
+    "Ci": "capacitance of the i-th capacitor"
+  },
+  "658": {
+    "L": "inductance of the coil",
+    "XL": "inductive reactance",
+    "w": "angular frequency of the AC current"
+  },
+  "659": {
+    "C": "capacitance of the capacitor",
+    "XC": "capacitive reactance",
+    "w": "angular frequency of the AC current"
+  },
+  "660": {
+    "R": "resistance (active resistance)",
+    "XC": "capacitive reactance",
+    "XL": "inductive reactance",
+    "Z": "total impedance of the RLC circuit"
+  },
+  "661": {
+    "C": "capacitance of the capacitor",
+    "R": "resistance of the circuit",
+    "tau": "time constant of the RC circuit"
+  },
+  "662": {
+    "L": "inductance of the coil",
+    "R": "resistance of the circuit",
+    "tau": "time constant of the RL circuit"
+  },
+  "663": {
+    "f": "linear frequency",
+    "pi": "the number π ≈ 3.14159",
+    "w": "angular frequency"
+  },
+  "664": {
+    "k": "wavenumber",
+    "lambda": "wavelength",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "665": {
+    "A": "wave amplitude",
+    "k": "wavenumber",
+    "t": "time",
+    "w": "angular frequency",
+    "x": "coordinate of the point",
+    "y": "displacement of a point on the wave"
+  },
+  "666": {
+    "c": "speed of light in vacuum",
+    "n": "refractive index of the medium",
+    "v": "speed of light in the medium"
+  },
+  "667": {
+    "n1": "refractive index of the first medium",
+    "n2": "refractive index of the second medium",
+    "theta1": "angle of incidence",
+    "theta2": "angle of refraction"
+  },
+  "668": {
+    "n1": "refractive index of the first (denser) medium",
+    "n2": "refractive index of the second (less dense) medium",
+    "theta_c": "critical angle of total internal reflection"
+  },
+  "669": {
+    "di": "distance from the lens to the image",
+    "do": "distance from the object to the lens",
+    "f": "focal length of the lens"
+  },
+  "670": {
+    "M": "linear magnification of the lens",
+    "di": "distance from the lens to the image",
+    "do": "distance from the object to the lens"
+  },
+  "671": {
+    "R1": "radius of curvature of the lens's first surface",
+    "R2": "radius of curvature of the lens's second surface",
+    "f": "focal length of the lens",
+    "n": "refractive index of the lens material"
+  },
+  "672": {
+    "P": "optical power of the lens",
+    "f": "focal length of the lens"
+  },
+  "673": {
+    "L": "distance from the slits to the screen",
+    "d": "distance between the slits",
+    "dy": "distance between adjacent interference fringes",
+    "lambda": "wavelength of light"
+  },
+  "674": {
+    "d": "period of the diffraction grating",
+    "lambda": "wavelength of light",
+    "m": "order of the maximum",
+    "theta": "diffraction angle"
+  },
+  "675": {
+    "a": "slit width",
+    "lambda": "wavelength of light",
+    "m": "order of the minimum",
+    "theta": "diffraction angle"
+  },
+  "676": {
+    "D": "lens diameter",
+    "lambda": "wavelength of light",
+    "theta": "minimum resolvable angle (Rayleigh criterion)"
+  },
+  "677": {
+    "I": "intensity of the transmitted light (Malus's law)",
+    "I0": "intensity of the incident polarized light",
+    "theta": "angle between the polarizer and analyzer"
+  },
+  "678": {
+    "f": "frequency of the sound source",
+    "f'": "observed sound frequency",
+    "v": "speed of sound in the medium",
+    "vo": "velocity of the observer",
+    "vs": "velocity of the sound source"
+  },
+  "679": {
+    "I": "sound intensity",
+    "I0": "threshold sound intensity",
+    "beta": "sound pressure level in decibels"
+  },
+  "680": {
+    "f1": "frequency of the first wave",
+    "f2": "frequency of the second wave",
+    "fb": "beat frequency"
+  },
+  "681": {
+    "dp": "uncertainty in the particle's momentum",
+    "dx": "uncertainty in the particle's position",
+    "hbar": "reduced Planck constant"
+  },
+  "682": {
+    "hbar": "reduced Planck constant",
+    "psi": "wave function",
+    "t": "time"
+  },
+  "683": {
+    "En": "energy of the n-th level of the particle in a potential well",
+    "L": "width of the potential well",
+    "hbar": "reduced Planck constant",
+    "m": "mass of the particle",
+    "n": "quantum number of the level",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "684": {
+    "E": "total relativistic energy",
+    "c": "speed of light",
+    "m": "rest mass of the particle",
+    "p": "momentum of the particle"
+  },
+  "685": {
+    "c": "speed of light",
+    "gamma": "Lorentz factor",
+    "v": "velocity of the body"
+  },
+  "686": {
+    "gamma": "Lorentz factor",
+    "m": "rest mass of the particle",
+    "p": "relativistic momentum of the particle",
+    "v": "velocity of the particle"
+  },
+  "687": {
+    "N": "number of undecayed nuclei at time t",
+    "N0": "initial number of nuclei",
+    "lambda": "radioactive decay constant",
+    "t": "time"
+  },
+  "688": {
+    "A": "activity of a radioactive source",
+    "N": "number of undecayed nuclei",
+    "lambda": "radioactive decay constant"
+  },
+  "689": {
+    "T_half": "half-life",
+    "lambda": "radioactive decay constant"
+  },
+  "690": {
+    "lambda": "radioactive decay constant",
+    "tau": "mean lifetime of the nucleus"
+  },
+  "691": {
+    "Eb": "binding energy of the nucleus",
+    "c": "speed of light",
+    "dm": "mass defect"
+  },
+  "692": {
+    "c": "speed of light",
+    "dlambda": "change in wavelength due to Compton scattering",
+    "h": "Planck constant",
+    "m": "mass of the electron",
+    "theta": "scattering angle of the photon"
+  },
+  "693": {
+    "En": "energy of the n-th level of the hydrogen atom",
+    "eV": "electronvolt — a unit of energy",
+    "n": "energy level number"
+  },
+  "694": {
+    "M": "molar mass of the substance",
+    "m": "mass of the substance",
+    "n": "amount of substance (moles)"
+  },
+  "695": {
+    "C": "molar concentration of the solution",
+    "V": "volume of the solution",
+    "n": "amount of substance (moles)"
+  },
+  "696": {
+    "C1": "initial concentration of the solution",
+    "C2": "final concentration of the solution",
+    "V1": "initial volume of the solution",
+    "V2": "final volume of the solution"
+  },
+  "697": {
+    "chi_i": "mole fraction of the i-th component",
+    "ni": "amount of the i-th component",
+    "ntotal": "total amount of substance in the mixture"
+  },
+  "698": {
+    "msolute": "mass of the dissolved substance",
+    "msolution": "mass of the solution",
+    "w": "mass fraction of the dissolved substance"
+  },
+  "699": {
+    "P": "gas pressure",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "V": "gas volume",
+    "n": "amount of substance (moles)"
+  },
+  "700": {
+    "Pi": "partial pressure of the i-th gas",
+    "Ptotal": "total pressure of the gas mixture"
+  },
+  "701": {
+    "C": "concentration of dissolved gas",
+    "P": "partial pressure of the gas over the solution",
+    "kH": "Henry's constant"
+  },
+  "702": {
+    "Pi": "partial pressure of the component over the solution",
+    "Pi0": "saturated vapor pressure of the pure component",
+    "chi_i": "mole fraction of the component in the solution"
+  },
+  "703": {
+    "A": "optical density of the solution",
+    "b": "thickness of the solution layer",
+    "c": "concentration of the solution",
+    "eps": "molar absorption coefficient"
+  },
+  "704": {
+    "H": "concentration of hydrogen ions",
+    "pH": "pH of the solution"
+  },
+  "705": {
+    "OH": "concentration of hydroxide ions",
+    "pOH": "basicity index of the solution"
+  },
+  "706": {
+    "H": "concentration of hydrogen ions",
+    "Kw": "ion product of water",
+    "OH": "concentration of hydroxide ions"
+  },
+  "707": {
+    "A-": "concentration of the conjugate base",
+    "HA": "concentration of undissociated acid",
+    "pH": "pH of the buffer solution",
+    "pKa": "acid dissociation constant exponent (pKa)"
+  },
+  "708": {
+    "k": "rate constant of the reaction",
+    "t1/2": "half-life of a first-order reaction"
+  },
+  "709": {
+    "T": "absolute temperature",
+    "dG": "change in Gibbs free energy",
+    "dH": "change in enthalpy",
+    "dS": "change in entropy"
+  },
+  "710": {
+    "K": "equilibrium constant of the reaction",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "dG0": "standard change in Gibbs free energy"
+  },
+  "711": {
+    "F": "Faraday constant",
+    "I": "electrolysis current",
+    "M": "molar mass of the substance",
+    "m": "mass of the substance deposited on the electrode",
+    "n": "number of electrons in the reaction",
+    "t": "electrolysis time"
+  },
+  "712": {
+    "M": "molar concentration of the solution",
+    "Pi": "osmotic pressure of the solution",
+    "R": "universal gas constant",
+    "T": "absolute temperature",
+    "i": "van 't Hoff isotonic coefficient"
+  },
+  "713": {
+    "A": "first event",
+    "B": "second (conditional) event",
+    "P": "conditional probability of event A given B"
+  },
+  "714": {
+    "A": "hypothesis",
+    "B": "observed event",
+    "P": "posterior probability (Bayes' formula)"
+  },
+  "715": {
+    "Hi": "hypothesis (element of the complete set of events)",
+    "P": "total probability of event A"
+  },
+  "716": {
+    "X": "first random variable",
+    "Y": "second random variable",
+    "r": "correlation coefficient",
+    "sigma_X": "standard deviation of X",
+    "sigma_Y": "standard deviation of Y"
+  },
+  "717": {
+    "P": "probability of exactly k successes",
+    "X": "random variable for the number of successes",
+    "k": "number of successes",
+    "n": "number of trials",
+    "p": "probability of success in a single trial"
+  },
+  "718": {
+    "P": "probability of k events (Poisson distribution)",
+    "X": "random variable for the number of events",
+    "k": "number of events",
+    "lambda": "mean number of events per interval"
+  },
+  "719": {
+    "SE": "standard error of the mean",
+    "n": "sample size",
+    "sigma": "standard deviation of the sample"
+  },
+  "720": {
+    "n": "sample size",
+    "s^2": "sample (unbiased) variance",
+    "x_bar": "arithmetic mean of the sample",
+    "xi": "i-th sample value"
+  },
+  "721": {
+    "X": "explanatory variable",
+    "Y": "dependent variable",
+    "b1": "slope of the regression line"
+  },
+  "722": {
+    "b0": "intercept of the regression line",
+    "b1": "regression slope coefficient",
+    "x_bar": "mean value of the explanatory variable",
+    "y_bar": "mean value of the dependent variable"
+  },
+  "723": {
+    "a1": "first term of the progression",
+    "an": "n-th term of an arithmetic progression",
+    "d": "common difference of the progression",
+    "n": "term number"
+  },
+  "724": {
+    "Sn": "sum of the first n terms of an arithmetic progression",
+    "a1": "first term of the progression",
+    "an": "n-th term of the progression",
+    "n": "number of terms"
+  },
+  "725": {
+    "a1": "first term of the progression",
+    "an": "n-th term of a geometric progression",
+    "n": "term number",
+    "r": "common ratio of the progression"
+  },
+  "726": {
+    "Sn": "sum of the first n terms of a geometric progression",
+    "a1": "first term of the progression",
+    "n": "number of terms",
+    "r": "common ratio of the progression"
+  },
+  "727": {
+    "P": "number of permutations of n taken k at a time",
+    "k": "number of elements being chosen",
+    "n": "total number of elements"
+  },
+  "728": {
+    "C": "number of combinations of n taken k at a time",
+    "k": "number of elements being chosen",
+    "n": "total number of elements"
+  },
+  "729": {
+    "e": "Euler's number (≈2.71828)",
+    "i": "imaginary unit",
+    "theta": "angle (argument)"
+  },
+  "730": {
+    "e": "Euler's number (≈2.71828)",
+    "i": "imaginary unit",
+    "pi": "the number π ≈ 3.14159"
+  },
+  "731": {
+    "A": "surface area of the sphere",
+    "pi": "the number π ≈ 3.14159",
+    "r": "radius of the sphere"
+  },
+  "732": {
+    "n": "exponent",
+    "x": "variable (function argument)"
+  },
+  "733": {
+    "F": "antiderivative of the function f",
+    "a": "lower limit of integration",
+    "b": "upper limit of integration",
+    "f": "integrand",
+    "x": "variable of integration"
+  },
+  "734": {
+    "v": "vector whose magnitude is being calculated",
+    "vx": "vector component along the x-axis",
+    "vy": "vector component along the y-axis",
+    "vz": "vector component along the z-axis"
+  },
+  "735": {
+    "a": "first vector",
+    "b": "second vector",
+    "theta": "angle between the vectors"
+  },
+  "736": {
+    "a": "first vector",
+    "b": "second vector",
+    "theta": "angle between the vectors"
+  },
+  "737": {
+    "A": "2×2 matrix",
+    "a": "matrix element (row 1, column 1)",
+    "b": "matrix element (row 1, column 2)",
+    "c": "matrix element (row 2, column 1)",
+    "d": "matrix element (row 2, column 2)"
+  },
+  "738": {
+    "f": "function whose root is being sought",
+    "f'": "derivative of the function",
+    "xn": "current approximation of the root"
+  },
+  "739": {
+    "H0": "Hubble constant",
+    "d": "distance to the galaxy",
+    "v": "recession velocity of the galaxy"
+  },
+  "740": {
+    "L": "luminosity of the star",
+    "R": "radius of the star",
+    "T": "surface temperature of the star",
+    "pi": "the number π ≈ 3.14159",
+    "sigma": "Stefan–Boltzmann constant"
+  },
+  "741": {
+    "F": "radiant flux (apparent brightness)",
+    "L": "luminosity of the source",
+    "d": "distance to the source"
+  },
+  "742": {
+    "M": "absolute magnitude",
+    "d": "distance to the object in parsecs",
+    "m": "apparent magnitude"
+  },
+  "743": {
+    "lambda_emit": "wavelength of the source's radiation",
+    "lambda_obs": "observed wavelength",
+    "z": "redshift"
+  },
+  "744": {
+    "K": "mean kinetic energy of the system",
+    "U": "mean potential energy of the system"
+  },
+  "745": {
+    "G": "gravitational constant",
+    "H": "Hubble constant",
+    "rho_c": "critical density of the Universe"
+  },
+  "746": {
+    "D": "true (linear) size of the object",
+    "d": "distance to the object",
+    "theta": "angular size of the object"
+  },
+  "747": {
+    "T": "orbital period",
+    "a": "semi-major axis of the orbit"
+  }
+}

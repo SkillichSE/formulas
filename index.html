@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -186,6 +186,63 @@ button:disabled:hover{ background:transparent; color:#5b6773; }
 @media (prefers-reduced-motion: reduce){
   .card, .card.drawn{ animation:none; transition:none; }
 }
+.defs-row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:6px;
+  margin-top:4px;
+  padding:0 4px;
+}
+.def-chip{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:11px;
+  letter-spacing:0.2px;
+  color: var(--card-ink);
+  background: transparent;
+  border: 1px solid var(--card-ink-faint);
+  padding: 3px 9px;
+  cursor: pointer;
+  border-radius: 2px;
+  line-height:1.4;
+}
+.def-chip:hover, .def-chip.active{
+  background: var(--card-ink);
+  border-color: var(--card-ink);
+  color: var(--paper);
+}
+.def-popover{
+  position: fixed;
+  z-index: 1000;
+  max-width: 260px;
+  background: var(--paper);
+  color: var(--card-ink);
+  border: 1px solid var(--card-ink);
+  box-shadow: 6px 6px 0 rgba(0,0,0,0.28);
+  padding: 14px 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.def-popover .crop{ width:8px; height:8px; }
+.def-popover .sym{
+  display:block;
+  font-family:'IBM Plex Mono', monospace;
+  font-weight:600;
+  font-size:13px;
+  color: var(--amber);
+  margin-bottom:6px;
+  letter-spacing:0.3px;
+}
+.def-popover .meaning{ color: var(--card-ink); }
+.def-popover .close-hint{
+  margin-top:9px;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:9.5px;
+  letter-spacing:0.5px;
+  text-transform:uppercase;
+  color: var(--card-ink-faint);
+}
 </style>
 </head>
 <body>
@@ -203,6 +260,7 @@ button:disabled:hover{ background:transparent; color:#5b6773; }
         <div id="content" style="display:none;">
           <div class="name" id="lawName"></div>
           <div class="formula" id="formulaText"></div>
+          <div class="defs-row" id="defsRow"></div>
         </div>
       </div>
       <div class="title-block">
@@ -232,6 +290,7 @@ const lawName = document.getElementById('lawName');
 const formulaText = document.getElementById('formulaText');
 const cardNo = document.getElementById('cardNo');
 const cardDomain = document.getElementById('cardDomain');
+const defsRow = document.getElementById('defsRow');
 const btn = document.getElementById('drawBtn');
 const statusLine = document.getElementById('statusLine');
 const domainSelect = document.getElementById('domainSelect');
@@ -257,6 +316,199 @@ function toLatex(value){
   return s;
 }
 
+let FORMULA_VARS = {};
+
+const KNOWN_TOKENS = {
+  NA: "Avogadro's number (≈6.022 × 10²³ mol⁻¹)",
+  GDP: 'Gross domestic product',
+  NPV: 'Net present value',
+  IRR: 'Internal rate of return',
+  PV: 'Present value',
+  FV: 'Future value',
+  PMT: 'Regular payment (annuity)',
+  BMI: 'Body mass index',
+  BMR: 'Basal metabolic rate',
+  pH: 'pH — a measure of the acidity of a solution',
+  pOH: 'Basicity index of a solution',
+  pKa: 'Acid dissociation constant exponent',
+  hbar: 'Reduced Planck constant (ħ = h / 2π)',
+  eps: 'EMF of the current source or permittivity (depends on context)',
+  Isp: 'Specific impulse of the engine',
+  Re: 'Reynolds number',
+  Sharpe: 'Sharpe ratio',
+  Cov: 'Covariance of random variables',
+  Var: 'Variance of a random variable',
+  const: 'Constant value',
+  NPVt: 'Net present value at time t'
+};
+const GREEK = {
+  alpha:'angle or coefficient (alpha) — meaning depends on the formula',
+  beta:"beta coefficient — e.g., an asset's sensitivity to the market",
+  gamma:'adiabatic index or gamma factor — depends on context',
+  delta:'small change in a quantity (delta)',
+  Delta:'change (difference) in a quantity',
+  epsilon:'small quantity, strain, or permittivity',
+  zeta:'damping coefficient (zeta)',
+  eta:'efficiency (eta)',
+  theta:'angle (theta)',
+  iota:'small quantity (iota)',
+  kappa:'coefficient, e.g., thermal conductivity (kappa)',
+  lambda:'wavelength or eigenvalue (lambda)',
+  mu:'coefficient of friction or magnetic permeability (mu)',
+  nu:'frequency (nu)',
+  xi:'random variable or small parameter (xi)',
+  pi:'the number π ≈ 3.14159',
+  rho:'density of a substance (rho)',
+  sigma:'stress, standard deviation, or the Stefan–Boltzmann constant',
+  tau:'time, torque, or time constant (tau)',
+  upsilon:'parameter (upsilon)',
+  phi:'angle or magnetic flux (phi)',
+  chi:'parameter (chi)',
+  psi:'wave function (psi)',
+  omega:'angular velocity (omega)'
+};
+const LETTER_MEANINGS = {
+  default: {
+    a:'first quantity or coefficient', b:'second quantity or coefficient',
+    c:'third quantity, often the speed of light', d:'differential or distance',
+    e:"Euler's number (≈2.71828) or electron charge", f:'function or frequency',
+    g:'acceleration due to gravity (≈9.8 m/s²)', h:'height or the Planck constant',
+    i:'imaginary unit, index, or current', j:'index or current density',
+    k:'coefficient, constant, or wavenumber', l:'length',
+    m:'mass or quantity', n:'quantity, exponent, or number of moles',
+    o:'origin', p:'pressure or momentum', q:'charge or amount of heat',
+    r:'radius or distance', s:'path, area, or displacement', t:'time',
+    u:'internal energy or velocity', v:'velocity', w:'work or angular velocity',
+    x:'unknown quantity or coordinate', y:'coordinate or function value',
+    z:'coordinate or complex number',
+    A:'amplitude, area, or work', B:'magnetic induction', C:'capacitance or constant',
+    D:'diameter or diffusion coefficient', E:'energy or field strength', F:'force',
+    G:'gravitational constant', H:'magnetic field strength or enthalpy',
+    I:'current or moment of inertia', J:'current density or angular momentum',
+    K:'constant or coefficient', L:'inductance or length',
+    M:'mass, moment of force, or molar mass', N:'quantity or number of particles',
+    O:'origin', P:'power, pressure, or probability',
+    Q:'amount of heat or charge', R:'resistance, radius, or gas constant',
+    S:'area or entropy', T:'period, temperature, or tension',
+    U:'voltage or internal energy', V:'volume or voltage',
+    W:'work', X:'reactance or unknown quantity',
+    Y:'modulus of elasticity or function value', Z:'total impedance'
+  },
+  'Mechanics': { m:'mass of the body', v:'velocity', a:'acceleration', F:'force', t:'time', h:'height', g:'acceleration due to gravity', P:'power or momentum', E:'energy', s:'distance traveled' },
+  'Electricity & Magnetism': { I:'current', U:'voltage', R:'electrical resistance', q:'electric charge', C:'capacitance', B:'magnetic field induction', E:'electric field strength', F:'force (e.g., Lorentz)', k:"Coulomb's constant" },
+  'Thermodynamics': { P:'gas pressure', V:'gas volume', T:'absolute temperature', n:'amount of substance (moles)', R:'universal gas constant', Q:'amount of heat', U:'internal energy', S:'entropy', A:'work done by the gas' },
+  'Orbital Mechanics': { m:'mass of the body', M:'mass of the central body', G:'gravitational constant', R:'orbital or planetary radius', v:'orbital velocity', T:'orbital period', h:'height above the surface' },
+  'Fluid & Aerodynamics': { P:'pressure', v:'flow velocity', S:'cross-sectional area', F:'force (buoyant, drag)', h:'depth or height of the liquid column' },
+  'Optics & Waves': { n:'refractive index of the medium', v:'wave speed', f:'focal length or frequency', d:'distance to the object' },
+  'Quantum & Nuclear Physics': { E:'energy', m:'mass of the particle', c:'speed of light', h:'Planck constant' },
+  'Chemistry': { n:'amount of substance (moles)', N:'number of particles', M:'molar mass', m:'mass of the substance' },
+  'Astronomy & Astrophysics': { L:'luminosity of the star', R:'radius of the star', T:'surface temperature of the star', z:'redshift' },
+  'Statistics & Probability': { P:'probability of the event', A:'random event', n:'number of outcomes or observations', m:'number of favorable outcomes' },
+  'Economics': { P:'principal (capital)', r:'interest rate', n:'number of compounding periods', A:'total amount', t:'time in years' },
+  'Materials Science': { E:"Young's modulus", F:'applied force', S:'cross-sectional area' },
+  'Rocketry': { F:'engine thrust' },
+  'Computer Science': { n:'size of the input', N:'total number of possibilities', B:'bandwidth' },
+  'Biology': { N:'population size', r:'population growth rate', K:'carrying capacity (maximum population size)', m:'mass of the body', h:'height' }
+};
+const STOPWORDS = new Set(['a','an','the','to','of','in','on','at','is','as','by','be','or','and','if','do','so','it','its','them','with','from','for','not','via','any','all','can','has','own','out','one','two','three','four','tree','trees','paths','edges','areas','angle','angles','degrees','degree','equal','equals','equally','equation','directions','transmitted','dividing','meet','medians','point','proportional','uniformly','repeatedly','tends','stays','stable','root','roots','ratio','rate','slope','mean','means','value','values','variable','variables','system','theorem','factorization','congruences','divisors','integer','number','numbers','sample','distribution','expected','weighted','average','central','characteristic','matrix','vertex','spanning','planar','nullity','rank','incidence','reflection','moves','move','meets','acted','contain','containing','satisfies','finds','sweeps','planet','planets','solar','dwarf','normal','couple','base','parallel','parallelepiped','phenotype','estimates','failure','gained','lost','long','short','shortest','stress','maximum','minimum','half','halves','white','colored','colors','congruent','cycles','count','births','deaths','years','unique','doubles','roughly','transistor','molecules','products','reactants','solution','solute','gases','uniformly']);
+const FUNC_WORDS = new Set(['sin','cos','tan','cot','sec','csc','sinh','cosh','tanh','log','ln','exp','sqrt','lim','det','gcd','mod','sum','prod','max','min','arg','inf','sup','div','grad','curl','proj','trans','circ','const','and','or']);
+
+function extractSymbols(raw){
+  const tokens = String(raw).match(/[A-Za-zΑ-Ωα-ω]+/g) || [];
+  const seen = new Set();
+  const result = [];
+  for(const tok of tokens){
+    const lower = tok.toLowerCase();
+    if(STOPWORDS.has(lower) || FUNC_WORDS.has(lower)) continue;
+    if(seen.has(tok)) continue;
+    seen.add(tok);
+    result.push(tok);
+  }
+  return result;
+}
+
+function lookupMeaning(tok, domain, idx){
+  const perFormula = FORMULA_VARS[idx];
+  if(perFormula && Object.prototype.hasOwnProperty.call(perFormula, tok)){
+    return perFormula[tok];
+  }
+  if(KNOWN_TOKENS[tok]) return KNOWN_TOKENS[tok];
+  if(GREEK[tok]) return GREEK[tok];
+  if(GREEK[tok.charAt(0).toLowerCase() + tok.slice(1)]) return GREEK[tok.charAt(0).toLowerCase() + tok.slice(1)];
+  if(tok.length >= 2 && tok[0] === 'd'){
+    const base = tok.slice(1);
+    const baseMeaning = lookupMeaning(base, domain, idx);
+    if(baseMeaning) return 'Infinitesimal change in the quantity "' + base + '"' + (baseMeaning ? ' (' + baseMeaning.charAt(0).toLowerCase() + baseMeaning.slice(1) + ')' : '');
+  }
+  const domainMap = LETTER_MEANINGS[domain];
+  if(tok.length === 1){
+    if(domainMap && domainMap[tok]) return domainMap[tok];
+    if(LETTER_MEANINGS.default[tok]) return LETTER_MEANINGS.default[tok];
+  }
+  const m = tok.match(/^([A-Za-z])([A-Za-z0-9]{1,6})$/);
+  if(m){
+    const base = m[1], suffix = m[2];
+    const baseMeaning = (domainMap && domainMap[base]) || LETTER_MEANINGS.default[base];
+    if(baseMeaning) return baseMeaning + ', here with the qualifying subscript "' + suffix + '"';
+  }
+  return 'A symbol used in this formula — its exact meaning depends on the specific formula.';
+}
+
+let activePopover = null;
+function closePopover(){
+  if(activePopover){ activePopover.el.remove(); activePopover.chip.classList.remove('active'); activePopover = null; }
+}
+document.addEventListener('click', (e) => {
+  if(activePopover && !activePopover.el.contains(e.target) && e.target !== activePopover.chip){
+    closePopover();
+  }
+});
+document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closePopover(); });
+window.addEventListener('scroll', closePopover, true);
+window.addEventListener('resize', closePopover);
+
+function showPopover(chip, symbol, meaning){
+  if(activePopover && activePopover.chip === chip){ closePopover(); return; }
+  closePopover();
+  const pop = document.createElement('div');
+  pop.className = 'def-popover';
+  pop.innerHTML = '<span class="sym">' + symbol + '</span><span class="meaning"></span><div class="close-hint">Click again to close</div>';
+  pop.querySelector('.meaning').textContent = meaning;
+  document.body.appendChild(pop);
+  const chipRect = chip.getBoundingClientRect();
+  const popRect = pop.getBoundingClientRect();
+  let left = chipRect.left + chipRect.width / 2 - popRect.width / 2;
+  left = Math.max(8, Math.min(left, window.innerWidth - popRect.width - 8));
+  let top = chipRect.bottom + 8;
+  if(top + popRect.height > window.innerHeight - 8){
+    top = chipRect.top - popRect.height - 8;
+  }
+  pop.style.left = left + 'px';
+  pop.style.top = top + 'px';
+  chip.classList.add('active');
+  activePopover = { el: pop, chip };
+}
+
+function renderDefs(item, idx){
+  defsRow.innerHTML = '';
+  const domain = item.domain || item.category || 'General';
+  const perFormula = FORMULA_VARS[idx];
+  const symbols = (perFormula && Object.keys(perFormula).length)
+    ? Object.keys(perFormula)
+    : extractSymbols(item.formula);
+  symbols.forEach(sym => {
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'def-chip';
+    chip.textContent = sym;
+    chip.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showPopover(chip, sym, lookupMeaning(sym, domain, idx));
+    });
+    defsRow.appendChild(chip);
+  });
+}
+
 function draw(){
   if(FORMULAS.length === 0) return;
   const pool = domainSelect.value === 'ALL'
@@ -270,6 +522,8 @@ function draw(){
   lawName.textContent = item.name;
   formulaText.innerHTML = '<span>\\(' + toLatex(item.formula) + '\\)</span>';
   MathJax.typesetPromise([formulaText]);
+  closePopover();
+  renderDefs(item, idx);
   cardNo.textContent = String(idx + 1).padStart(3, '0');
   cardDomain.textContent = item.domain || item.category || '—';
   cardEl.classList.remove('drawn');
@@ -277,10 +531,14 @@ function draw(){
   cardEl.classList.add('drawn');
 }
 btn.addEventListener('click', draw);
-fetch('./formulas.json')
-  .then(res => res.json())
-  .then(data => {
-    FORMULAS = data;
+
+Promise.all([
+  fetch('./formulas.json').then(res => res.json()),
+  fetch('./formula_vars.json').then(res => res.json()).catch(() => ({}))
+])
+  .then(([formulasData, formulaVarsData]) => {
+    FORMULAS = formulasData;
+    FORMULA_VARS = formulaVarsData || {};
     [...new Set(FORMULAS.map(item => item.domain || item.category || 'General'))]
       .sort((a,b) => a.localeCompare(b))
       .forEach(domain => {
