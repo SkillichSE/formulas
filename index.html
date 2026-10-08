@@ -238,6 +238,20 @@ button:disabled:hover{ background:transparent; color:#5b6773; }
   text-transform:uppercase;
   color: var(--card-ink-faint);
 }
+
+.calc{width:100%;border:1px solid rgba(220,213,191,0.35);padding:16px 18px;display:none;font-family:'IBM Plex Mono',monospace;}
+.calc-head{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-faint);margin-bottom:14px;}
+.calc select{font:inherit;color:var(--amber);background:var(--blueprint);border:1px solid var(--amber);padding:5px 8px;margin-left:6px;}
+.calc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px 18px;}
+.calc-grid label{display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(220,213,191,0.3);}
+.calc-grid .sym{color:var(--amber);font-size:13px;min-width:24px;}
+.calc-grid input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--chalk);font:inherit;font-size:13px;padding:7px 2px;}
+.calc-grid input::placeholder{color:rgba(220,213,191,0.28);font-size:10px;}
+.calc-grid input:disabled{opacity:.3;}
+.calc-out{margin-top:16px;font-size:15px;line-height:1.7;color:var(--paper);min-height:26px;}
+.calc-out b{color:var(--amber);font-weight:600;}
+.calc-out .ok{color:#8fd19e;}
+.calc-hint{margin-top:10px;font-size:10px;color:var(--ink-faint);}
 </style>
 </head>
 <body>
@@ -269,6 +283,15 @@ button:disabled:hover{ background:transparent; color:#5b6773; }
         </div>
       </div>
     </div>
+  </div>
+  <div class="calc" id="calc">
+    <div class="calc-head">
+      <label>Solve for <select id="calcTarget"></select></label>
+      <label><input type="checkbox" id="calcDeg" checked> angles in degrees</label>
+    </div>
+    <div class="calc-grid" id="calcGrid"></div>
+    <div class="calc-out" id="calcOut"></div>
+    <div class="calc-hint">Values can be expressions: 3/4, sqrt(2), pi/6. Degrees apply inside sin/cos/tan only — use radians for formulas like sector area.</div>
   </div>
   <select id="domainSelect" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--amber);background:transparent;border:1px solid var(--amber);padding:11px 12px;cursor:pointer;">
     <option value="ALL">All domains</option>
@@ -661,6 +684,184 @@ function lookupMeaning(tok, domain, idx){
   return 'A symbol used in this formula — its exact meaning depends on the specific formula.';
 }
 
+/* ===== CALCULATOR: plug numbers into the shown formula, solve for any variable ===== */
+let CALC=null, CALC_DEG=true;
+const FN={sin:Math.sin,cos:Math.cos,tan:Math.tan,cot:x=>1/Math.tan(x),sec:x=>1/Math.cos(x),csc:x=>1/Math.sin(x),sinh:Math.sinh,cosh:Math.cosh,tanh:Math.tanh,ln:Math.log,log:Math.log10,exp:Math.exp,sqrt:Math.sqrt};
+const TRIG=new Set(['sin','cos','tan','cot','sec','csc']);
+function fact(n){ if(n<0||Math.abs(n-Math.round(n))>1e-9||n>170) return NaN; let r=1; for(let i=2;i<=Math.round(n);i++) r*=i; return r; }
+const COMB={C:(n,k)=>fact(n)/(fact(k)*fact(n-k)), A:(n,k)=>fact(n)/fact(n-k), P:(n,k)=>fact(n)/fact(n-k)};
+const fmt=v=>{ if(!isFinite(v)) return '—'; const r=parseFloat(v.toPrecision(10)); return (r!==0&&(Math.abs(r)>=1e12||Math.abs(r)<1e-6))?r.toExponential(6):String(r); };
+
+/* formula string -> list of sides (split by "="), each {f(E,sign), used:Set, v:single-var|null, pm:bool}; throws if unsupported */
+function compile(src, vars){
+  src=src.replace(/π/g,'pi').replace(/θ/g,'theta').replace(/²/g,'^2').replace(/³/g,'^3').replace(/\+-/g,'±');
+  const names=[...vars,...Object.keys(FN),'pi','e'].sort((a,b)=>b.length-a.length), T=[];
+  for(let i=0,m;i<src.length;){
+    const ch=src[i];
+    if(/\s/.test(ch)){i++;continue;}
+    if(m=/^\d+(\.\d+)?/.exec(src.slice(i))){T.push({n:+m[0]});i+=m[0].length;continue;}
+    if(/[A-Za-z]/.test(ch)){const nm=names.find(x=>src.startsWith(x,i)); if(!nm) throw 0; T.push({id:nm}); i+=nm.length; continue;}
+    if('()[]|^*/+-±!,='.includes(ch)){T.push({o:ch});i++;continue;}
+    throw 0;
+  }
+  let p=0, abs=0, used, pm, piN=0;
+  const isO=c=>T[p]&&T[p].o===c, eat=c=>{ if(!isO(c)) throw 0; p++; };
+  const sf=()=>{const t=T[p]; return t&&(t.n!==undefined||t.id||t.o==='('||t.o==='['||(t.o==='|'&&!abs));};
+  const mul=(l,r)=>(E,s)=>l(E,s)*r(E,s);
+  function expr(){
+    let a=term();
+    for(;;){
+      const o=T[p]&&T[p].o;
+      if(o!=='+'&&o!=='-'&&o!=='±') return a;
+      p++; const l=a, r=term();
+      if(o==='±') pm=true;
+      a=o==='+'?(E,s)=>l(E,s)+r(E,s):o==='-'?(E,s)=>l(E,s)-r(E,s):(E,s)=>l(E,s)+s*r(E,s);
+    }
+  }
+  function term(){
+    let a=pw(), aLit=a.lit;
+    for(;;){
+      const t=T[p];
+      if(t&&t.o==='*'){p++; a=mul(a,pw()); aLit=false;}
+      else if(t&&t.o==='/'){
+        p++; const l=a; let d=pw();
+        /* "1/3 pi r" = (1/3)*pi*r, but "/ 2a" = /(2a) */
+        if(!(aLit&&d.lit)) while(sf()) d=mul(d,pw());
+        a=(E,s)=>l(E,s)/d(E,s); aLit=false;
+      }
+      else if(sf()){a=mul(a,pw()); aLit=false;}
+      else return a;
+    }
+  }
+  function pw(){
+    if(isO('-')){p++; const f=pw(); return (E,s)=>-f(E,s);}
+    if(isO('+')){p++; return pw();}
+    const b=post();
+    if(isO('^')){p++; const e=pw(); return (E,s)=>Math.pow(b(E,s),e(E,s));}
+    return b;
+  }
+  function post(){ let a=atom(); while(isO('!')){p++; const f=a; a=(E,s)=>fact(f(E,s));} return a; }
+  function atom(){
+    const t=T[p++]; if(!t) throw 0;
+    if(t.n!==undefined){const f=()=>t.n; f.lit=true; return f;}
+    if(t.o==='('||t.o==='['){const f=expr(); eat(t.o==='('?')':']'); return f;}
+    if(t.o==='|'){abs++; const f=expr(); abs--; eat('|'); return (E,s)=>Math.abs(f(E,s));}
+    const id=t.id; if(!id) throw 0;
+    if(FN[id]){
+      let ex=null; if(isO('^')){p++; ex=post();}
+      const p0=piN; let a; if(isO('(')){p++; a=expr(); eat(')');} else a=pw();
+      const g=FN[id], tr=TRIG.has(id)&&piN===p0;   /* arg contains pi -> already radians */
+      return (E,s)=>{ let v=a(E,s); if(tr&&CALC_DEG) v*=Math.PI/180; v=g(v); return ex?Math.pow(v,ex(E,s)):v; };
+    }
+    if(COMB[id]&&isO('(')){p++; const n=expr(); eat(','); const k=expr(); eat(')'); return (E,s)=>COMB[id](n(E,s),k(E,s));}
+    if(vars.has(id)){
+      if('fFT'.includes(id)&&isO('(')) throw 0;   /* f(x) is a function call, not f*(x) */
+      used.add(id); return E=>E[id];
+    }
+    if(id==='pi'){piN++; return ()=>Math.PI;}
+    if(id==='e') return ()=>Math.E;
+    throw 0;
+  }
+  const sides=[];
+  for(;;){
+    used=new Set(); pm=false; const st=p, f=expr();
+    sides.push({f, used, pm, v:(p-st===1&&T[st].id&&vars.has(T[st].id))?T[st].id:null});
+    if(isO('=')){p++;continue;} break;
+  }
+  if(p<T.length) throw 0;
+  return sides;
+}
+
+function buildCalc(idx,item){
+  const vm=FORMULA_VARS[idx]||{}; let names=Object.keys(vm);
+  if(!names.length) names=[...new Set(item.formula.replace(/sqrt|sinh|cosh|tanh|sin|cos|tan|cot|sec|csc|log|ln|exp|pi/g,'').match(/[A-Za-z]\d*/g)||[])];
+  const vars=new Set(names.filter(n=>n!=='pi'&&!(n==='e'&&!/euler|natural|base/i.test(vm.e||'')&&names.length>3)));
+  let sides; try{ sides=compile(item.formula,vars); }catch(e){ return null; }
+  if(sides.length<2) return null;
+  const all=new Set(); sides.forEach(s=>s.used.forEach(n=>all.add(n)));
+  if(!all.size) return null;
+  return {vm, sides, names:names.filter(n=>all.has(n))};
+}
+
+function findRoots(L,R,t,E,vm){
+  const F=x=>{E[t]=x; return L.f(E,1)-R.f(E,1);};
+  const xs=[];
+  if(/angle/i.test(vm[t]||'')){ const hi=CALC_DEG?180:Math.PI; for(let i=0;i<=1800;i++) xs.push(hi*i/1800); }
+  else{ for(let i=-4000;i<=4000;i++) xs.push(i/40); for(let k=-6;k<=6;k++) for(let m=1;m<10;m++) xs.push(m*10**k,-m*10**k); xs.sort((a,b)=>a-b); }
+  const out=[]; let pa=xs[0], pf=F(pa); if(pf===0) out.push(pa);
+  for(let i=1;i<xs.length;i++){
+    const b=xs[i], fb=F(b);
+    if(fb===0&&b!==pa) out.push(b);
+    else if(isFinite(pf)&&isFinite(fb)&&pf*fb<0){
+      let lo=pa,hi=b,flo=pf;
+      for(let k=0;k<100;k++){ const m=(lo+hi)/2, fm=F(m); if(fm*flo<=0) hi=m; else{lo=m;flo=fm;} }
+      const r=(lo+hi)/2, fr=Math.abs(F(r)), sc=1+Math.abs(L.f(E,1))+Math.abs(R.f(E,1));
+      if(fr<1e-6*sc) out.push(r);   /* rejects sign flips across poles */
+    }
+    pa=b; pf=fb;
+  }
+  delete E[t];
+  out.sort((a,b)=>a-b);
+  const uniq=out.filter((v,i)=>i===0||Math.abs(v-out[i-1])>1e-7*(1+Math.abs(v)));
+  return [...uniq.filter(v=>v>0),...uniq.filter(v=>v<=0)];
+}
+
+function parseVal(str){
+  try{ const s=compile(str,new Set()); const v=s[0].f({},1); return s.length===1&&isFinite(v)?v:NaN; }catch(e){ return NaN; }
+}
+
+function runCalc(){
+  const out=document.getElementById('calcOut'), t=document.getElementById('calcTarget').value, E={}, bad=[];
+  CALC.names.forEach(n=>{
+    const inp=document.querySelector('#calcGrid input[data-v="'+n+'"]'); inp.disabled=(n===t);
+    if(n===t) return;
+    const s=inp.value.trim(); if(!s) return;
+    const v=parseVal(s); if(isNaN(v)) bad.push(n); else E[n]=v;
+  });
+  if(bad.length){ out.textContent='Cannot read the value of: '+bad.join(', '); return; }
+  const S=CALC.sides, miss=n=>!(n in E), vals=s=>(s.pm?[1,-1]:[1]).map(k=>s.f(E,k));
+  if(!t){   /* check mode: evaluate every side, see if they match */
+    const res=S.map(s=>[...s.used].some(miss)?null:vals(s));
+    const need=new Set(); S.forEach(s=>s.used.forEach(n=>miss(n)&&need.add(n)));
+    if(need.size){ out.textContent='Fill in: '+[...need].join(', '); return; }
+    const flat=res.map(r=>r.map(fmt).join(' / '));
+    const same=res.every(r=>Math.abs(r[0]-res[0][0])<=1e-9*(1+Math.abs(res[0][0])));
+    out.innerHTML=flat.map((x,i)=>'side '+(i+1)+' = '+x).join('<br>')+'<br>'+(same?'<span class="ok">✓ both sides are equal</span>':'✗ sides are not equal');
+    return;
+  }
+  const res=[], need=new Set();
+  for(let i=0;i<S.length-1&&!res.length;i++){
+    const L=S[i], R=S[i+1];
+    if(!L.used.has(t)&&!R.used.has(t)) continue;
+    const m=[...L.used,...R.used].filter(n=>n!==t&&miss(n));
+    if(m.length){ m.forEach(n=>need.add(n)); continue; }
+    const dir=(A,B)=>A.v===t&&!B.used.has(t)?vals(B):null;
+    (dir(L,R)||dir(R,L)||findRoots(L,R,t,E,CALC.vm)).filter(isFinite).forEach(v=>res.push(v));
+  }
+  if(res.length) out.innerHTML=res.map((v,i)=>t+(res.length>1?'<sub>'+(i+1)+'</sub>':'')+' = <b>'+fmt(v)+'</b>').join('<br>');
+  else if(need.size) out.textContent='Fill in: '+[...need].join(', ');
+  else out.textContent='No real solution for these values';
+}
+
+function setupCalc(idx,item){
+  CALC=buildCalc(idx,item);
+  const box=document.getElementById('calc');
+  if(!CALC){ box.style.display='none'; return; }
+  box.style.display='block';
+  const tgt=document.getElementById('calcTarget'), grid=document.getElementById('calcGrid');
+  tgt.innerHTML='<option value="">check both sides</option>';
+  grid.innerHTML='';
+  CALC.names.forEach(n=>{
+    const o=document.createElement('option'); o.value=o.textContent=n; tgt.appendChild(o);
+    const lab=document.createElement('label'), sym=document.createElement('span'), inp=document.createElement('input');
+    sym.className='sym'; sym.textContent=n; inp.dataset.v=n; inp.placeholder=CALC.vm[n]||''; inp.title=CALC.vm[n]||''; inp.autocomplete='off';
+    inp.addEventListener('input',runCalc); lab.append(sym,inp); grid.appendChild(lab);
+  });
+  tgt.value=CALC.sides[0].v||'';
+  runCalc();
+}
+document.addEventListener('change',e=>{ if(!CALC) return; if(e.target.id==='calcDeg') CALC_DEG=e.target.checked; if(e.target.id==='calcTarget'||e.target.id==='calcDeg') runCalc(); });
+
 let activePopover = null;
 function closePopover(){
   if(activePopover){ activePopover.el.remove(); activePopover.hit.classList.remove('active'); activePopover = null; }
@@ -736,6 +937,7 @@ function draw(){
 
   cardNo.textContent = String(idx + 1).padStart(3, '0');
   cardDomain.textContent = item.domain || item.category || '—';
+  setupCalc(idx, item);
   cardEl.classList.remove('drawn');
   void cardEl.offsetWidth; 
   cardEl.classList.add('drawn');
